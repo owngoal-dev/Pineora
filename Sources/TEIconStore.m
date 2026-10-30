@@ -3,7 +3,7 @@
 #import "TELog.h"
 #import "TERenderer.h"
 
-NSString *const TEStoreDidReloadNotification = @"local.apelin.themeengine.store.reloaded";
+NSString *const TEStoreDidReloadNotification = @"wiki.qaq.pineora.store.reloaded";
 
 // 系统路径：/var/mobile 在两种 bootstrap 下都是真实路径，不做前缀转换。
 static NSString *const TEPreferencesDirectory = @"/var/mobile/Library/Preferences";

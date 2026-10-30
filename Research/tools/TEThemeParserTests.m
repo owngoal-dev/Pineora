@@ -1,7 +1,7 @@
 // 仅离线解析测试；所有合成文件及产物写入项目 build/，真实主题只读。
 // 在项目根目录编译：
 // clang -fobjc-arc -fblocks -arch arm64e -Wall -Wextra -Werror \
-//   -DAPELIN_PACKAGE_ID='"local.apelin.themeengine"' -ISources \
+//   -DAPELIN_PACKAGE_ID='"wiki.qaq.pineora"' -ISources \
 //   Research/tools/TEThemeParserTests.m Sources/TETheme.m \
 //   -framework Foundation -framework UIKit -o build/TEThemeParserTests
 // ldid -SResearch/tools/Tool.entitlements build/TEThemeParserTests

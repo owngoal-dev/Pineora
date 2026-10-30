@@ -1,6 +1,6 @@
 // 图标仓库：读设置、扫描主题、按 bundle id + 倍率取图并缓存。
 // 设置文件（系统路径，不经 bootstrap 转换）：
-//   /var/mobile/Library/Preferences/local.apelin.themeengine.plist
+//   /var/mobile/Library/Preferences/<package id>.plist
 // 键：
 //   Enabled                  BOOL，默认 YES
 //   Themes                   array<string>，主题目录（绝对路径或 /Library/Themes 下的名字）

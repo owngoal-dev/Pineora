@@ -1,6 +1,6 @@
 // 离线自检：不加载 SpringBoard，只用 TETheme 解析一个合成主题目录。
 // 编译（在项目根执行）：
-//   clang -fobjc-arc -arch arm64e -DAPELIN_PACKAGE_ID='"local.apelin.themeengine"' \
+//   clang -fobjc-arc -arch arm64e -DAPELIN_PACKAGE_ID='"wiki.qaq.pineora"' \
 //     -ISources Research/tools/TEThemeTest.m Sources/TETheme.m \
 //     -framework Foundation -o /tmp/tetheme-test && ldid -S /tmp/tetheme-test
 #import <Foundation/Foundation.h>

@@ -14,15 +14,15 @@
     <key>CFBundleExecutable</key>
     <string>PineoraPrefs</string>
     <key>CFBundleIdentifier</key>
-    <string>local.apelin.themeengine.prefs</string>
+    <string>wiki.qaq.pineora.prefs</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundlePackageType</key>
     <string>BNDL</string>
     <key>CFBundleShortVersionString</key>
-    <string>0.0.2</string>
+    <string>0.0.3</string>
     <key>CFBundleVersion</key>
-    <string>0.0.2</string>
+    <string>0.0.3</string>
     <key>NSPrincipalClass</key>
     <string>PineoraRootListController</string>
 </dict>
