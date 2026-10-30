@@ -11,7 +11,7 @@
 
 static NSHashTable *TEVisibleIcons;
 static NSHashTable *TEClockViews;
-static char TEOriginalImageKey, TELastImageKey, TETextFrameKey, TEClockMaskCacheKey, TEBadgeTintKey;
+static char TEOriginalImageKey, TELastImageKey, TETextFrameKey, TEClockMaskCacheKey, TEClockLayerCacheKey, TEBadgeTintKey;
 
 TEIconImageInfo TEImageInfoForObject(id object) {
     TEIconImageInfo info = {CGSizeMake(60, 60), UIScreen.mainScreen.scale, 13.5};
@@ -140,6 +140,30 @@ static UIImage *TEClockContents(id self, SEL cmd) { return TEClockBackground(sel
 static UIImage *(*TEOriginalClockSquare)(id, SEL);
 static UIImage *TEClockSquare(id self, SEL cmd) { return TEClockBackground(self, NO) ?: TEOriginalClockSquare(self, cmd); }
 
+// 系统指针图层含阴影留边，不能把细长主题贴图横向铺满。
+// 在原生画布内等比居中，不改 bounds / anchorPoint / transform，保留系统走时。
+static UIImage *TEClockLayerImage(UIImage *source, CGSize size, CGFloat scale) {
+    if (!source.CGImage || source.size.width <= 0 || source.size.height <= 0 ||
+        !isfinite(size.width) || !isfinite(size.height) || size.width <= 0 || size.height <= 0 ||
+        size.width > 512 || size.height > 512 || !isfinite(scale) || scale < 1 || scale > 4) return nil;
+    NSString *key = [NSString stringWithFormat:@"%g:%g:%g", size.width, size.height, scale];
+    NSDictionary *cached = objc_getAssociatedObject(source, &TEClockLayerCacheKey);
+    if ([cached[@"key"] isEqualToString:key]) return cached[@"image"];
+    CGFloat ratio = MIN(size.width / source.size.width, size.height / source.size.height);
+    CGSize fitted = CGSizeMake(source.size.width * ratio, source.size.height * ratio);
+    CGRect rect = CGRectMake((size.width - fitted.width) / 2, (size.height - fitted.height) / 2,
+                             fitted.width, fitted.height);
+    UIGraphicsImageRendererFormat *format = [UIGraphicsImageRendererFormat preferredFormat];
+    format.scale = scale;
+    format.opaque = NO;
+    UIGraphicsImageRenderer *renderer = [[UIGraphicsImageRenderer alloc] initWithSize:size format:format];
+    UIImage *image = [renderer imageWithActions:^(__unused UIGraphicsImageRendererContext *context) {
+        [source drawInRect:rect];
+    }];
+    objc_setAssociatedObject(source, &TEClockLayerCacheKey, @{@"key":key, @"image":image}, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    return image;
+}
+
 static void TEApplyClockLayers(id view) {
     NSArray *ivars = @[@"_hours", @"_minutes", @"_seconds", @"_hourMinuteDot", @"_secondDot"];
     NSArray *names = @[@"ClockIconHourHand", @"ClockIconMinuteHand", @"ClockIconSecondHand", @"ClockIconBlackDot", @"ClockIconRedDot"];
@@ -147,7 +171,8 @@ static void TEApplyClockLayers(id view) {
     for (NSUInteger i = 0; i < ivars.count; i++) {
         CALayer *layer = TEObjectIvar(view, [ivars[i] UTF8String], CALayer.class);
         if (!layer) continue;
-        UIImage *image = [TEIconStore.sharedStore resourceImageForBundleIdentifier:@"com.apple.springboard" name:names[i] size:layer.bounds.size scale:info.scale];
+        UIImage *raw = [TEIconStore.sharedStore rawResourceForBundleIdentifier:@"com.apple.springboard" name:names[i] scale:(NSInteger)lround(info.scale)];
+        UIImage *image = TEClockLayerImage(raw, layer.bounds.size, info.scale);
         id last = objc_getAssociatedObject(layer, &TELastImageKey);
         if (image) {
             if (!last || layer.contents != last) objc_setAssociatedObject(layer, &TEOriginalImageKey, layer.contents ?: (id)NSNull.null, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
