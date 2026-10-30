@@ -1,0 +1,2139 @@
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.37-Beta4-rootless
+Installed-Size: 3268
+SHA256: 21c4686ced56eede121bc91efcaae27dc2c553857b565351361cd1ae772929d0
+SHA1: 1b3e80eb10ea03f6ed54f23262789ef37aa02656
+MD5sum: a7239a85eee273dc2f297878702a97b8
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1128570
+Filename: download/com.spark.snowboard/1.5.37-Beta4-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm
+Version: 1.5.37-Beta4
+Installed-Size: 3284
+SHA256: 1e5d097198f95baa0f0216521a974f70a1633065ea485e05b50d88822eec30ee
+SHA1: 49081a0527724ce77b7a4dbecc8eae6147978abf
+MD5sum: ca9047183eb478c292edb7e4a936e292
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1152360
+Filename: download/com.spark.snowboard/1.5.37-Beta4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.26-Beta4-rootless
+Installed-Size: 3236
+SHA256: 2857efc003bf3c2def3119ea1b45f25b86eb57c8bf6f3b8d12c822e976608a51
+SHA1: 1548df152c15da2d898f19e618fb6af4bdee5d85
+MD5sum: 9109ec3d0b2bca55154f15610c8b61ba
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1120268
+Filename: download/com.spark.snowboard/1.5.26-Beta4-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.25-Beta4-rootless
+Installed-Size: 3236
+SHA256: d6b599cd35672312c690808a8f093e02442d7ff9f455023233edcab8d4da54dc
+SHA1: d663a9f4f354a6c216080cb879b8a11e70ecd798
+MD5sum: 19d1c13f7342f2385695e682673be4a9
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1119296
+Filename: download/com.spark.snowboard/1.5.25-Beta4-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.24-Beta4-rootless
+Installed-Size: 3236
+SHA256: 47c098117594382b2df2881ea1de87bd162334da47716503f5e53b9023671dd2
+SHA1: 0fe06ab0541121818021b5ee9414fc4477946ca3
+MD5sum: ffcf5cde2e64b181192aeece2dfb18e6
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1120374
+Filename: download/com.spark.snowboard/1.5.24-Beta4-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm
+Version: 1.5.21-Beta3
+Installed-Size: 4260
+SHA256: 4285febe09bf2c9f6b806ea66be930bc440c7fda746b31bc5ad733c067073509
+SHA1: ef1fa22dcbd90afe19d962997291b7cb389f87a6
+MD5sum: 81540321e8e9d59eca277cedeaf74321
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1419906
+Filename: download/com.spark.snowboard/1.5.21-Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.21-Beta3-rootless
+Installed-Size: 3188
+SHA256: 7388536dcbca307da803138eabc466592d3df7f0a7562433ca389d9d8de488ef
+SHA1: b97c7292e9ac3b1f6041f6c20f57f610af0db9dd
+MD5sum: 92b6d1aa118a9249e2a3bb5ef3a71dfd
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1123358
+Filename: download/com.spark.snowboard/1.5.21-Beta3-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm
+Version: 1.5.19-Beta3
+Installed-Size: 4228
+SHA256: f6c1e00afc3955f8c3f0f2d0ac8a9cb887d25677fc306f0c72b3b30fbcdf26bb
+SHA1: 8b03ba2f57c69eb8b4cead031634a46705da7111
+MD5sum: aab707248585413428e1f7ee66c5d72f
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1418522
+Filename: download/com.spark.snowboard/1.5.19-Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.19-Beta3-rootless
+Installed-Size: 3188
+SHA256: 53977bb5c28b67530b4b54484a0f9d035247ebd930980bd08ba8cb4610e71211
+SHA1: 4aecf5751adba696e3e740d5c719b6c372e923f5
+MD5sum: ed3d7dfe62cc44f05e262552c643f9dd
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1122674
+Filename: download/com.spark.snowboard/1.5.19-Beta3-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.17-Beta3-rootless
+Installed-Size: 3188
+SHA256: e3446cefae8c8efb98f4bacebb6112aa1c4227ec78e927ca593e23a936d95e85
+SHA1: cf6d0b34ba0a239d1ef263a7a6dd49fa877616a5
+MD5sum: 84a471bf2991b1e3748f58e2f4940741
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1123168
+Filename: download/com.spark.snowboard/1.5.17-Beta3-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm
+Version: 1.5.17-Beta3
+Installed-Size: 4228
+SHA256: 65d1f5d5aacab30e020e2e05c8f425ef84034c3c1b313ac59aeed5bff0c12ea7
+SHA1: c4725eb8676161a926b3561af8982a2409f828fb
+MD5sum: c0e95786e200ac74e1c87a44363f5ac8
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1420668
+Filename: download/com.spark.snowboard/1.5.17-Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm
+Version: 1.5.16-Beta3
+Installed-Size: 4228
+SHA256: c39563d32ead6c5e10f0471865eb69e0cbadafde71fd89990038cf25644387aa
+SHA1: 672bad2a5f2152a549930107eaa52dc3bf55fa5d
+MD5sum: 48b1d7337c35ac1950c5ba337abfe111
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1421198
+Filename: download/com.spark.snowboard/1.5.16-Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.16-Beta3-rootless
+Installed-Size: 3188
+SHA256: 2894c52c27bd021837c23f527e67207bb79e3eb4de4166adc1aed0616762b31b
+SHA1: 8b1f6acda0ed00fd764223a6e6b675e9c24ebe53
+MD5sum: b6f26a8fd51780f8c0c3e5102c394ade
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1123916
+Filename: download/com.spark.snowboard/1.5.16-Beta3-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm
+Version: 1.5.15-Beta3
+Installed-Size: 4228
+SHA256: 02d7d5817fe4bd554958febcd17deba7dd6e9b5cffcda373268e4978eee1f4b3
+SHA1: d5c37e720f129d6d742e45316857aa837d6dafa6
+MD5sum: 0940acc196de40b0b5c6337e9b6704da
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1418348
+Filename: download/com.spark.snowboard/1.5.15-Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.15-Beta3-rootless
+Installed-Size: 3188
+SHA256: 5f76e4a188c48482a1ef0e359ea4581869891d10f87ce5001225cdede595690e
+SHA1: fa6be2d2cc07c2ef5f8277223c6fcfaf20d5feec
+MD5sum: 2eb372d9c7d771cc5848803d1f1a2626
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1122954
+Filename: download/com.spark.snowboard/1.5.15-Beta3-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.13-Beta3-rootless
+Installed-Size: 3188
+SHA256: be0c8141fc3b3a02199787d4ca47680c74f8eff44bca40d617b9660050248350
+SHA1: 4ffb678038e30ab49453413be5664961760c8fc3
+MD5sum: b55add422bac04a6833b78104c30a59a
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1121212
+Filename: download/com.spark.snowboard/1.5.13-Beta3-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.5.11-Beta3
+Installed-Size: 4244
+SHA256: d5c6974aa3b9a3202eb1d557144f34311aaee4e3107eb8511bdb998ede54fea4
+SHA1: 42e9cd510f127bd12aa96169f881ae18952cc11d
+MD5sum: 8696d421904576aa8649532681fbf433
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1432650
+Filename: download/com.spark.snowboard/1.5.11-Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm64
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.5.9-Beta3-rootless
+Installed-Size: 3188
+SHA256: b03e8ce64c3092e6607ab719034276a1867f2259b9604913a4ed960a211c940a
+SHA1: 8ea8f4e6d22b5b55820aac28b159c1404d71c6fe
+MD5sum: 1cfa9a99ed81fdc489ce08800c86918f
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1129868
+Filename: download/com.spark.snowboard/1.5.9-Beta3-rootless.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.5.5~Beta2
+Installed-Size: 5204
+SHA256: 923f5adfe4aecdeedd4488659360a50436180da4682334e1b83705761bcb778f
+SHA1: f8e86e78f8fcc53abf7847b054fb903fba45df6a
+MD5sum: 9e07730472610d3a025b6581a2ba6b86
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1623370
+Filename: download/com.spark.snowboard/1.5.5~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.5.4~Beta2
+Installed-Size: 5204
+SHA256: e6de08496bc1d9f39d9c4a648b6cc6ce9c6d3ac1ea75221d647e5921ec2bbc8e
+SHA1: 7443657622ffc5f00b1101f7de0ac5a8ac5c0766
+MD5sum: c2dda6d80144dc2705b5491d6634a31c
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1617122
+Filename: download/com.spark.snowboard/1.5.4~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.5.3~Beta2
+Installed-Size: 5204
+SHA256: 8a0b18babc6eac70fc7877442fc0911a737776fe67742b6ccf3c9e5d0d7bea26
+SHA1: b448100619d25ea32982e86a46e33b19f60e677e
+MD5sum: cfa4ddebdb7e10ae324f48fe52007bab
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1616766
+Filename: download/com.spark.snowboard/1.5.3~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.5.1~Beta1
+Installed-Size: 5108
+SHA256: 18a4c5b43db3caa1c4a380fc795afa1fd0d4907a671ed4c5fbdbc34eb4eb33a0
+SHA1: ceb456f0a5a563584820c8ab81663c0228f2d002
+MD5sum: 63829b6cb64204bf7954f70cdcd578de
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1600416
+Filename: download/com.spark.snowboard/1.5.1~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.5.0~Beta1
+Installed-Size: 5172
+SHA256: a5dda80466fc060fb71fd60c7ffb715d3fa4a55af19a57e05348f6d26fd3bd54
+SHA1: 8ff14302ed67c77a362b53b982788f7ae4efca6a
+MD5sum: 6f3c6e8b31c53c73e7223b7dbabe6d16
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1603820
+Filename: download/com.spark.snowboard/1.5.0~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.4.20~Beta4
+Installed-Size: 5008
+SHA256: a98bde4179af69362b3d969941c010a26ca05548d0b89e73e7e852a2875b64f1
+SHA1: 65053af13e2cea17ac8342eeb36b47d9faecc2fc
+MD5sum: 1fb582d7e8e2f3093cc0e02b66bb7b07
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1591782
+Filename: download/com.spark.snowboard/1.4.20~Beta4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.4.18~Beta4
+Installed-Size: 5260
+SHA256: 92acda81dea91eb104605f570bb778a4f94fbdb3e7c5e33b84ddb98e827d3c82
+SHA1: 360a7013b26c99f1847be036793a66ff26b60cf1
+MD5sum: b0e9d03de0cf20c89e6026778eb6bbb7
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1628610
+Filename: download/com.spark.snowboard/1.4.18~Beta4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.4.12~Beta4
+Installed-Size: 4828
+SHA256: f517b7f5160a3d27282ecee016a23ecd1a6ace8dd7e23d63aca61e24a8ad2045
+SHA1: 389e7e7dc840e46aa0c601c86a6a42273005e91f
+MD5sum: a4dc9696690c0711b57d8c8a327e7fcf
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1562164
+Filename: download/com.spark.snowboard/1.4.12~Beta4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.4.9~Beta4
+Installed-Size: 4648
+SHA256: 54767495a75d11c4412917d7c0d10d3e020567695d9041f6064f728d632c976b
+SHA1: 8571c49a7fb84d8f4369376fd32eb4e568f7146d
+MD5sum: b1166161f4307b45727d4d08c4b69f65
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1529774
+Filename: download/com.spark.snowboard/1.4.9~Beta4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.4.7~Beta4
+Installed-Size: 4892
+SHA256: 9b974280ac0e3fff961fdc6341d178601e936d6ead51d28936dc9c43d96900c9
+SHA1: d57c58a00fd0cad2de1aaaa01cdd72301612519b
+MD5sum: a0b76bc673f1bbbae34d625a83991288
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1563724
+Filename: download/com.spark.snowboard/1.4.7~Beta4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.4.2~Beta4
+Installed-Size: 4884
+SHA256: 3503067822d9c332d2ca77d3d769eabf0da492937c47cabfe3d8964bce083916
+SHA1: 2c098229be61c82c02bba61dcec46f70b941635b
+MD5sum: 0ccc95da2f2e0accbbad83e80d67a9fd
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1544346
+Filename: download/com.spark.snowboard/1.4.2~Beta4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.4.1~Beta4
+Installed-Size: 4884
+SHA256: 7ff5a6b2d1912023193eaee34fd023d31f6cf517b19cd4b789eb196572cc04df
+SHA1: 6367d28ab4c2e10134057cc44ad6e2b76c70a661
+MD5sum: 64b03ecbacc08f8f6e89d45722e6a855
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1544220
+Filename: download/com.spark.snowboard/1.4.1~Beta4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.4.0~Beta4
+Installed-Size: 4788
+SHA256: d8294c594f35a7e9f0ac265d78e660b68cd0d210c27e0f88aa7967913baca8fb
+SHA1: b032b2533ec5ea3f90077c4cae86c9828924cf19
+MD5sum: a9d72aabb1d8b6adf6108aeaa1ad5d88
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1544318
+Filename: download/com.spark.snowboard/1.4.0~Beta4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.3.9~Beta3
+Installed-Size: 4688
+SHA256: fb725e2a909073d2688d7ef6df26c7a52256c364e83aa94f854d6e7701adf0c3
+SHA1: 384ef1c5c9cb11847efdc4ace8a3f86d78e0b3a9
+MD5sum: ed0765e17feccae59698106c4b57111f
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1519902
+Filename: download/com.spark.snowboard/1.3.9~Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.3.8~Beta3
+Installed-Size: 4736
+SHA256: c046635a526836af0dd0dc43f52aaf36286979a398a830c22d4b5f78a5d98285
+SHA1: 714726ba46d8588fda262a53c3ec95de803f1452
+MD5sum: 1e3fb1a7e451b1a16a17157fb1d8f373
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1506140
+Filename: download/com.spark.snowboard/1.3.8~Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.3.6~Beta3
+Installed-Size: 4720
+SHA256: 653a8328621d5b165a2f51fd2453e7863944ba3f51db5ca8d08c11e4aeb31757
+SHA1: 7d9d7ff66a4024a43ebf55db586fe46ffdc40ae5
+MD5sum: 8a3a8ef39aeeffd280eb4475b81a210b
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1507588
+Filename: download/com.spark.snowboard/1.3.6~Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.3.3~Beta3
+Installed-Size: 4656
+SHA256: 9691403438ca69d4bc0f8129224a6af0285e96cfad6fa3c63654b68c4a78a568
+SHA1: 390549c3b666c1f676f3f8bc90c2af4bfea2c731
+MD5sum: fad151dc9a93369fff83e69ddbd47f0e
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1481966
+Filename: download/com.spark.snowboard/1.3.3~Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.3.0~Beta3
+Installed-Size: 4644
+SHA256: 648376206b43b198bbf2d92638e9ed0fc8da6e294eaf37528e466cbc8bbec8fd
+SHA1: 383fe011309f3b02801447481b3341daa6f0a29d
+MD5sum: 005e8ca1ee6a4edb578f482c5e7dd15b
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1470750
+Filename: download/com.spark.snowboard/1.3.0~Beta3.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.94~Beta2
+Installed-Size: 4312
+SHA256: 4659ad76babae03f8c5460eff9f95c2d7c4e1a0ac2927bdcf2e5c498b1aec81a
+SHA1: 20595b78960a5077d3354aa787026a988bda6c55
+MD5sum: fefc19abccc1b5072f55cadc91e320fe
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1437260
+Filename: download/com.spark.snowboard/1.2.94~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.94~Beta2
+Installed-Size: 4312
+SHA256: 4659ad76babae03f8c5460eff9f95c2d7c4e1a0ac2927bdcf2e5c498b1aec81a
+SHA1: 20595b78960a5077d3354aa787026a988bda6c55
+MD5sum: fefc19abccc1b5072f55cadc91e320fe
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1437260
+Filename: download/com.spark.snowboard/1.2.94~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.91~Beta2
+Installed-Size: 4036
+SHA256: 004a019ee5d8c75ea4d08cfad35d138c2eb086c45c813a70c578226b9913e835
+SHA1: 4bb4d02e979989f48e42df4e4dae261d238850a3
+MD5sum: 274783f402f052f482e26ca47aa0d90f
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1408464
+Filename: download/com.spark.snowboard/1.2.91~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.90~Beta2
+Installed-Size: 4216
+SHA256: 669186856ef7ef203b7105172d30f38757dead2a8a4e4e99783215727f063d1a
+SHA1: 43e37305d8423a3ebbab8a11e5dc248e225b1fa7
+MD5sum: b478223885cc8d72e323bcfd4a75bfbd
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1443406
+Filename: download/com.spark.snowboard/1.2.90~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.89~Beta2
+Installed-Size: 4216
+SHA256: d8399bf008419f42e8f0b4891a616130e020ceb10fd14148cae9e76f5f955d30
+SHA1: 2b2afbd034273caa1b86f8bb127def38a776aade
+MD5sum: 37ce50a5cefd7a68765e6698c8103783
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1441568
+Filename: download/com.spark.snowboard/1.2.89~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.87~Beta2
+Installed-Size: 4292
+SHA256: 3a39afbe0cf477f3fba16adadb2e3df7f4d761294f829b61367a6f2acb74d28c
+SHA1: 6b792e4673221e6baa45d0f4a032a6ff1e8127a1
+MD5sum: 7e4ebf6c2612ebb85252f8f403ea6476
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1435328
+Filename: download/com.spark.snowboard/1.2.87~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.86~Beta2
+Installed-Size: 4292
+SHA256: b0382b6cb9695b216d62abc6218ce2c82d6685d472114a4fa9e2d2da95d0d396
+SHA1: 5322e7ccbd21d40dfd1ad69773db85d5be59a924
+MD5sum: 150b0df2dc0cb92277ef7fe00fe8f540
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1433570
+Filename: download/com.spark.snowboard/1.2.86~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.85~Beta2
+Installed-Size: 4292
+SHA256: 1acb668be1e502f0761f39542a39c232bbc3099c1893e5f1ad667fe9d37ed00c
+SHA1: 9f5aa9e62874a8b9a62769d32613a52610f44beb
+MD5sum: f5ef225685d9c0ea36847f60e3cf150e
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1437306
+Filename: download/com.spark.snowboard/1.2.85~Beta2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.83~Beta1
+Installed-Size: 4276
+SHA256: 746314e7da3d7e9c59ac4020dc86c0ee08555ae6de49969ca2e7476098e33351
+SHA1: eeb32af83f8c542ae08fec43b26f4606a6bbe143
+MD5sum: 78deb1425400cf8bb480626cba83c32d
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1435390
+Filename: download/com.spark.snowboard/1.2.83~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.82~Beta1
+Installed-Size: 4288
+SHA256: ccbabdf2b21883d22f28bea7aa512a1e3896293f53927af7abc753161841ad42
+SHA1: 3b1c284bed856fcfc5a7df3e2d86a42ae8285ee6
+MD5sum: 34f078e7fb96db314280e6ba08238ed8
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1431962
+Filename: download/com.spark.snowboard/1.2.82~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.81~Beta1
+Installed-Size: 4288
+SHA256: 6ce2e99e5735ce1a1a342a5081bff21ff5722e231a6343a957929465f592f7bc
+SHA1: 795cb555db2a1c5650d69c7d882047b0ca3f4af3
+MD5sum: 4de55b09d4b0ebb5b79ad5bfeb2c84e0
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1431174
+Filename: download/com.spark.snowboard/1.2.81~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.78~Beta1
+Installed-Size: 4272
+SHA256: 0526d558ca58316bb17787fb1372fe83ddb63f77897dd0cf89148984ed50ca91
+SHA1: 8fb87dfff3441af3335e18d478329dc96ca325eb
+MD5sum: ee7c0d075b483aac7132508625df9e92
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1430152
+Filename: download/com.spark.snowboard/1.2.78~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.77~Beta1
+Installed-Size: 4272
+SHA256: be0c7253a805581ee0045dec46b977d59028220f397c56892bd9270ebbf23ed8
+SHA1: 3786ec76575615bed2965310a0876d2cb9f50e25
+MD5sum: 0d89731fe942c8cc82390534da50867b
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1430358
+Filename: download/com.spark.snowboard/1.2.77~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.76~Beta1
+Installed-Size: 4224
+SHA256: b6844b3159e63b43b2470d243e03ce72fea142c934ce3dd402e4945d23d209f4
+SHA1: 9be2c678134aa928e575a3be56b55354896839c4
+MD5sum: f3b6384f533e70af403b6220652cc4d9
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1420250
+Filename: download/com.spark.snowboard/1.2.76~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.75~Beta1
+Installed-Size: 4212
+SHA256: ee539e8f4a2a4ed8c6856df9493afd89c058fed0c29926eaece8722a99e438aa
+SHA1: 6fdd5892124e8249f908ea5024b308356b08ec0b
+MD5sum: b5bbe30fa230e708c6de72f514193903
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1421068
+Filename: download/com.spark.snowboard/1.2.75~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.74~Beta1
+Installed-Size: 4212
+SHA256: 35480de29944be868a49bf3779a28cc558e9422207a044c79d3d9315447eeae6
+SHA1: d9b468347179292658fb63f602c0eb4a76048943
+MD5sum: 9777db1050f9229a0d64a5e7d7cffeaa
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1419708
+Filename: download/com.spark.snowboard/1.2.74~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.72~Beta1
+Installed-Size: 4212
+SHA256: 92a1e05718fd2833da0179b39342a4b57a7c1618ea9fe5b28c0474c36f65c6f4
+SHA1: ac15998f1681295c6e460e9317a1c9aeb930d080
+MD5sum: 4dae43d72a5e5a7f823a594c6b0b8b88
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1416100
+Filename: download/com.spark.snowboard/1.2.72~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.71~Beta1
+Installed-Size: 4212
+SHA256: 6c6b239e4bc7cc984855b0b6933bf5e0196bf733a7de4f340f9029d3cec31f7e
+SHA1: 9a9baced53e124b08857787596f56a9d6ab679a7
+MD5sum: 957151ee310764e81789d8dde7ae09eb
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1415226
+Filename: download/com.spark.snowboard/1.2.71~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.69~Beta1
+Installed-Size: 4212
+SHA256: aee1b650602a75945c2e273169cb27fdffb98081e10f3ce3b51732e2d217915f
+SHA1: cf377518a4ec0c8bab122b49fb700b38a94476af
+MD5sum: 4780e8ecf2eb800c2103fba4c45a41ec
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1413046
+Filename: download/com.spark.snowboard/1.2.69~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.67~Beta1
+Installed-Size: 4196
+SHA256: d31ba3b1970c41f47ebcc0aef9dec2408f50d875a8d14243b700f8b65ed5bd6f
+SHA1: 5ade1731e2735ab7788c392420e035eb2d57dd7a
+MD5sum: 9f81ce86c3c85039edb132093e6f6c0f
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1406642
+Filename: download/com.spark.snowboard/1.2.67~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.66~Beta1
+Installed-Size: 4212
+SHA256: 2fccf009c15cb986181f14d67b3418fab383d7687de95f9c2d603933938682bd
+SHA1: 0af6495dc7a0645b0572b5a8c2f26d3b5370aa3e
+MD5sum: 5f79cc7ea665462b2e35c0354986700c
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1406806
+Filename: download/com.spark.snowboard/1.2.66~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.57~Beta1
+Installed-Size: 4148
+SHA256: 0c07fa22bc49098361ede10c936b0b8da707a9e3c064fddd884c6c4cdc336d60
+SHA1: aa734d643bc765a53a1c543b32478ddd70cfa347
+MD5sum: a776a119eaea82b5f17b0c0272334ece
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1391644
+Filename: download/com.spark.snowboard/1.2.57~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.56~Beta1
+Installed-Size: 4148
+SHA256: e88aa5fe15eaaf5258e7d5a68aade3fad335299d7c44eb7b3cbfe3735cc7fade
+SHA1: 015e449db274dfd8ecccfe52586a339ccf2984b3
+MD5sum: 220780210feec8eb06c6a96d1e6affe8
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1393436
+Filename: download/com.spark.snowboard/1.2.56~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.54~Beta1
+Installed-Size: 4148
+SHA256: 18d04d6106ad9be64a07ef377f54122e01a45c58114f1afa4c3d1f9a7adb09f2
+SHA1: 9c420e78ca193150f73be17e6b0b0b1db79021dd
+MD5sum: 141c20baa0b9220d2d3082195c77f26c
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1392612
+Filename: download/com.spark.snowboard/1.2.54~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.52~Beta1
+Installed-Size: 4148
+SHA256: 25dda5b15b9681fc504426898bb00b6e335a95c5240791d590465dd5a60fdd0f
+SHA1: dea8c8c5ead6a5cab170959b36e833170e95a836
+MD5sum: 9a0bf17b6bb4e37e2c52a4caf2b5d7ff
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1389992
+Filename: download/com.spark.snowboard/1.2.52~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.51~Beta1
+Installed-Size: 4148
+SHA256: 4ae4fc52c652ba11aa1a6d75f797db406ce01d194bd611dcd74b9f664a703702
+SHA1: d4847a96391568feb5e387bd4113f84c321da97f
+MD5sum: 2703b796ee95300fd9e9a6ec567704a3
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1387946
+Filename: download/com.spark.snowboard/1.2.51~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.50~Beta1
+Installed-Size: 4148
+SHA256: 0154b8487110617213eb9e1053d76a78e9e5ad2441f7705346e4549d0331cf8b
+SHA1: e4b85b44a4bdfee7e701cc32ccfd6dc9e2f97d94
+MD5sum: 3bab41b6a41c9ad6307b4a47f4ae8124
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1384498
+Filename: download/com.spark.snowboard/1.2.50~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.49~Beta1
+Installed-Size: 4148
+SHA256: 4458af9ace35a30e1f5da69bcab4301dc560f11139b700e734c0a435e8f3d7ec
+SHA1: 70169bd85d2430112935a207520169cb70a912d5
+MD5sum: d7ad866dfaf6ae93acc2a53858b63aea
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1384532
+Filename: download/com.spark.snowboard/1.2.49~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.45~Beta1
+Installed-Size: 4136
+SHA256: 56ced98afcbe0b619a96fc556f6d4433947cad83c3f4498d696ce4ab37db676f
+SHA1: ae2b7ecce4f7ae9bbdd044a49a2de75902689fa7
+MD5sum: 7be385b69b4583ee50d2d29f3427af59
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1379756
+Filename: download/com.spark.snowboard/1.2.45~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.44~Beta1
+Installed-Size: 4100
+SHA256: f5593f3d7cc01f42a9bbbfea5e2b88eea5c72ac0271f240f0cbe98a369ff7942
+SHA1: af785f812f173ed1dfe38d90b036f01790de0237
+MD5sum: 5b361976b3615c3c2697293c1cd07e68
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1372026
+Filename: download/com.spark.snowboard/1.2.44~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.43~Beta1
+Installed-Size: 4100
+SHA256: 66d66120283df920020210f460efa130c4b725b9ab4c24720866bfa1c72e4e1e
+SHA1: d1ca5776a13457af6abeaaa5897396ba6dfdf9d0
+MD5sum: e7e33337ebcf73f062917070bdf5f102
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1370640
+Filename: download/com.spark.snowboard/1.2.43~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.42~Beta1
+Installed-Size: 4052
+SHA256: 48c29693f4d073c9a745416e5dada64c209c5cbcd59026087baa75495d95e001
+SHA1: 3eeb13fa4bef4b2b9655696642871db72fe1a990
+MD5sum: 36588c141e19cb05c5d045f3356d1f77
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1369256
+Filename: download/com.spark.snowboard/1.2.42~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.37~Beta1
+Installed-Size: 3712
+SHA256: f70feec2095d8d7195cc254fecb51782d4d81ded9bdb4d98420f613b75ad961b
+SHA1: 23de68884843d4921588941041ae34c69ed2707f
+MD5sum: 42deb712eecedd1d93a4e67593ad35e4
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 1328804
+Filename: download/com.spark.snowboard/1.2.37~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.27~Beta1
+Installed-Size: 3072
+SHA256: 083543b8da78e020b84dd7a675f3f72ad28b3231b23ef9f96b21e94733436946
+SHA1: 60c422b8f466aeeb0ba13ccd60e964b86736371c
+MD5sum: 38b0ac91233753e1d9d3cbb30a3b4590
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 758654
+Filename: download/com.spark.snowboard/1.2.27~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.26~Beta1
+Installed-Size: 3056
+SHA256: 37921a352a9101a27dbffab84559c495c0dd7530d7e84cc821358d12949a48de
+SHA1: 166f29f8c1f66872ad5ee4052655cc24ebf6b496
+MD5sum: 8fb1cfe41b90f699dd1166797856e77b
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 754998
+Filename: download/com.spark.snowboard/1.2.26~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.25~Beta1
+Installed-Size: 3056
+SHA256: e6462f34cfe1270c7089f631338b9052134a258eee17c2412c123be5554f36e1
+SHA1: d0a4d8489c10739786841cd16f9e2e943077149b
+MD5sum: 974ab9acfcf2fe194058c53b1df92b5a
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 755254
+Filename: download/com.spark.snowboard/1.2.25~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.23~Beta1
+Installed-Size: 3056
+SHA256: a1b3b612cf30d4d3c0fe73f61a371ab590b7930a77cd25ce5e1e794765acd620
+SHA1: 60d8b317a7b3f534fdd62e22ad6d81f4fb05dbaa
+MD5sum: d700332cc11e7382322e56d8aafa35d5
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 754662
+Filename: download/com.spark.snowboard/1.2.23~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.21~Beta1
+Installed-Size: 3056
+SHA256: fa476c039a2912a8ce6a21999d4334562e1ab51b46b8b54704800c77c823f5ab
+SHA1: 5edc6bc7c94c2ff2174db7ae451a2c3e224cdcf0
+MD5sum: 0b85c90f9b2d57ae495a3c5fae26f08a
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 753912
+Filename: download/com.spark.snowboard/1.2.21~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.20~Beta1
+Installed-Size: 3056
+SHA256: a78b311f4477c37908bf613678220877f3e25cb653fd47f1c0a87b23698a0db2
+SHA1: bb64ff68c5222180d23984ba9668b65232c78d2c
+MD5sum: 328bb6d581b5746744140fa6373f4754
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 753860
+Filename: download/com.spark.snowboard/1.2.20~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.19~Beta1
+Installed-Size: 3056
+SHA256: 14b8af34009e5709a2889a917733f14521f5e3e4cafff1fadf6ed7902f35438e
+SHA1: a4b277695804c5695f43b73a38d859d855ad6a46
+MD5sum: 40798f80e84632aa5ff6f11e7262d1b8
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 753456
+Filename: download/com.spark.snowboard/1.2.19~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.18~Beta1
+Installed-Size: 3056
+SHA256: 441c6ecf2d17237f39415965fc82b428caa03002bc680b91baef197cff9d99d4
+SHA1: d56522bdf1506f9381a410a4668e496218155de6
+MD5sum: 611076f8edf8aa0002d8e3096451e698
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 751964
+Filename: download/com.spark.snowboard/1.2.18~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.17~Beta1
+Installed-Size: 3056
+SHA256: aef4d20e61564978c046b35457ace54bbe00477f169aaf172a193f505419c7a6
+SHA1: a36d8ccae564d0f8227795aa047eb06e87562448
+MD5sum: 6db82c2a019ce4bf177eecfce71e7720
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 755886
+Filename: download/com.spark.snowboard/1.2.17~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.16~Beta1
+Installed-Size: 3024
+SHA256: 37747bad819bebfa062e0233887d568a0ae76e9739c70a227c224c51f0f657be
+SHA1: 513a31ae5725f770c6d2ac7aacb3b773f8dc714b
+MD5sum: caa8d0088023ef13fe60b00e7bce233a
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 749680
+Filename: download/com.spark.snowboard/1.2.16~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.14~Beta1
+Installed-Size: 3024
+SHA256: 136ce194ed62c4734561af35790e438371297f51a7f2dee9242ab4c49ed428b9
+SHA1: c4c440ac84af7876c9d24927613dc606cf17954b
+MD5sum: b8cc23ff5e491f2a9c909132851eca6b
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 749530
+Filename: download/com.spark.snowboard/1.2.14~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.13~Beta1
+Installed-Size: 3024
+SHA256: f648444c68cba0d977228e088a443f03c09c4893bfec2ba0b14785f56c035354
+SHA1: d23b3f660b734d1550a4757566360df16ea64800
+MD5sum: 122b862801f0c036e53bb9fda888aa5e
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 749910
+Filename: download/com.spark.snowboard/1.2.13~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.11~Beta1
+Installed-Size: 3120
+SHA256: 66670bfcc4ec256341b99d7ae7c602388a113bf099f6104eb5d276062f078f5f
+SHA1: 355832d4ba11fe17a04dd117bf150a7212571790
+MD5sum: bfbb4b50305bffdbdd2da4b4041a900a
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 747776
+Filename: download/com.spark.snowboard/1.2.11~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.9~Beta1
+Installed-Size: 3024
+SHA256: 0e62dea7f0e8dbcb80b174f6102fec215585395c56791a64654d81d87fcb991a
+SHA1: a3c2617dd4060cc61cb8bf85b22e9f90bad228f4
+MD5sum: 6cafd71a262f92ac23835a5f8794cb9b
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 741808
+Filename: download/com.spark.snowboard/1.2.9~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.8~Beta1
+Installed-Size: 3024
+SHA256: ebaa5242469a26943d7d6350ac38dbc20208d89e2d7b40daa13ff5d894f5386c
+SHA1: 36a6274932b1f507239fea7b7a56e4cc4cd029c9
+MD5sum: 0f08a584f7ec2d87b12ad5abe524352f
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 737994
+Filename: download/com.spark.snowboard/1.2.8~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.2.7~Beta1
+Installed-Size: 3008
+SHA256: 701d3482a9c09cca19524c116e7d0e3e81e36d3ed13305fcc3c926191792ab44
+SHA1: b25ac934309a36e8ad4c1e1b345ed0769384918e
+MD5sum: 7d0a165e77cde2996f9d5dda5675ac6a
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 739926
+Filename: download/com.spark.snowboard/1.2.7~Beta1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.1.7
+Installed-Size: 1652
+SHA256: 2ef95f9d7f5ee849e832355af797e20ba7fa1f87b7a4d607a7b0858c317011df
+SHA1: eaa6e6ba5650f9ae63d1d9f618c2c17e87dde76a
+MD5sum: 86161fd423004c70c81f74a7743a2e8b
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 446150
+Filename: download/com.spark.snowboard/1.1.7.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, jp.ashikase.techsupport, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.1.6
+Installed-Size: 1636
+SHA256: 41a66b7765be1f1b92464b92134cbb52fc8ebcf5e6439970bff06b1dc3991100
+SHA1: 24f8b128e0fd903cce70adf1abb69b6cb8a8bfed
+MD5sum: 0c28a4b7b421b23ff9bb0f2822b23c99
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 442628
+Filename: download/com.spark.snowboard/1.1.6.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, jp.ashikase.techsupport, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.1.5
+Installed-Size: 964
+SHA256: f260230cfb5c983bb86f5e1e812b562f0612fe84d924269fb76245d58e234caa
+SHA1: 1255c192e84c31b3823dde9decb0d71697bdb015
+MD5sum: 2ed1650db0f010d4a7413931f862c876
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 361918
+Filename: download/com.spark.snowboard/1.1.5.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, jp.ashikase.techsupport, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.1.4
+Installed-Size: 964
+SHA256: 14df7fea276c6b8efb15e3c629185eb8777ea15054488fe24f7f9e9e977244ed
+SHA1: 20de06d7346570ab461cb909ae590bfc1ef3a720
+MD5sum: 788e942b2c32ac74a57776b190fd4def
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 361860
+Filename: download/com.spark.snowboard/1.1.4.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, jp.ashikase.techsupport, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.0.4-1
+Installed-Size: 964
+SHA256: 4447b5e2b40e418c4203a6896ef538129f47637af55257cf24e88dd9401bd953
+SHA1: 339b10f573994ca499478491a241fb58b72beda7
+MD5sum: b8d5f722b7fb583f9e546bc51802f83f
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 358712
+Filename: download/com.spark.snowboard/1.0.4-1.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, jp.ashikase.techsupport, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.0.2-2
+Installed-Size: 964
+SHA256: cc361b682733fc1b82416a7c900dfffb1fe482a0efe9d849e42c2e9eab80d983
+SHA1: b0f4e9fed64852eba0a4c37dd48af0adee4afe8d
+MD5sum: 3a07e0c548f6f130588618764ec1adcd
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 355084
+Filename: download/com.spark.snowboard/1.0.2-2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, jp.ashikase.techsupport, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.0.2
+Installed-Size: 964
+SHA256: e51d9f98432c289af7314d65249e68ea5f5f26acfd3edf382f0d7762710ad192
+SHA1: 6b89bfd14c19867054a99083a42ec42fa6fac537
+MD5sum: c0e7f33e23150bf169ebd648b4b7e24a
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 354978
+Filename: download/com.spark.snowboard/1.0.2.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+
+Package: com.spark.snowboard
+Name: SnowBoard
+Depends: mobilesubstrate, jp.ashikase.techsupport, preferenceloader
+Architecture: iphoneos-arm
+Description: Snowboard theming engine
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.0.1-18+debug
+Installed-Size: 1524
+SHA256: b2a70a03ef6e3aebd6d229ebcbf2ceb3c426ca0f23f76d03a4b1820b5578f6a9
+SHA1: 77c965c73ac74c1c339d472e4cb49ed4f4896b7d
+MD5sum: 9b942b5e568d4c9ec805fd8e110fe8d4
+Depiction: https://www.sparkdev.me/package/com.spark.snowboard
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.snowboard
+Size: 425248
+Filename: download/com.spark.snowboard/1.0.1-18%2Bdebug.deb
+Icon: https://www.sparkdev.me/package-logo/com.spark.snowboard
+Tag: purpose::extension
+

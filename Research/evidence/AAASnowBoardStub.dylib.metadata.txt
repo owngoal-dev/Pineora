@@ -1,0 +1,23 @@
+HEADER cpu=0x100000c subtype=0x0 type=6 ncmds=24
+SECTION __TEXT,__text VA=0x4000 size=0x10 offset=0x4000
+SECTION __TEXT,__stubs VA=0x4010 size=0xc offset=0x4010
+SECTION __TEXT,__init_offsets VA=0x401c size=0x4 offset=0x401c
+SECTION __TEXT,__cstring VA=0x4020 size=0x1d offset=0x4020
+SECTION __TEXT,__unwind_info VA=0x4040 size=0x58 offset=0x4040
+SECTION __DATA_CONST,__got VA=0x8000 size=0x8 offset=0x8000
+SECTION __DATA_CONST,__objc_imageinfo VA=0x8008 size=0x8 offset=0x8008
+DYLIB cmd=0xd @rpath/AAASnowBoardStub.dylib
+CHAINED_FORMAT 2
+BUILD platform=2 minos=0xe0000 sdk=0x110400
+ENCRYPT cryptid=0
+DYLIB cmd=0xc /usr/lib/libobjc.A.dylib
+DYLIB cmd=0xc /System/Library/Frameworks/Foundation.framework/Foundation
+DYLIB cmd=0xc /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+DYLIB cmd=0xc /usr/lib/libc++.1.dylib
+DYLIB cmd=0xc /usr/lib/libSystem.B.dylib
+RPATH /var/jb/Library/Frameworks
+RPATH /var/jb/usr/lib
+RPATH @loader_path/.jbroot/Library/Frameworks
+RPATH @loader_path/.jbroot/usr/lib
+INIT 0x4000
+STRING 0x4020 __cstring /usr/lib/SnowBoardBase.dylib

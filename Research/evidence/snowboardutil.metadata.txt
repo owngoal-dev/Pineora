@@ -1,0 +1,402 @@
+HEADER cpu=0x100000c subtype=0x0 type=2 ncmds=26
+SECTION __TEXT,__text VA=0x100008000 size=0x224c offset=0x8000
+SECTION __TEXT,__stubs VA=0x10000a24c size=0x174 offset=0xa24c
+SECTION __TEXT,__objc_stubs VA=0x10000a3c0 size=0x780 offset=0xa3c0
+SECTION __TEXT,__objc_methlist VA=0x10000ab40 size=0xac offset=0xab40
+SECTION __TEXT,__cstring VA=0x10000abec size=0xc51 offset=0xabec
+SECTION __TEXT,__const VA=0x10000b840 size=0x8 offset=0xb840
+SECTION __TEXT,__ustring VA=0x10000b848 size=0x3a offset=0xb848
+SECTION __TEXT,__gcc_except_tab VA=0x10000b884 size=0x84 offset=0xb884
+SECTION __TEXT,__objc_classname VA=0x10000b908 size=0x2b offset=0xb908
+SECTION __TEXT,__objc_methname VA=0x10000b933 size=0x46c offset=0xb933
+SECTION __TEXT,__objc_methtype VA=0x10000bd9f size=0x40 offset=0xbd9f
+SECTION __TEXT,__unwind_info VA=0x10000bde0 size=0x108 offset=0xbde0
+SECTION __DATA_CONST,__got VA=0x10000c000 size=0x118 offset=0xc000
+SECTION __DATA_CONST,__const VA=0x10000c118 size=0x80 offset=0xc118
+SECTION __DATA_CONST,__cfstring VA=0x10000c198 size=0x900 offset=0xc198
+SECTION __DATA_CONST,__objc_classlist VA=0x10000ca98 size=0x10 offset=0xca98
+SECTION __DATA_CONST,__objc_imageinfo VA=0x10000caa8 size=0x8 offset=0xcaa8
+SECTION __DATA_CONST,__objc_arraydata VA=0x10000cab0 size=0x210 offset=0xcab0
+SECTION __DATA_CONST,__objc_arrayobj VA=0x10000ccc0 size=0x18 offset=0xccc0
+SECTION __DATA_CONST,__objc_intobj VA=0x10000ccd8 size=0x30 offset=0xccd8
+SECTION __DATA_CONST,__objc_doubleobj VA=0x10000cd08 size=0x20 offset=0xcd08
+SECTION __DATA_CONST,__objc_dictobj VA=0x10000cd28 size=0x28 offset=0xcd28
+SECTION __DATA,__objc_const VA=0x100010000 size=0x160 offset=0x10000
+SECTION __DATA,__objc_selrefs VA=0x100010160 size=0x1f0 offset=0x10160
+SECTION __DATA,__objc_classrefs VA=0x100010350 size=0x70 offset=0x10350
+SECTION __DATA,__objc_ivar VA=0x1000103c0 size=0x4 offset=0x103c0
+SECTION __DATA,__objc_data VA=0x1000103c8 size=0xa0 offset=0x103c8
+SECTION __DATA,__bss VA=0x100010468 size=0x40 offset=0x0
+SECTION __DATA,__common VA=0x1000104a8 size=0xc offset=0x0
+CHAINED_FORMAT 2
+CHAINED_FORMAT 2
+BUILD platform=2 minos=0xe0000 sdk=0x110400
+ENCRYPT cryptid=0
+DYLIB cmd=0xc /usr/lib/libobjc.A.dylib
+DYLIB cmd=0xc /System/Library/Frameworks/Foundation.framework/Foundation
+DYLIB cmd=0xc /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+DYLIB cmd=0xc /usr/lib/libSystem.B.dylib
+RPATH /var/jb/Library/Frameworks
+RPATH /var/jb/usr/lib
+RPATH @loader_path/.jbroot/Library/Frameworks
+RPATH @loader_path/.jbroot/usr/lib
+STRING 0x10000abec __cstring v8@?0
+STRING 0x10000abf2 __cstring @rpath/libroot.dylib
+STRING 0x10000ac07 __cstring libroot_get_root_prefix
+STRING 0x10000ac1f __cstring libroot_get_jbroot_prefix
+STRING 0x10000ac39 __cstring libroot_get_boot_uuid
+STRING 0x10000ac4f __cstring libroot_jbrootpath
+STRING 0x10000ac62 __cstring libroot_rootfspath
+STRING 0x10000ac75 __cstring 
+STRING 0x10000ac76 __cstring /var/jb
+STRING 0x10000ac7e __cstring 00000000-0000-0000-0000-000000000000
+STRING 0x10000aca3 __cstring com.spark.snowboard
+STRING 0x10000acb7 __cstring /Library/Themes
+STRING 0x10000acc7 __cstring /mytheme.theme
+STRING 0x10000acd6 __cstring 	Example y:
+		snowboardutil -t "%s"
+
+STRING 0x10000acfb __cstring Jul  9 2024
+STRING 0x10000ad07 __cstring Unknown
+STRING 0x10000ad0f __cstring /var/mobile/Library/Preferences/com.spark.snowboardprefs.plist
+STRING 0x10000ad4e __cstring %@.bak
+STRING 0x10000ad55 __cstring com.spark.snowboard.refreshComplete
+STRING 0x10000ad79 __cstring com.spark.snowboard.refresh
+STRING 0x10000ad95 __cstring com.spark.snowboard.refreshNow
+STRING 0x10000adb4 __cstring com.spark.snowboard.purgeAndUpdateAllIcons
+STRING 0x10000addf __cstring com.spark.snowboard.purgeAndUpdateAllIconsInDock
+STRING 0x10000ae10 __cstring com.spark.snowboard.clearOverrides
+STRING 0x10000ae33 __cstring Plist path "%s" is invalid.
+
+STRING 0x10000ae50 __cstring Plist path successfully updated to "%s"!
+
+STRING 0x10000ae7a __cstring Theme path "%s" is not in %s
+
+STRING 0x10000ae98 __cstring Theme path "%s" is invalid.
+
+STRING 0x10000aeb5 __cstring Theme "%s" is enabled.
+
+STRING 0x10000aecd __cstring Theme "%s" is disabled.
+
+STRING 0x10000aee6 __cstring Theme "%s" successfully enabled!
+
+STRING 0x10000af08 __cstring Theme "%s" successfully disabled!
+
+STRING 0x10000af2b __cstring com.spark.snowboard.hidePopupOnce
+STRING 0x10000af4d __cstring -r
+STRING 0x10000af50 __cstring --reload
+STRING 0x10000af59 __cstring -f
+STRING 0x10000af5c __cstring --force
+STRING 0x10000af64 __cstring -s
+STRING 0x10000af67 __cstring --soft
+STRING 0x10000af6e __cstring -d
+STRING 0x10000af71 __cstring --dock
+STRING 0x10000af78 __cstring -o
+STRING 0x10000af7b __cstring --overrides
+STRING 0x10000af87 __cstring -c
+STRING 0x10000af8a __cstring --change
+STRING 0x10000af93 __cstring -a
+STRING 0x10000af96 __cstring --apply
+STRING 0x10000af9e __cstring -t
+STRING 0x10000afa1 __cstring --theme
+STRING 0x10000afa9 __cstring -u
+STRING 0x10000afac __cstring --utheme
+STRING 0x10000afb5 __cstring -q
+STRING 0x10000afb8 __cstring --qtheme
+STRING 0x10000afc1 __cstring -h
+STRING 0x10000afc4 __cstring --help
+STRING 0x10000afcb __cstring -w
+STRING 0x10000afce __cstring --wait
+STRING 0x10000afd5 __cstring -p
+STRING 0x10000afd8 __cstring --popuphide
+STRING 0x10000afe4 __cstring Usage: snowboardutil [option] [extra options]
+
+STRING 0x10000b013 __cstring Options:
+STRING 0x10000b01c __cstring 	-r --reload		Reload all themes and refresh icons and other elements (Conforms to a SnowBoard handled cooldown).
+STRING 0x10000b08d __cstring 	-f --force		Reload all themes and refresh icons and other elements (Bypasses cooldown).
+STRING 0x10000b0e6 __cstring 	-s --soft		Refresh icons and other elements (Does not reload themes) (Bypasses cooldown).
+STRING 0x10000b141 __cstring 	-d --dock		Refresh icons in dock only (Bypasses cooldown).
+STRING 0x10000b17d __cstring 	-o --override		Clears user icon overrides, and refreshes icons (Conforms to a SnowBoard handled cooldown).
+STRING 0x10000b1e9 __cstring 	-c --change		Change preferences plist (Does not refresh) (-c [path]).
+STRING 0x10000b230 __cstring 	-a --apply		Change preferences plist (Then applies changes via a force refresh) (-a [path]).
+STRING 0x10000b28e __cstring 	-t --theme		Toggle a theme path (Does not refresh) (-t [path/name]).
+STRING 0x10000b2d4 __cstring 	-u --utheme		Toggle a theme path and refresh (Bypasses cooldown) (-u [path/name]).
+STRING 0x10000b328 __cstring 	-q --qtheme		Query if a theme path is enabled or not (-q [path/name]).
+STRING 0x10000b370 __cstring 	-h --help		Show this help.
+STRING 0x10000b38c __cstring Extra Options (Optional):
+STRING 0x10000b3a6 __cstring 	-w --wait		Wait for refresh to complete before snowboardutil exits.
+STRING 0x10000b3eb __cstring 	-p --popup		Force hide the extension respring popup.
+STRING 0x10000b421 __cstring Examples:
+STRING 0x10000b42b __cstring 	Example 1:
+		snowboardutil -r -w
+STRING 0x10000b44d __cstring 	Example 2:
+		snowboardutil -r
+STRING 0x10000b46c __cstring 	Example 3:
+		snowboardutil --overrides --wait
+STRING 0x10000b49b __cstring 	Example 4:
+		snowboardutil -s "/var/myplist.plist"
+STRING 0x10000b4cf __cstring 	Example 5:
+		snowboardutil -r -w -p
+STRING 0x10000b4f4 __cstring 	Example y:
+		snowboardutil -u mytheme.theme
+STRING 0x10000b521 __cstring In loving memory of Dennis D. Bednarz.
+
+STRING 0x10000b549 __cstring Refresh submitted!
+STRING 0x10000b55c __cstring Force refresh submitted!
+STRING 0x10000b575 __cstring Soft refresh submitted!
+STRING 0x10000b58d __cstring Dock refresh submitted!
+STRING 0x10000b5a5 __cstring Clear overrides submitted!
+STRING 0x10000b5c0 __cstring Please provide a plist path.
+STRING 0x10000b5dd __cstring Please provide a theme path.
+STRING 0x10000b5fa __cstring Will hide popup...
+STRING 0x10000b60d __cstring Refresh Completed Successfully.
+STRING 0x10000b62d __cstring Refresh request timed out.
+STRING 0x10000b648 __cstring %@
+STRING 0x10000b64b __cstring 1.5.37-Beta4-rootless
+STRING 0x10000b661 __cstring /var/jb/usr/bin/dpkg-query
+STRING 0x10000b67c __cstring /usr/bin/dpkg-query
+STRING 0x10000b690 __cstring Unknown (dpkg-query not found)
+STRING 0x10000b6af __cstring /
+STRING 0x10000b6b1 __cstring 
+
+STRING 0x10000b6b3 __cstring : 
+STRING 0x10000b6b6 __cstring Version
+STRING 0x10000b6be __cstring Enabled
+STRING 0x10000b6c6 __cstring i
+STRING 0x10000b6c8 __cstring CustomCornerRadiusEnabled
+STRING 0x10000b6e2 __cstring CustomCornerRadius
+STRING 0x10000b6f5 __cstring ForceCustomCornerRadius
+STRING 0x10000b70d __cstring CustomIconSizeEnabled
+STRING 0x10000b723 __cstring CustomIconSizeBadgesEnabled
+STRING 0x10000b73f __cstring CustomIconSize
+STRING 0x10000b74e __cstring HideLabels
+STRING 0x10000b759 __cstring HideLabelDots
+STRING 0x10000b767 __cstring CustomIconDockDisabled
+STRING 0x10000b77e __cstring LoadInWidgets
+STRING 0x10000b78c __cstring ShownWelcome
+STRING 0x10000b799 __cstring letitsnow
+STRING 0x10000b7a3 __cstring LegacyThemeSelector
+STRING 0x10000b7b7 __cstring ForceLegacyThemes
+STRING 0x10000b7c9 __cstring HideIconOverlays
+STRING 0x10000b7da __cstring GroupThemes
+STRING 0x10000b7e6 __cstring Force3Icons
+STRING 0x10000b7f2 __cstring HidePopUp
+STRING 0x10000b7fc __cstring CustomIconSizeWidgets
+STRING 0x10000b812 __cstring LoadInCarPlay
+STRING 0x10000b820 __cstring BadgeTheming
+STRING 0x10000b82d __cstring ActiveMenuItems
+STRING 0x10000b933 __objc_methname containsObject:
+STRING 0x10000b943 __objc_methname T@"NSString",&,N,V_version
+STRING 0x10000b95e __objc_methname stringByAppendingPathComponent:
+STRING 0x10000b97e __objc_methname _version
+STRING 0x10000b987 __objc_methname .cxx_destruct
+STRING 0x10000b995 __objc_methname kCurrentVersion
+STRING 0x10000b9a5 __objc_methname UTF8String
+STRING 0x10000b9b0 __objc_methname version
+STRING 0x10000b9b8 __objc_methname addObject:
+STRING 0x10000b9c3 __objc_methname arguments
+STRING 0x10000b9cd __objc_methname arrayWithObjects:count:
+STRING 0x10000b9e5 __objc_methname boolValue
+STRING 0x10000b9ef __objc_methname clearCache
+STRING 0x10000b9fa __objc_methname componentsSeparatedByString:
+STRING 0x10000ba17 __objc_methname copy
+STRING 0x10000ba1c __objc_methname copyItemAtPath:toPath:error:
+STRING 0x10000ba39 __objc_methname count
+STRING 0x10000ba3f __objc_methname countByEnumeratingWithState:objects:count:
+STRING 0x10000ba6a __objc_methname currentRunLoop
+STRING 0x10000ba79 __objc_methname date
+STRING 0x10000ba7e __objc_methname dateWithTimeIntervalSinceNow:
+STRING 0x10000ba9c __objc_methname defaultManager
+STRING 0x10000baab __objc_methname defaultPrefs
+STRING 0x10000bab8 __objc_methname dictionaryWithContentsOfFile:
+STRING 0x10000bad6 __objc_methname fileExistsAtPath:
+STRING 0x10000bae8 __objc_methname fileExistsAtPath:isDirectory:
+STRING 0x10000bb06 __objc_methname fileHandleForReading
+STRING 0x10000bb1b __objc_methname fileSystemRepresentation
+STRING 0x10000bb34 __objc_methname getActiveMenuItems
+STRING 0x10000bb47 __objc_methname getPrefForKey:
+STRING 0x10000bb56 __objc_methname getPrefs
+STRING 0x10000bb5f __objc_methname hasPrefix:
+STRING 0x10000bb6a __objc_methname indexOfObject:
+STRING 0x10000bb79 __objc_methname initWithData:encoding:
+STRING 0x10000bb90 __objc_methname isEqualToString:
+STRING 0x10000bba1 __objc_methname lastPathComponent
+STRING 0x10000bbb3 __objc_methname launch
+STRING 0x10000bbba __objc_methname moveItemAtPath:toPath:error:
+STRING 0x10000bbd7 __objc_methname mutableCopy
+STRING 0x10000bbe3 __objc_methname numberWithInt:
+STRING 0x10000bbf2 __objc_methname objectAtIndex:
+STRING 0x10000bc01 __objc_methname objectForKey:
+STRING 0x10000bc0f __objc_methname packageWithIdentifier:isRootPackage:
+STRING 0x10000bc34 __objc_methname pipe
+STRING 0x10000bc39 __objc_methname processInfo
+STRING 0x10000bc45 __objc_methname rangeOfString:
+STRING 0x10000bc54 __objc_methname readDataToEndOfFile
+STRING 0x10000bc68 __objc_methname removeItemAtPath:error:
+STRING 0x10000bc80 __objc_methname removeObject:
+STRING 0x10000bc8e __objc_methname runUntilDate:
+STRING 0x10000bc9c __objc_methname savePrefs:
+STRING 0x10000bca7 __objc_methname setActiveMenuItems:
+STRING 0x10000bcbb __objc_methname setArguments:
+STRING 0x10000bcc9 __objc_methname setCurrentDirectoryPath:
+STRING 0x10000bce2 __objc_methname setLaunchPath:
+STRING 0x10000bcf1 __objc_methname setObject:forKey:
+STRING 0x10000bd03 __objc_methname setStandardOutput:
+STRING 0x10000bd16 __objc_methname setVersion:
+STRING 0x10000bd22 __objc_methname stringWithFormat:
+STRING 0x10000bd34 __objc_methname stringWithUTF8String:
+STRING 0x10000bd4a __objc_methname substringFromIndex:
+STRING 0x10000bd5e __objc_methname substringToIndex:
+STRING 0x10000bd70 __objc_methname timeIntervalSinceDate:
+STRING 0x10000bd87 __objc_methname writeToFile:atomically:
+CFSTRING 0x10000c198 com.spark.snowboard
+CFSTRING 0x10000c1b8 /Library/Themes
+CFSTRING 0x10000c1d8 /mytheme.theme
+CFSTRING 0x10000c1f8 ©
+CFSTRING 0x10000c218 Unknown
+CFSTRING 0x10000c238 /var/mobile/Library/Preferences/com.spark.snowboardprefs.plist
+CFSTRING 0x10000c258 %@.bak
+CFSTRING 0x10000c278 com.spark.snowboard.refreshComplete
+CFSTRING 0x10000c298 com.spark.snowboard.refresh
+CFSTRING 0x10000c2b8 com.spark.snowboard.refreshNow
+CFSTRING 0x10000c2d8 com.spark.snowboard.purgeAndUpdateAllIcons
+CFSTRING 0x10000c2f8 com.spark.snowboard.purgeAndUpdateAllIconsInDock
+CFSTRING 0x10000c318 com.spark.snowboard.clearOverrides
+CFSTRING 0x10000c338 com.spark.snowboard.hidePopupOnce
+CFSTRING 0x10000c358 -r
+CFSTRING 0x10000c378 --reload
+CFSTRING 0x10000c398 -f
+CFSTRING 0x10000c3b8 --force
+CFSTRING 0x10000c3d8 -s
+CFSTRING 0x10000c3f8 --soft
+CFSTRING 0x10000c418 -d
+CFSTRING 0x10000c438 --dock
+CFSTRING 0x10000c458 -o
+CFSTRING 0x10000c478 --overrides
+CFSTRING 0x10000c498 -c
+CFSTRING 0x10000c4b8 --change
+CFSTRING 0x10000c4d8 -a
+CFSTRING 0x10000c4f8 --apply
+CFSTRING 0x10000c518 -t
+CFSTRING 0x10000c538 --theme
+CFSTRING 0x10000c558 -u
+CFSTRING 0x10000c578 --utheme
+CFSTRING 0x10000c598 -q
+CFSTRING 0x10000c5b8 --qtheme
+CFSTRING 0x10000c5d8 -h
+CFSTRING 0x10000c5f8 --help
+CFSTRING 0x10000c618 -w
+CFSTRING 0x10000c638 --wait
+CFSTRING 0x10000c658 -p
+CFSTRING 0x10000c678 --popuphide
+CFSTRING 0x10000c698 %@
+CFSTRING 0x10000c6b8 1.5.37-Beta4-rootless
+CFSTRING 0x10000c6d8 /var/jb/usr/bin/dpkg-query
+CFSTRING 0x10000c6f8 /usr/bin/dpkg-query
+CFSTRING 0x10000c718 Unknown (dpkg-query not found)
+CFSTRING 0x10000c738 /
+CFSTRING 0x10000c758 
+
+CFSTRING 0x10000c778 : 
+CFSTRING 0x10000c798 Version
+CFSTRING 0x10000c7b8 Enabled
+CFSTRING 0x10000c7d8 CustomCornerRadiusEnabled
+CFSTRING 0x10000c7f8 CustomCornerRadius
+CFSTRING 0x10000c818 ForceCustomCornerRadius
+CFSTRING 0x10000c838 CustomIconSizeEnabled
+CFSTRING 0x10000c858 CustomIconSizeBadgesEnabled
+CFSTRING 0x10000c878 CustomIconSize
+CFSTRING 0x10000c898 HideLabels
+CFSTRING 0x10000c8b8 HideLabelDots
+CFSTRING 0x10000c8d8 CustomIconDockDisabled
+CFSTRING 0x10000c8f8 LoadInWidgets
+CFSTRING 0x10000c918 ShownWelcome
+CFSTRING 0x10000c938 letitsnow
+CFSTRING 0x10000c958 LegacyThemeSelector
+CFSTRING 0x10000c978 ForceLegacyThemes
+CFSTRING 0x10000c998 HideIconOverlays
+CFSTRING 0x10000c9b8 GroupThemes
+CFSTRING 0x10000c9d8 Force3Icons
+CFSTRING 0x10000c9f8 HidePopUp
+CFSTRING 0x10000ca18 CustomIconSizeWidgets
+CFSTRING 0x10000ca38 LoadInCarPlay
+CFSTRING 0x10000ca58 BadgeTheming
+CFSTRING 0x10000ca78 ActiveMenuItems
+CLASS 0x1000103c8 SparkPackage
+METHOD 0x100009ddc -[SparkPackage version] types=@16@0:8
+METHOD 0x100009de4 -[SparkPackage setVersion:] types=v24@0:8@16
+METHOD 0x100009df0 -[SparkPackage .cxx_destruct] types=v16@0:8
+CLASS 0x1000103f0 meta SparkPackage
+METHOD 0x1000098d8 +[SparkPackage packageWithIdentifier:isRootPackage:] types=@28@0:8@16B24
+CLASS 0x100010418 SnowBoardPreferencesManager
+CLASS 0x100010440 meta SnowBoardPreferencesManager
+METHOD 0x100009dfc +[SnowBoardPreferencesManager defaultPrefs] types=@16@0:8
+METHOD 0x100009e08 +[SnowBoardPreferencesManager getPrefForKey:] types=@24@0:8@16
+METHOD 0x100009f88 +[SnowBoardPreferencesManager getPrefs] types=@16@0:8
+METHOD 0x10000a0a4 +[SnowBoardPreferencesManager savePrefs:] types=v24@0:8@16
+METHOD 0x10000a16c +[SnowBoardPreferencesManager clearCache] types=v16@0:8
+METHOD 0x10000a17c +[SnowBoardPreferencesManager kCurrentVersion] types=@16@0:8
+METHOD 0x10000a18c +[SnowBoardPreferencesManager setActiveMenuItems:] types=v24@0:8@16
+METHOD 0x10000a238 +[SnowBoardPreferencesManager getActiveMenuItems] types=@16@0:8
+SELREF 0x100010160 .cxx_destruct
+SELREF 0x100010168 UTF8String
+SELREF 0x100010170 addObject:
+SELREF 0x100010178 arguments
+SELREF 0x100010180 arrayWithObjects:count:
+SELREF 0x100010188 boolValue
+SELREF 0x100010190 clearCache
+SELREF 0x100010198 componentsSeparatedByString:
+SELREF 0x1000101a0 containsObject:
+SELREF 0x1000101a8 copy
+SELREF 0x1000101b0 copyItemAtPath:toPath:error:
+SELREF 0x1000101b8 count
+SELREF 0x1000101c0 countByEnumeratingWithState:objects:count:
+SELREF 0x1000101c8 currentRunLoop
+SELREF 0x1000101d0 date
+SELREF 0x1000101d8 dateWithTimeIntervalSinceNow:
+SELREF 0x1000101e0 defaultManager
+SELREF 0x1000101e8 defaultPrefs
+SELREF 0x1000101f0 dictionaryWithContentsOfFile:
+SELREF 0x1000101f8 fileExistsAtPath:
+SELREF 0x100010200 fileExistsAtPath:isDirectory:
+SELREF 0x100010208 fileHandleForReading
+SELREF 0x100010210 fileSystemRepresentation
+SELREF 0x100010218 getActiveMenuItems
+SELREF 0x100010220 getPrefForKey:
+SELREF 0x100010228 getPrefs
+SELREF 0x100010230 hasPrefix:
+SELREF 0x100010238 indexOfObject:
+SELREF 0x100010240 initWithData:encoding:
+SELREF 0x100010248 isEqualToString:
+SELREF 0x100010250 kCurrentVersion
+SELREF 0x100010258 lastPathComponent
+SELREF 0x100010260 launch
+SELREF 0x100010268 moveItemAtPath:toPath:error:
+SELREF 0x100010270 mutableCopy
+SELREF 0x100010278 numberWithInt:
+SELREF 0x100010280 objectAtIndex:
+SELREF 0x100010288 objectForKey:
+SELREF 0x100010290 packageWithIdentifier:isRootPackage:
+SELREF 0x100010298 pipe
+SELREF 0x1000102a0 processInfo
+SELREF 0x1000102a8 rangeOfString:
+SELREF 0x1000102b0 readDataToEndOfFile
+SELREF 0x1000102b8 removeItemAtPath:error:
+SELREF 0x1000102c0 removeObject:
+SELREF 0x1000102c8 runUntilDate:
+SELREF 0x1000102d0 savePrefs:
+SELREF 0x1000102d8 setActiveMenuItems:
+SELREF 0x1000102e0 setArguments:
+SELREF 0x1000102e8 setCurrentDirectoryPath:
+SELREF 0x1000102f0 setLaunchPath:
+SELREF 0x1000102f8 setObject:forKey:
+SELREF 0x100010300 setStandardOutput:
+SELREF 0x100010308 setVersion:
+SELREF 0x100010310 stringByAppendingPathComponent:
+SELREF 0x100010318 stringWithFormat:
+SELREF 0x100010320 stringWithUTF8String:
+SELREF 0x100010328 substringFromIndex:
+SELREF 0x100010330 substringToIndex:
+SELREF 0x100010338 timeIntervalSinceDate:
+SELREF 0x100010340 version
+SELREF 0x100010348 writeToFile:atomically:

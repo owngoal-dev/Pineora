@@ -1,0 +1,3252 @@
+HEADER cpu=0x100000c subtype=0x0 type=6 ncmds=30
+SECTION __TEXT,__text VA=0x8000 size=0x27d38 offset=0x8000
+SECTION __TEXT,__stubs VA=0x2fd38 size=0x498 offset=0x2fd38
+SECTION __TEXT,__objc_stubs VA=0x301d0 size=0x5660 offset=0x301d0
+SECTION __TEXT,__objc_methlist VA=0x35830 size=0x1e94 offset=0x35830
+SECTION __TEXT,__cstring VA=0x376c4 size=0x1456 offset=0x376c4
+SECTION __TEXT,__const VA=0x38b20 size=0x170 offset=0x38b20
+SECTION __TEXT,__objc_methname VA=0x38c90 size=0x6100 offset=0x38c90
+SECTION __TEXT,__objc_classname VA=0x3ed90 size=0x3e3 offset=0x3ed90
+SECTION __TEXT,__objc_methtype VA=0x3f173 size=0xf33 offset=0x3f173
+SECTION __TEXT,__gcc_except_tab VA=0x400a8 size=0x294c offset=0x400a8
+SECTION __TEXT,__ustring VA=0x429f4 size=0x40 offset=0x429f4
+SECTION __TEXT,__unwind_info VA=0x42a34 size=0xa30 offset=0x42a34
+SECTION __TEXT,__eh_frame VA=0x43468 size=0xa8 offset=0x43468
+SECTION __DATA_CONST,__got VA=0x44000 size=0x400 offset=0x44000
+SECTION __DATA_CONST,__const VA=0x44400 size=0x8f0 offset=0x44400
+SECTION __DATA_CONST,__cfstring VA=0x44cf0 size=0x2180 offset=0x44cf0
+SECTION __DATA_CONST,__objc_classlist VA=0x46e70 size=0x118 offset=0x46e70
+SECTION __DATA_CONST,__objc_catlist VA=0x46f88 size=0x10 offset=0x46f88
+SECTION __DATA_CONST,__objc_protolist VA=0x46f98 size=0x38 offset=0x46f98
+SECTION __DATA_CONST,__objc_imageinfo VA=0x46fd0 size=0x8 offset=0x46fd0
+SECTION __DATA_CONST,__objc_intobj VA=0x46fd8 size=0x48 offset=0x46fd8
+SECTION __DATA_CONST,__objc_doubleobj VA=0x47020 size=0x20 offset=0x47020
+SECTION __DATA_CONST,__objc_arraydata VA=0x47040 size=0x160 offset=0x47040
+SECTION __DATA_CONST,__objc_dictobj VA=0x471a0 size=0x28 offset=0x471a0
+SECTION __DATA,__objc_const VA=0x48000 size=0x46f0 offset=0x48000
+SECTION __DATA,__objc_selrefs VA=0x4c6f0 size=0x18f8 offset=0x4c6f0
+SECTION __DATA,__objc_protorefs VA=0x4dfe8 size=0x8 offset=0x4dfe8
+SECTION __DATA,__objc_classrefs VA=0x4dff0 size=0x258 offset=0x4dff0
+SECTION __DATA,__objc_superrefs VA=0x4e248 size=0xa8 offset=0x4e248
+SECTION __DATA,__objc_ivar VA=0x4e2f0 size=0x28c offset=0x4e2f0
+SECTION __DATA,__objc_data VA=0x4e580 size=0xaf0 offset=0x4e580
+SECTION __DATA,__data VA=0x4f070 size=0x2a8 offset=0x4f070
+SECTION __DATA,__bss VA=0x4f318 size=0x1110 offset=0x0
+DYLIB cmd=0xd /var/jb/Library/PreferenceBundles/SnowboardPrefs.bundle/SnowboardPrefs
+CHAINED_FORMAT 2
+CHAINED_FORMAT 2
+BUILD platform=2 minos=0xe0000 sdk=0x110400
+ENCRYPT cryptid=0
+DYLIB cmd=0xc /usr/lib/libobjc.A.dylib
+DYLIB cmd=0xc /System/Library/Frameworks/Foundation.framework/Foundation
+DYLIB cmd=0xc /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+DYLIB cmd=0xc /System/Library/Frameworks/UIKit.framework/UIKit
+DYLIB cmd=0xc /System/Library/PrivateFrameworks/Preferences.framework/Preferences
+DYLIB cmd=0xc /usr/lib/libc++.1.dylib
+DYLIB cmd=0xc /usr/lib/libSystem.B.dylib
+DYLIB cmd=0xc /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+DYLIB cmd=0xc /System/Library/Frameworks/CoreImage.framework/CoreImage
+DYLIB cmd=0xc /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+RPATH /var/jb/Library/Frameworks
+RPATH /var/jb/usr/lib
+RPATH @loader_path/.jbroot/Library/Frameworks
+RPATH @loader_path/.jbroot/usr/lib
+STRING 0x376c4 __cstring v8@?0
+STRING 0x376ca __cstring @rpath/libroot.dylib
+STRING 0x376df __cstring libroot_get_root_prefix
+STRING 0x376f7 __cstring libroot_get_jbroot_prefix
+STRING 0x37711 __cstring libroot_get_boot_uuid
+STRING 0x37727 __cstring libroot_jbrootpath
+STRING 0x3773a __cstring libroot_rootfspath
+STRING 0x3774d __cstring 
+STRING 0x3774e __cstring /var/jb
+STRING 0x37756 __cstring 00000000-0000-0000-0000-000000000000
+STRING 0x3777b __cstring Preferences
+STRING 0x37787 __cstring /var/mobile/Library/Preferences/
+STRING 0x377a8 __cstring %@prefs.plist
+STRING 0x377b6 __cstring key
+STRING 0x377ba __cstring presetUserAgent
+STRING 0x377ca __cstring %@/%@
+STRING 0x377d0 __cstring device
+STRING 0x377d7 __cstring iosVersion
+STRING 0x377e2 __cstring default
+STRING 0x377ea __cstring User-Agent
+STRING 0x377f5 __cstring EnableDataCollector
+STRING 0x37809 __cstring DATA_COLLECTION
+STRING 0x37819 __cstring DATA_COLLECTION_WARNING
+STRING 0x37831 __cstring CONFIRM
+STRING 0x37839 __cstring v16@?0@"UIAlertAction"8
+STRING 0x37851 __cstring CANCEL
+STRING 0x37858 __cstring i
+STRING 0x3785a __cstring PostNotification
+STRING 0x3786b __cstring killall
+STRING 0x37873 __cstring -9
+STRING 0x37876 __cstring backboardd
+STRING 0x37881 __cstring /usr/bin/killall
+STRING 0x37892 __cstring SnowBoardLocalisation
+STRING 0x378a8 __cstring SETTINGS
+STRING 0x378b1 __cstring APPLY_ONE
+STRING 0x378bb __cstring SnowBoardThemeLoader
+STRING 0x378d0 __cstring .SFUIText-Bold
+STRING 0x378df __cstring /Library/PreferenceBundles/SnowboardPrefs.bundle
+STRING 0x37910 __cstring checkmark.png
+STRING 0x3791e __cstring APPLY_REORDER
+STRING 0x3792c __cstring APPLY_CHANGES
+STRING 0x3793a __cstring v12@?0B8
+STRING 0x37943 __cstring %@
+STRING 0x37946 __cstring IconBundles
+STRING 0x37952 __cstring self ENDSWITH '.png'
+STRING 0x37967 __cstring @
+STRING 0x37969 __cstring -large
+STRING 0x37970 __cstring q24@?0@"NSString"8@"NSString"16
+STRING 0x37990 __cstring %@ (%dpx, %dpx)
+STRING 0x379a0 __cstring icon.png
+STRING 0x379a9 __cstring q24@?0@"SnowBoardThemeItem"8@"SnowBoardThemeItem"16
+STRING 0x379dd __cstring Icon.png
+STRING 0x379e6 __cstring com.apple.mobilephone
+STRING 0x379fc __cstring placeholder-extension.png
+STRING 0x37a16 __cstring SnowBoardExtensionPreferencesViewController
+STRING 0x37a42 __cstring ENABLE
+STRING 0x37a49 __cstring DISABLE
+STRING 0x37a51 __cstring warning.png
+STRING 0x37a5d __cstring placeholder.png
+STRING 0x37a6d __cstring %@ %@
+STRING 0x37a73 __cstring WARNING
+STRING 0x37a7b __cstring OVERSIZED_ICONS_WARNING
+STRING 0x37a93 __cstring OK
+STRING 0x37a96 __cstring LIST_LARGE_ICONS
+STRING 0x37aa7 __cstring %@
+%@
+STRING 0x37aad __cstring OVERSIZED_ICONS
+STRING 0x37abd __cstring v16@?0@"NSArray"8
+STRING 0x37acf __cstring %@: %@
+STRING 0x37ad6 __cstring THEME_PACK
+STRING 0x37ae1 __cstring THEME
+STRING 0x37ae7 __cstring THEME_INFO
+STRING 0x37af2 __cstring ICONS_EXTENSIONS
+STRING 0x37b03 __cstring v20@?0@"SnowBoardSortedItem"8B16
+STRING 0x37b24 __cstring UITableViewCellReorderControl
+STRING 0x37b42 __cstring SnowBoardPreferencesManager
+STRING 0x37b5e __cstring GroupThemes
+STRING 0x37b6a __cstring com.apple.Preferences
+STRING 0x37b80 __cstring THEMES
+STRING 0x37b87 __cstring EXTENSIONS
+STRING 0x37b92 __cstring /Library/Themes
+STRING 0x37ba2 __cstring SnowBoardExtensionManager
+STRING 0x37bbc __cstring Info.plist
+STRING 0x37bc7 __cstring PackageName
+STRING 0x37bd3 __cstring .theme
+STRING 0x37bda __cstring  
+STRING 0x37bdc __cstring v32@?0@8Q16^B24
+STRING 0x37bec __cstring title
+STRING 0x37bf2 __cstring ActiveMenuItems
+STRING 0x37c02 __cstring snowBoardThemeCell
+STRING 0x37c15 __cstring /var/mobile/Library/Preferences
+STRING 0x37c35 __cstring com.spark.snowboardprefs
+STRING 0x37c4e __cstring %@/%@.plist
+STRING 0x37c5a __cstring Extensions
+STRING 0x37c65 __cstring com.spark.snowboard.refresh
+STRING 0x37c81 __cstring [SnowBoard] Exception: %@
+STRING 0x37c9b __cstring GROUP
+STRING 0x37ca1 __cstring UNGROUP
+STRING 0x37ca9 __cstring RESPRING
+STRING 0x37cb2 __cstring Cancel
+STRING 0x37cb9 __cstring NO_THEMES
+STRING 0x37cc3 __cstring INSTALL_THEMES
+STRING 0x37cd2 __cstring /Library/SnowBoard/Extensions
+STRING 0x37cf0 __cstring SnowboardVersion
+STRING 0x37d01 __cstring [Snowboard] Extension out of date! %@
+STRING 0x37d27 __cstring CFBundleDisplayName
+STRING 0x37d3b __cstring ExtensionClass
+STRING 0x37d4a __cstring ExtensionType
+STRING 0x37d58 __cstring CompanionTweak
+STRING 0x37d67 __cstring icon
+STRING 0x37d6c __cstring png
+STRING 0x37d70 __cstring 0.0.0
+STRING 0x37d76 __cstring plist
+STRING 0x37d7c __cstring zoom
+STRING 0x37d81 __cstring Root
+STRING 0x37d86 __cstring IconOptions
+STRING 0x37d92 __cstring PSSpecifier
+STRING 0x37d9e __cstring %@...
+STRING 0x37da4 __cstring isController
+STRING 0x37db1 __cstring enabled
+STRING 0x37db9 __cstring Force3Icons
+STRING 0x37dc5 __cstring /var/mobile/Library/Preferences/com.spark.snowboardprefs.plist
+STRING 0x37e04 __cstring CustomCornerRadius
+STRING 0x37e17 __cstring CustomCornerRadiusEnabled
+STRING 0x37e31 __cstring CustomIconSize
+STRING 0x37e40 __cstring CustomIconSizeEnabled
+STRING 0x37e56 __cstring letitsnow
+STRING 0x37e60 __cstring com.spark.snowboard.letitsnow
+STRING 0x37e7e __cstring ForceLegacyThemes
+STRING 0x37e90 __cstring LEGACY_WARNING
+STRING 0x37e9f __cstring HidePopUp
+STRING 0x37ea9 __cstring HIDE_POPUP_WARNING
+STRING 0x37ebc __cstring LegacyThemeSelector
+STRING 0x37ed0 __cstring com.spark.snowboard.refreshNow
+STRING 0x37eef __cstring https://twitter.com/SparkDev_
+STRING 0x37f0d __cstring https://twitter.com/DennisBednarz
+STRING 0x37f2f __cstring com.spark.snowboard.clearOverrides
+STRING 0x37f52 __cstring Cell
+STRING 0x37f57 __cstring iconlarge.png
+STRING 0x37f65 __cstring .SFUIDisplay
+STRING 0x37f72 __cstring SnowBoard
+STRING 0x37f7c __cstring Developed by SparkDev
+STRING 0x37f92 __cstring Designed by Dennis D. Bednarz
+STRING 0x37fb0 __cstring /iconlarge.png
+STRING 0x37fbf __cstring com.spark.snowboard
+STRING 0x37fd3 __cstring Jul  9 2024
+STRING 0x37fdf __cstring DENNIS_TRIBUTE
+STRING 0x37fee __cstring .SFUIText
+STRING 0x37ff8 __cstring ExtensionsBannerCell
+STRING 0x3800d __cstring footerCellClass
+STRING 0x3801d __cstring label
+STRING 0x38023 __cstring Respring...
+STRING 0x3802f __cstring SnowboardFooterCell
+STRING 0x38043 __cstring Unknown
+STRING 0x3804b __cstring 1.5.37-Beta4-rootless
+STRING 0x38061 __cstring /var/jb/usr/bin/dpkg-query
+STRING 0x3807c __cstring /usr/bin/dpkg-query
+STRING 0x38090 __cstring Unknown (dpkg-query not found)
+STRING 0x380af __cstring /
+STRING 0x380b1 __cstring -s
+STRING 0x380b4 __cstring 
+
+STRING 0x380b6 __cstring : 
+STRING 0x380b9 __cstring Version
+STRING 0x380c1 __cstring Enabled - Tap/Drag to disable.
+STRING 0x380e0 __cstring Disabled - Tap/Drag to enable.
+STRING 0x380ff __cstring No Themes Are Enabled...
+STRING 0x38118 __cstring No Themes Are Disabled...
+STRING 0x38132 __cstring CIColorInvert
+STRING 0x38140 __cstring inputImage
+STRING 0x3814b __cstring Enabled
+STRING 0x38153 __cstring ForceCustomCornerRadius
+STRING 0x3816b __cstring CustomIconSizeBadgesEnabled
+STRING 0x38187 __cstring HideLabels
+STRING 0x38192 __cstring HideLabelDots
+STRING 0x381a0 __cstring CustomIconDockDisabled
+STRING 0x381b7 __cstring LoadInWidgets
+STRING 0x381c5 __cstring ShownWelcome
+STRING 0x381d2 __cstring HideIconOverlays
+STRING 0x381e3 __cstring CustomIconSizeWidgets
+STRING 0x381f9 __cstring LoadInCarPlay
+STRING 0x38207 __cstring BadgeTheming
+STRING 0x38214 __cstring com.apple.springboard
+STRING 0x3822a __cstring com.spark.snowboard.requestThemes
+STRING 0x3824c __cstring com.spark.snowboard.receiveThemes
+STRING 0x3826e __cstring LoadedThemes
+STRING 0x3827b __cstring Overrides
+STRING 0x38285 __cstring Icons
+STRING 0x3828b __cstring CalendarIconDateSettings
+STRING 0x382a4 __cstring .SFUIDisplay-Thin
+STRING 0x382b6 __cstring FontName
+STRING 0x382bf __cstring FontSize
+STRING 0x382c8 __cstring FontWeight
+STRING 0x382d3 __cstring TextColor
+STRING 0x382dd __cstring TextXoffset
+STRING 0x382e9 __cstring TextYoffset
+STRING 0x382f5 __cstring CalendarIconDaySettings
+STRING 0x3830d __cstring .SFUIText-SemiBold
+STRING 0x38320 __cstring BadgeSettings
+STRING 0x3832e __cstring ThemeLib-BadgeSettings
+STRING 0x38345 __cstring FolderGridImageAlpha
+STRING 0x3835a __cstring [SnowBoard] FolderGridImageAlpha: %f
+STRING 0x3837f __cstring FolderMaskForegroundEffect
+STRING 0x3839a __cstring [SnowBoard] FolderMaskForegroundEffect: %d
+STRING 0x383c5 __cstring ForceResizeForEffects
+STRING 0x383db __cstring [SnowBoard] ForceResizeForEffects: %d
+STRING 0x38401 __cstring ThemeType
+STRING 0x3840b __cstring MaskFolderMaximisedBG
+STRING 0x38421 __cstring FuzzyBundleIdentifiers
+STRING 0x38438 __cstring Bundles
+STRING 0x38440 __cstring ANEMFolderIconBG
+STRING 0x38451 __cstring ANEMFolderIconBG-
+STRING 0x38463 __cstring ANEMFolderBackground
+STRING 0x38478 __cstring ClockIconBackgroundSquare
+STRING 0x38492 __cstring SBBadgeBG
+STRING 0x3849c __cstring ClockIconHourHand
+STRING 0x384ae __cstring Modern%@
+STRING 0x384b7 __cstring ClockIconMinuteHand
+STRING 0x384cb __cstring ClockIconSecondHand
+STRING 0x384df __cstring ClockIconRedDot
+STRING 0x384ef __cstring ClockIconBlackDot
+STRING 0x38501 __cstring appicon
+STRING 0x38509 __cstring icon@
+STRING 0x3850f __cstring %@-%d-%d
+STRING 0x38518 __cstring Original-
+STRING 0x38522 __cstring -
+STRING 0x38524 __cstring [SnowBoard] Failed to load custom icon: %@
+STRING 0x3854f __cstring com.apple.AppPredictionWidget.extension
+STRING 0x38577 __cstring com.apple.Spotlight
+STRING 0x3858b __cstring SnowBoard Exception 3: %@ | %@
+STRING 0x385aa __cstring SnowBoard Exception 4: %@ | %@
+STRING 0x385c9 __cstring %@-%@-%f
+STRING 0x385d2 __cstring SnowBoardIconMaskExtension
+STRING 0x385ed __cstring SBIcon
+STRING 0x385f4 __cstring %@-alt
+STRING 0x385fb __cstring SnowBoard Exception 1: %@ | %@
+STRING 0x3861a __cstring IconOverrides
+STRING 0x38628 __cstring [SnowBoard] %@
+STRING 0x38637 __cstring /var/mobile/Media/Snowboard/CustomIcons/
+STRING 0x38660 __cstring [SnowBoard] Failed to load original icon for: %@
+STRING 0x38691 __cstring .
+STRING 0x38693 __cstring /Applications/%@.app
+STRING 0x386a8 __cstring B24@?0@"NSURL"8@"NSError"16
+STRING 0x386c4 __cstring %@/%s
+STRING 0x386ca __cstring CFBundleIcons
+STRING 0x386d8 __cstring CFBundlePrimaryIcon
+STRING 0x386ec __cstring CFBundleIconFiles
+STRING 0x386fe __cstring %@/%@.png
+STRING 0x38708 __cstring AppIcon
+STRING 0x38710 __cstring #
+STRING 0x38712 __cstring (
+STRING 0x38714 __cstring )
+STRING 0x38716 __cstring ,
+STRING 0x38718 __cstring rgb
+STRING 0x3871c __cstring transparent
+STRING 0x38728 __cstring %@Color
+STRING 0x38730 __cstring SnowBoard Exception 2: %@ | %@
+STRING 0x3874f __cstring bold
+STRING 0x38754 __cstring italic
+STRING 0x3875b __cstring heavy
+STRING 0x38761 __cstring light
+STRING 0x38767 __cstring thin
+STRING 0x3876c __cstring ultralight
+STRING 0x38777 __cstring medium
+STRING 0x3877e __cstring regular
+STRING 0x38786 __cstring semibold
+STRING 0x3878f __cstring .SF
+STRING 0x38793 __cstring STLPath
+STRING 0x3879b __cstring STLLoadedIcons
+STRING 0x387aa __cstring STLThemeSettings
+STRING 0x387bb __cstring SBIconView
+STRING 0x387c6 __cstring SBIconController
+STRING 0x387d7 __cstring SnowBoardSBIconManager
+STRING 0x387ee __cstring SBBookmarkIcon
+STRING 0x387fd __cstring SBApplicationController
+STRING 0x38815 __cstring SBApplicationIcon
+STRING 0x38827 __cstring _alt
+STRING 0x3882c __cstring _
+STRING 0x3882e __cstring x
+STRING 0x38830 __cstring _alt.png
+STRING 0x38839 __cstring SIHBundleIdentifier
+STRING 0x3884d __cstring SIHThemePath
+STRING 0x3885a __cstring SIHImagePaths
+STRING 0x38868 __cstring SIHAltImagePaths
+STRING 0x38879 __cstring com.spark.snowboard.remoteProcess
+STRING 0x3889b __cstring com.spark.snowboard.remoteReceive.%@
+STRING 0x388c0 __cstring com.spark.snowboardapplication
+STRING 0x388df __cstring InitInApps
+STRING 0x388ea __cstring *
+STRING 0x388ec __cstring |
+STRING 0x388ee __cstring BlackListInApps
+STRING 0x388fe __cstring q24@?0@8@16
+STRING 0x3890a __cstring [SnowBoardExtensionManager] Notifying extensions of icon reload...
+STRING 0x3894d __cstring [SnowBoardExtensionManager] Creating instance of icon extension: %@
+STRING 0x38991 __cstring Extension %@ failed to load path %@ with exception %@
+STRING 0x389c7 __cstring Icon
+STRING 0x389cc __cstring Identifier
+STRING 0x389d7 __cstring Sender
+STRING 0x389de __cstring com.spark.snowboard.ui
+STRING 0x389f5 __cstring kCFAllocatorNull
+STRING 0x38a06 __cstring CFDataCreateWithBytesNoCopy
+STRING 0x38a22 __cstring CFPropertyListCreateWithData
+STRING 0x38a3f __cstring CFPropertyListCreateFromXMLData
+STRING 0x38a5f __cstring CFStringCreateWithCStringNoCopy
+STRING 0x38a7f __cstring CFDictionaryGetValue
+STRING 0x38a94 __cstring CFGetTypeID
+STRING 0x38aa0 __cstring CFStringGetTypeID
+STRING 0x38ab2 __cstring CFStringGetCString
+STRING 0x38ac5 __cstring CFRelease
+STRING 0x38acf __cstring /System/Library/CoreServices/SystemVersion.plist
+STRING 0x38b00 __cstring r
+STRING 0x38b02 __cstring ProductVersion
+STRING 0x38b11 __cstring %d.%d.%d
+STRING 0x38c90 __objc_methname CGColor
+STRING 0x38c98 __objc_methname CGPath
+STRING 0x38c9f __objc_methname CIImage
+STRING 0x38ca7 __objc_methname T@"<SnowBoardExtension>",&,N,V_instance
+STRING 0x38ccf __objc_methname T@"NSIndexPath",&,N,VcIndexPath
+STRING 0x38cef __objc_methname T@"CADisplayLink",&,N,VdLink
+STRING 0x38d0c __objc_methname T@"UILabel",&,N,V_subtitleLabel
+STRING 0x38d2c __objc_methname T@"NSArray",&,N,V_cachedThemeImages
+STRING 0x38d50 __objc_methname TB,N,V_isLegacy
+STRING 0x38d60 __objc_methname T@"NSArray",&,N,V_fuzzyBundleIdentifiers
+STRING 0x38d89 __objc_methname _bundle
+STRING 0x38d91 __objc_methname T@"NSArray",&,N,V_loadedThemesOnlyExistingIcons
+STRING 0x38dc1 __objc_methname _colour
+STRING 0x38dc9 __objc_methname T@"NSArray",&,N,V_themeList
+STRING 0x38de5 __objc_methname _hadFirstAppear
+STRING 0x38df5 __objc_methname T@"NSBundle",&,N,V_prefsBundle
+STRING 0x38e14 __objc_methname _modern
+STRING 0x38e1c __objc_methname T@"NSCache",&,N,V_maskedCachedIcons
+STRING 0x38e40 __objc_methname addClip
+STRING 0x38e48 __objc_methname T@"NSCache",&,N,V_unmaskedCachedIcons
+STRING 0x38e6e __objc_methname applyChangesNow
+STRING 0x38e7e __objc_methname T@"NSDictionary",&,N,V_badgeSettings
+STRING 0x38ea3 __objc_methname badgeBackground
+STRING 0x38eb3 __objc_methname T@"NSDictionary",&,N,V_imagePaths
+STRING 0x38ed5 __objc_methname bundleWithPath:
+STRING 0x38ee5 __objc_methname T@"NSDictionary",&,N,V_namedFolderBackgrounds
+STRING 0x38f13 __objc_methname clockBackground
+STRING 0x38f23 __objc_methname T@"NSDictionary",&,N,V_themeSettings
+STRING 0x38f48 __objc_methname containsString:
+STRING 0x38f58 __objc_methname T@"NSMutableArray",&,N,V_menuItems
+STRING 0x38f7b __objc_methname detailTextLabel
+STRING 0x38f8b __objc_methname T@"NSMutableDictionary",&,N,V_currentReceiveHandlers
+STRING 0x38fc0 __objc_methname dispose
+STRING 0x38fc8 __objc_methname T@"NSNumber",&,N,V_yOffset
+STRING 0x38fe3 __objc_methname filterWithName:
+STRING 0x38ff3 __objc_methname T@"NSString",&,N,V_className
+STRING 0x39010 __objc_methname imageWithScale:
+STRING 0x39020 __objc_methname T@"NSString",&,N,V_displayName
+STRING 0x3903f __objc_methname isDraggableCell
+STRING 0x3904f __objc_methname T@"NSString",&,N,V_fulltitle
+STRING 0x3906c __objc_methname kCurrentVersion
+STRING 0x3907c __objc_methname T@"NSString",&,N,V_identifier
+STRING 0x3909a __objc_methname lowercaseString
+STRING 0x390aa __objc_methname T@"NSString",&,N,V_name
+STRING 0x390c2 __objc_methname navItem
+STRING 0x390ca __objc_methname T@"NSString",&,N,V_preferencesPlistPath
+STRING 0x390f2 __objc_methname numberWithBool:
+STRING 0x39102 __objc_methname T@"NSString",&,N,V_subtitle
+STRING 0x3911e __objc_methname prefsIdentifier
+STRING 0x3912e __objc_methname T@"NSString",&,N,V_themeType
+STRING 0x3914b __objc_methname release
+STRING 0x39153 __objc_methname T@"NSString",&,N,V_type
+STRING 0x3916b __objc_methname row
+STRING 0x3916f __objc_methname T@"NSString",&,N,V_widgetDisplayName
+STRING 0x39194 __objc_methname sectionIndexTitlesForTableView:
+STRING 0x391b4 __objc_methname T@"NSString",R,C
+STRING 0x391c5 __objc_methname setCachedImage:
+STRING 0x391d5 __objc_methname T@"SnowBoardClockIconHolder",&,N,V_blackDot
+STRING 0x39201 __objc_methname setContentView:
+STRING 0x39211 __objc_methname T@"SnowBoardClockIconHolder",&,N,V_minuteHand
+STRING 0x3923f __objc_methname setHeaderLabel:
+STRING 0x3924f __objc_methname T@"SnowBoardClockIconHolder",&,N,V_secondHand
+STRING 0x3927d __objc_methname setLoadedIcons:
+STRING 0x3928d __objc_methname T@"SnowBoardIconHolder",&,N,V_badgeBackground
+STRING 0x392bb __objc_methname setSavedObject:
+STRING 0x392cb __objc_methname T@"SnowBoardIconHolder",&,N,V_dockView
+STRING 0x392f2 __objc_methname sortedThemeItem
+STRING 0x39302 __objc_methname T@"SnowBoardIconHolder",&,N,V_folderMaxBackground
+STRING 0x39334 __objc_methname stringByResolvingSymlinksInPath
+STRING 0x39354 __objc_methname T@"SnowBoardSortedItem",&,N,V_themeGroup
+STRING 0x3937d __objc_methname viewWillAppear:
+STRING 0x3938d __objc_methname T@"SnowBoardThemeCellHeaderCell",&,N,V_contentView
+STRING 0x393c0 __objc_methname xOffset
+STRING 0x393c8 __objc_methname T@"SnowBoardThemeItem",&,N,V_iconsTheme
+STRING 0x393f0 __objc_methname .cxx_destruct
+STRING 0x393fe __objc_methname CGImage
+STRING 0x39406 __objc_methname T#,R
+STRING 0x3940b __objc_methname T@"NSArray",&,N,V_enabledThemes
+STRING 0x3942b __objc_methname T@"<SnowBoardThemeTableViewDelegate>",D,N
+STRING 0x39455 __objc_methname T@"NSIndexPath",&,N,ViIndexPath
+STRING 0x39475 __objc_methname T@"NSArray",&,N,V_blacklistInApps
+STRING 0x39497 __objc_methname T@"UITableView",&,N,V_tableView
+STRING 0x394b7 __objc_methname T@"NSArray",&,N,V_extensions
+STRING 0x394d4 __objc_methname Ti,N,V_pContainsOversizedImages
+STRING 0x394f4 __objc_methname T@"NSArray",&,N,V_loadedThemes
+STRING 0x39513 __objc_methname _cachedSBFloatingDockController
+STRING 0x39533 __objc_methname T@"NSArray",&,N,V_sortedThemes
+STRING 0x39552 __objc_methname _companionTweak
+STRING 0x39562 __objc_methname T@"NSBundle",&,N,V_bundle
+STRING 0x3957c __objc_methname _imageWithSize:
+STRING 0x3958c __objc_methname T@"NSCache",&,N,V_cachedFuzzyBundleIdentifiers
+STRING 0x395bb __objc_methname _redDot
+STRING 0x395c3 __objc_methname T@"NSCache",&,N,V_resizedCachedIcons
+STRING 0x395e8 __objc_methname animateWithDuration:animations:
+STRING 0x39608 __objc_methname T@"NSDictionary",&,N,V_altImagePaths
+STRING 0x3962d __objc_methname backgroundColor
+STRING 0x3963d __objc_methname T@"NSDictionary",&,N,V_cachedImages
+STRING 0x39661 __objc_methname blacklistInApps
+STRING 0x39671 __objc_methname T@"NSDictionary",&,N,V_loadedIcons
+STRING 0x39694 __objc_methname cachedThemeLogo
+STRING 0x396a4 __objc_methname T@"NSDictionary",&,N,V_overrides
+STRING 0x396c5 __objc_methname containsObject:
+STRING 0x396d5 __objc_methname T@"NSMutableArray",&,N,V_items
+STRING 0x396f4 __objc_methname currentInstance
+STRING 0x39704 __objc_methname T@"NSMutableArray",&,N,V_menuItemsDisabled
+STRING 0x3972f __objc_methname displayLinkWithTarget:selector:
+STRING 0x3974f __objc_methname T@"NSNumber",&,N,V_xOffset
+STRING 0x3976a __objc_methname enabled
+STRING 0x39772 __objc_methname T@"NSString",&,N,V_bundleIdentifier
+STRING 0x39796 __objc_methname getOverrideForBundleIdentifier:
+STRING 0x397b6 __objc_methname T@"NSString",&,N,V_companionTweak
+STRING 0x397d8 __objc_methname imageWithShadow
+STRING 0x397e8 __objc_methname T@"NSString",&,N,V_extensionType
+STRING 0x39809 __objc_methname isProxy
+STRING 0x39811 __objc_methname T@"NSString",&,N,V_iconPath
+STRING 0x3982d __objc_methname locationInView:
+STRING 0x3983d __objc_methname T@"NSString",&,N,V_largestImagePath
+STRING 0x39861 __objc_methname moveRowAtIndexPath:toIndexPath:
+STRING 0x39881 __objc_methname T@"NSString",&,N,V_path
+STRING 0x39899 __objc_methname notifyObservers
+STRING 0x398a9 __objc_methname T@"NSString",&,N,V_prefsIdentifier
+STRING 0x398cc __objc_methname padding
+STRING 0x398d4 __objc_methname T@"NSString",&,N,V_themePath
+STRING 0x398f1 __objc_methname prepareForReuse
+STRING 0x39901 __objc_methname T@"NSString",&,N,V_title
+STRING 0x3991a __objc_methname requiresUICache
+STRING 0x3992a __objc_methname T@"NSString",&,N,V_version
+STRING 0x39945 __objc_methname section
+STRING 0x3994d __objc_methname T@"NSString",?,R,C
+STRING 0x39960 __objc_methname set
+STRING 0x39964 __objc_methname T@"SnowBoardApplyView",&,N,V_applyView
+STRING 0x3998b __objc_methname setContentMode:
+STRING 0x3999b __objc_methname T@"SnowBoardClockIconHolder",&,N,V_hourHand
+STRING 0x399c7 __objc_methname setDisplayName:
+STRING 0x399d7 __objc_methname T@"SnowBoardClockIconHolder",&,N,V_redDot
+STRING 0x39a01 __objc_methname setIsAnimating:
+STRING 0x39a11 __objc_methname T@"SnowBoardEditButton",&,N,V_editButton
+STRING 0x39a3a __objc_methname setPrefsBundle:
+STRING 0x39a4a __objc_methname T@"SnowBoardIconHolder",&,N,V_clockBackground
+STRING 0x39a78 __objc_methname setShadowColor:
+STRING 0x39a88 __objc_methname T@"SnowBoardIconHolder",&,N,V_folderBackground
+STRING 0x39ab7 __objc_methname stringByAppendingPathComponent:
+STRING 0x39ad7 __objc_methname T@"SnowBoardSortedItem",&,N,V_sortedThemeItem
+STRING 0x39b05 __objc_methname version
+STRING 0x39b0d __objc_methname T@"SnowBoardSortedItem",&,N,V_themeWarningItem
+STRING 0x39b3c __objc_methname webClip
+STRING 0x39b44 __objc_methname T@"SnowBoardThemeCellHeaderCell",&,N,V_headerView
+STRING 0x39b76 __objc_methname yOffset
+STRING 0x39b7e __objc_methname T@"SnowBoardThemeItem",&,N,V_themeItem
+STRING 0x39ba5 __objc_methname T@"SnowBoardToggleButton",&,N,V_enableButton
+STRING 0x39bd2 __objc_methname T@"SparkCalendarSettings",&,N,V_calendarSettings
+STRING 0x39c03 __objc_methname T@"SparkClockInnerIcons",&,N,V_clockIcons
+STRING 0x39c2d __objc_methname T@"SparkFontSettings",&,N,V_calendarDayNumberFont
+STRING 0x39c5f __objc_methname T@"SparkFontSettings",&,N,V_calendarDayTextFont
+STRING 0x39c8f __objc_methname T@"SparkSpringBoardThemeHolder",&,N,V_springboardTheme
+STRING 0x39cc6 __objc_methname T@"UIColor",&,N,V_colour
+STRING 0x39cdf __objc_methname T@"UIFont",&,N,V_font
+STRING 0x39cf5 __objc_methname T@"UIImage",&,N,V_cachedBadgeBackground
+STRING 0x39d1d __objc_methname T@"UIImage",&,N,V_cachedImage
+STRING 0x39d3b __objc_methname T@"UIImage",&,N,V_cachedThemeLogo
+STRING 0x39d5d __objc_methname T@"UIImageView",&,N,V_bannerView
+STRING 0x39d7e __objc_methname T@"UIImageView",&,N,V_checkmarkView
+STRING 0x39da2 __objc_methname T@"UIImageView",&,N,V_iconImageView
+STRING 0x39dc6 __objc_methname T@"UIImageView",&,N,V_themeWarningView
+STRING 0x39ded __objc_methname T@"UIImageView",&,N,VdraggingView
+STRING 0x39e0f __objc_methname T@"UILabel",&,N,V_headerLabel
+STRING 0x39e2d __objc_methname T@"UILabel",&,N,V_titleLabel
+STRING 0x39e4a __objc_methname T@"UILongPressGestureRecognizer",&,N,V_longPress
+STRING 0x39e7b __objc_methname T@"UILongPressGestureRecognizer",&,N,VgestureRecognizer
+STRING 0x39eb3 __objc_methname T@"UIView",&,N,V_contentView
+STRING 0x39ed0 __objc_methname T@"UIView",&,N,V_subCellsView
+STRING 0x39eee __objc_methname T@,&,N,V_cachedSBFloatingDockController
+STRING 0x39f16 __objc_methname T@,&,N,V_folderViewController
+STRING 0x39f34 __objc_methname T@,&,N,V_parentVC
+STRING 0x39f46 __objc_methname T@,&,N,VsavedObject
+STRING 0x39f5a __objc_methname TB,D,N
+STRING 0x39f61 __objc_methname TB,N,V_enabled
+STRING 0x39f70 __objc_methname TB,N,V_folderMaskForegroundEffect
+STRING 0x39f92 __objc_methname TB,N,V_folderMaskMaxBackground
+STRING 0x39fb1 __objc_methname TB,N,V_forceResizeForEffects
+STRING 0x39fce __objc_methname TB,N,V_hadFirstAppear
+STRING 0x39fe4 __objc_methname TB,N,V_hasForceRefreshedOnce
+STRING 0x3a001 __objc_methname TB,N,V_initialLoadComplete
+STRING 0x3a01c __objc_methname TB,N,V_isAnimating
+STRING 0x3a02f __objc_methname TB,N,V_isApplication
+STRING 0x3a044 __objc_methname TB,N,V_isDraggableCell
+STRING 0x3a05b __objc_methname TB,N,V_isEnabled
+STRING 0x3a06c __objc_methname TB,N,V_isExpanded
+STRING 0x3a07e __objc_methname TB,N,V_isExtensions
+STRING 0x3a092 __objc_methname TB,N,V_isGrouped
+STRING 0x3a0a3 __objc_methname TB,N,V_modern
+STRING 0x3a0b1 __objc_methname TB,N,V_shouldReload
+STRING 0x3a0c5 __objc_methname TB,N,V_shouldSendIconsToSpringBoard
+STRING 0x3a0e9 __objc_methname TB,N,V_waitingForLazyLoad
+STRING 0x3a103 __objc_methname TQ,R
+STRING 0x3a108 __objc_methname Td,N,VdraggingRowHeight
+STRING 0x3a120 __objc_methname Td,N,VdraggingViewOpacity
+STRING 0x3a13a __objc_methname Td,N,VsRate
+STRING 0x3a146 __objc_methname Tf,N,V_folderGridImageAlpha
+STRING 0x3a162 __objc_methname Tf,N,V_requestedFontSize
+STRING 0x3a17b __objc_methname Ti,N,V_enabledState
+STRING 0x3a18f __objc_methname URLWithString:
+STRING 0x3a19e __objc_methname UTF8String
+STRING 0x3a1a9 __objc_methname UUID
+STRING 0x3a1ae __objc_methname UUIDString
+STRING 0x3a1b9 __objc_methname __loadUnmaskedIconImageForFormat:
+STRING 0x3a1db __objc_methname __loadUnmaskedIconImageForFormat:bundleIdentifier:
+STRING 0x3a20e __objc_methname _altImagePaths
+STRING 0x3a21d __objc_methname _appInfo
+STRING 0x3a226 __objc_methname _applyView
+STRING 0x3a231 __objc_methname _badgeBackground
+STRING 0x3a242 __objc_methname _badgeSettings
+STRING 0x3a251 __objc_methname _bannerView
+STRING 0x3a25d __objc_methname _blackDot
+STRING 0x3a267 __objc_methname _blacklistInApps
+STRING 0x3a278 __objc_methname _bundleIdentifier
+STRING 0x3a28a __objc_methname _cachedBadgeBackground
+STRING 0x3a2a1 __objc_methname _cachedFuzzyBundleIdentifiers
+STRING 0x3a2bf __objc_methname _cachedImage
+STRING 0x3a2cc __objc_methname _cachedImages
+STRING 0x3a2da __objc_methname _cachedThemeImages
+STRING 0x3a2ed __objc_methname _cachedThemeLogo
+STRING 0x3a2fe __objc_methname _calendarDayNumberFont
+STRING 0x3a315 __objc_methname _calendarDayTextFont
+STRING 0x3a32a __objc_methname _calendarSettings
+STRING 0x3a33c __objc_methname _checkmarkView
+STRING 0x3a34b __objc_methname _className
+STRING 0x3a356 __objc_methname _clockBackground
+STRING 0x3a367 __objc_methname _clockIcons
+STRING 0x3a373 __objc_methname _contentView
+STRING 0x3a380 __objc_methname _currentReceiveHandlers
+STRING 0x3a398 __objc_methname _displayName
+STRING 0x3a3a5 __objc_methname _dockView
+STRING 0x3a3af __objc_methname _editButton
+STRING 0x3a3bb __objc_methname _enableButton
+STRING 0x3a3c9 __objc_methname _enabled
+STRING 0x3a3d2 __objc_methname _enabledState
+STRING 0x3a3e0 __objc_methname _enabledThemes
+STRING 0x3a3ef __objc_methname _extensionType
+STRING 0x3a3fe __objc_methname _extensions
+STRING 0x3a40a __objc_methname _folderBackground
+STRING 0x3a41c __objc_methname _folderGridImageAlpha
+STRING 0x3a432 __objc_methname _folderMaskForegroundEffect
+STRING 0x3a44e __objc_methname _folderMaskMaxBackground
+STRING 0x3a467 __objc_methname _folderMaxBackground
+STRING 0x3a47c __objc_methname _folderViewController
+STRING 0x3a492 __objc_methname _font
+STRING 0x3a498 __objc_methname _forceResizeForEffects
+STRING 0x3a4af __objc_methname _fulltitle
+STRING 0x3a4ba __objc_methname _fuzzyBundleIdentifiers
+STRING 0x3a4d2 __objc_methname _hasForceRefreshedOnce
+STRING 0x3a4e9 __objc_methname _headerLabel
+STRING 0x3a4f6 __objc_methname _headerView
+STRING 0x3a502 __objc_methname _hourHand
+STRING 0x3a50c __objc_methname _iconImageView
+STRING 0x3a51b __objc_methname _iconPath
+STRING 0x3a525 __objc_methname _iconsTheme
+STRING 0x3a531 __objc_methname _identifier
+STRING 0x3a53d __objc_methname _imagePaths
+STRING 0x3a549 __objc_methname _initialLoadComplete
+STRING 0x3a55e __objc_methname _instance
+STRING 0x3a568 __objc_methname _isAnimating
+STRING 0x3a575 __objc_methname _isApplication
+STRING 0x3a584 __objc_methname _isDraggableCell
+STRING 0x3a595 __objc_methname _isEnabled
+STRING 0x3a5a0 __objc_methname _isExpanded
+STRING 0x3a5ac __objc_methname _isExtensions
+STRING 0x3a5ba __objc_methname _isGrouped
+STRING 0x3a5c5 __objc_methname _isLegacy
+STRING 0x3a5cf __objc_methname _items
+STRING 0x3a5d6 __objc_methname _largestImagePath
+STRING 0x3a5e8 __objc_methname _loadedIcons
+STRING 0x3a5f5 __objc_methname _loadedThemes
+STRING 0x3a603 __objc_methname _loadedThemesOnlyExistingIcons
+STRING 0x3a622 __objc_methname _longPress
+STRING 0x3a62d __objc_methname _maskedCachedIcons
+STRING 0x3a640 __objc_methname _menuItems
+STRING 0x3a64b __objc_methname _menuItemsDisabled
+STRING 0x3a65e __objc_methname _minuteHand
+STRING 0x3a66a __objc_methname _name
+STRING 0x3a670 __objc_methname _namedFolderBackgrounds
+STRING 0x3a688 __objc_methname _overrides
+STRING 0x3a693 __objc_methname _pContainsOversizedImages
+STRING 0x3a6ad __objc_methname _parentVC
+STRING 0x3a6b7 __objc_methname _path
+STRING 0x3a6bd __objc_methname _preferencesPlistPath
+STRING 0x3a6d3 __objc_methname _prefsBundle
+STRING 0x3a6e0 __objc_methname _prefsIdentifier
+STRING 0x3a6f1 __objc_methname _requestedFontSize
+STRING 0x3a704 __objc_methname _resizedCachedIcons
+STRING 0x3a718 __objc_methname _secondHand
+STRING 0x3a724 __objc_methname _shouldReload
+STRING 0x3a732 __objc_methname _shouldSendIconsToSpringBoard
+STRING 0x3a750 __objc_methname _sortedThemeItem
+STRING 0x3a761 __objc_methname _sortedThemes
+STRING 0x3a76f __objc_methname _springboardTheme
+STRING 0x3a781 __objc_methname _subCellsView
+STRING 0x3a78f __objc_methname _subtitle
+STRING 0x3a799 __objc_methname _subtitleLabel
+STRING 0x3a7a8 __objc_methname _tableView
+STRING 0x3a7b3 __objc_methname _themeGroup
+STRING 0x3a7bf __objc_methname _themeItem
+STRING 0x3a7ca __objc_methname _themeList
+STRING 0x3a7d5 __objc_methname _themePath
+STRING 0x3a7e0 __objc_methname _themeSettings
+STRING 0x3a7ef __objc_methname _themeType
+STRING 0x3a7fa __objc_methname _themeWarningItem
+STRING 0x3a80c __objc_methname _themeWarningView
+STRING 0x3a81e __objc_methname _title
+STRING 0x3a825 __objc_methname _titleLabel
+STRING 0x3a831 __objc_methname _type
+STRING 0x3a837 __objc_methname _unmaskedCachedIcons
+STRING 0x3a84c __objc_methname _version
+STRING 0x3a855 __objc_methname _waitingForLazyLoad
+STRING 0x3a869 __objc_methname _widgetDisplayName
+STRING 0x3a87c __objc_methname _xOffset
+STRING 0x3a885 __objc_methname _yOffset
+STRING 0x3a88e __objc_methname absoluteString
+STRING 0x3a89d __objc_methname actionWithTitle:style:handler:
+STRING 0x3a8bc __objc_methname activeThemes
+STRING 0x3a8c9 __objc_methname addAction:
+STRING 0x3a8d4 __objc_methname addAltPath:
+STRING 0x3a8e0 __objc_methname addEntriesFromDictionary:
+STRING 0x3a8fa __objc_methname addGestureRecognizer:
+STRING 0x3a910 __objc_methname addImagePath:
+STRING 0x3a91e __objc_methname addObject:
+STRING 0x3a929 __objc_methname addObjectsFromArray:
+STRING 0x3a93e __objc_methname addObserver:selector:name:object:
+STRING 0x3a960 __objc_methname addOverride:forBundleIdentifier:
+STRING 0x3a981 __objc_methname addSubview:
+STRING 0x3a98d __objc_methname addTarget:action:forControlEvents:
+STRING 0x3a9b0 __objc_methname addToRunLoop:forMode:
+STRING 0x3a9c6 __objc_methname alertControllerWithTitle:message:preferredStyle:
+STRING 0x3a9f7 __objc_methname allIconPaths
+STRING 0x3aa04 __objc_methname allIconPathsForBundleIdentifier:
+STRING 0x3aa25 __objc_methname allOversizedIcons:
+STRING 0x3aa38 __objc_methname allValues
+STRING 0x3aa42 __objc_methname altImagePathWithScale:
+STRING 0x3aa59 __objc_methname altImagePaths
+STRING 0x3aa67 __objc_methname altImageWithScale:
+STRING 0x3aa7a __objc_methname animateWithDuration:animations:completion:
+STRING 0x3aaa5 __objc_methname animateWithDuration:delay:options:animations:completion:
+STRING 0x3aade __objc_methname applicationIconForBundleIdentifier:
+STRING 0x3ab02 __objc_methname applicationIconForDisplayIdentifier:
+STRING 0x3ab27 __objc_methname applicationWithBundleIdentifier:
+STRING 0x3ab48 __objc_methname applicationWithDisplayIdentifier:
+STRING 0x3ab6a __objc_methname applyChanges
+STRING 0x3ab77 __objc_methname applyView
+STRING 0x3ab81 __objc_methname archivedDataWithRootObject:
+STRING 0x3ab9d __objc_methname arrayWithObject:
+STRING 0x3abae __objc_methname arrayWithObjects:count:
+STRING 0x3abc6 __objc_methname attributesOfItemAtPath:error:
+STRING 0x3abe4 __objc_methname autorelease
+STRING 0x3abf0 __objc_methname badgeSettings
+STRING 0x3abfe __objc_methname bannerView
+STRING 0x3ac09 __objc_methname beginAnimations:context:
+STRING 0x3ac22 __objc_methname beginUpdates
+STRING 0x3ac2f __objc_methname bezierPathWithCGPath:
+STRING 0x3ac45 __objc_methname bezierPathWithRoundedRect:byRoundingCorners:cornerRadii:
+STRING 0x3ac7e __objc_methname bezierPathWithRoundedRect:cornerRadius:
+STRING 0x3aca6 __objc_methname blackColor
+STRING 0x3acb1 __objc_methname blackDot
+STRING 0x3acba __objc_methname boldSystemFontOfSize:
+STRING 0x3acd0 __objc_methname boolValue
+STRING 0x3acda __objc_methname bounds
+STRING 0x3ace1 __objc_methname buildCalendarImage:withWidth:withDayTextStr:andDayNumberStr:
+STRING 0x3ad1e __objc_methname bundle
+STRING 0x3ad25 __objc_methname bundleContainerURL
+STRING 0x3ad38 __objc_methname bundleIdentifier
+STRING 0x3ad49 __objc_methname buttonSize
+STRING 0x3ad54 __objc_methname buttonTapped:
+STRING 0x3ad62 __objc_methname cIndexPath
+STRING 0x3ad6d __objc_methname cachedBadgeBackground
+STRING 0x3ad83 __objc_methname cachedFuzzyBundleIdentifiers
+STRING 0x3ada0 __objc_methname cachedIconInfoField3
+STRING 0x3adb5 __objc_methname cachedImage
+STRING 0x3adc1 __objc_methname cachedImageWithScale:
+STRING 0x3add7 __objc_methname cachedImages
+STRING 0x3ade4 __objc_methname cachedMaskImageForKey:
+STRING 0x3adfb __objc_methname cachedMaskImageKeyWithIdentifier:andSize:andScale:
+STRING 0x3ae2e __objc_methname cachedMaskImageWithIdentifier:andSize:andScale:
+STRING 0x3ae5e __objc_methname cachedSBFloatingDockController
+STRING 0x3ae7d __objc_methname cachedThemeImages
+STRING 0x3ae8f __objc_methname calendarDayNumberFont
+STRING 0x3aea5 __objc_methname calendarDayTextFont
+STRING 0x3aeb9 __objc_methname calendarSettings
+STRING 0x3aeca __objc_methname callApply
+STRING 0x3aed4 __objc_methname callStackSymbols
+STRING 0x3aee5 __objc_methname canReorder
+STRING 0x3aef0 __objc_methname cancelGesture
+STRING 0x3aefe __objc_methname caseInsensitiveCompare:
+STRING 0x3af16 __objc_methname cellForRowAtIndexPath:
+STRING 0x3af2d __objc_methname cellHeight
+STRING 0x3af38 __objc_methname center
+STRING 0x3af3f __objc_methname checkIfContainsOversizedImagesWithCompletion:
+STRING 0x3af6d __objc_methname checkIfImage
+STRING 0x3af7a __objc_methname checkIfImage:
+STRING 0x3af88 __objc_methname checkIfNeedsRespring
+STRING 0x3af9d __objc_methname checkIfNeedsUICache
+STRING 0x3afb1 __objc_methname checkmarkView
+STRING 0x3afbf __objc_methname class
+STRING 0x3afc5 __objc_methname className
+STRING 0x3afcf __objc_methname clearCache
+STRING 0x3afda __objc_methname clearColor
+STRING 0x3afe5 __objc_methname clearOverrides
+STRING 0x3aff4 __objc_methname clearThemes
+STRING 0x3b000 __objc_methname clearalternatives
+STRING 0x3b012 __objc_methname clockIcons
+STRING 0x3b01d __objc_methname colorFromHexString:
+STRING 0x3b031 __objc_methname colorWithAlphaComponent:
+STRING 0x3b04a __objc_methname colorWithRed:green:blue:alpha:
+STRING 0x3b069 __objc_methname colour
+STRING 0x3b070 __objc_methname colourWithHexString:
+STRING 0x3b085 __objc_methname colourWithRGBString:
+STRING 0x3b09a __objc_methname colourWithString:
+STRING 0x3b0ac __objc_methname commitAnimations
+STRING 0x3b0bd __objc_methname companionTweak
+STRING 0x3b0cc __objc_methname componentsSeparatedByString:
+STRING 0x3b0e9 __objc_methname conformsToProtocol:
+STRING 0x3b0fd __objc_methname contains:
+STRING 0x3b107 __objc_methname contentInset
+STRING 0x3b114 __objc_methname contentOffset
+STRING 0x3b122 __objc_methname contentSize
+STRING 0x3b12e __objc_methname contentView
+STRING 0x3b13a __objc_methname contentViewPadding
+STRING 0x3b14d __objc_methname contentsOfDirectoryAtPath:error:
+STRING 0x3b16e __objc_methname copy
+STRING 0x3b173 __objc_methname count
+STRING 0x3b179 __objc_methname countByEnumeratingWithState:objects:count:
+STRING 0x3b1a4 __objc_methname createDirectoryAtPath:withIntermediateDirectories:attributes:error:
+STRING 0x3b1e8 __objc_methname createGroupButton
+STRING 0x3b1fa __objc_methname createPlaceHolder
+STRING 0x3b20c __objc_methname createRespringButton
+STRING 0x3b221 __objc_methname croppedImage:
+STRING 0x3b22f __objc_methname croppedInsetsForImage:
+STRING 0x3b246 __objc_methname currentReceiveHandlers
+STRING 0x3b25d __objc_methname currentScrollPos
+STRING 0x3b26e __objc_methname currentTraitCollection
+STRING 0x3b285 __objc_methname customCornerRadius
+STRING 0x3b298 __objc_methname dLink
+STRING 0x3b29e __objc_methname darkGrayColor
+STRING 0x3b2ac __objc_methname dataForBundleIdentifier:
+STRING 0x3b2c5 __objc_methname dataSource
+STRING 0x3b2d0 __objc_methname dataWithContentsOfFile:
+STRING 0x3b2e8 __objc_methname date
+STRING 0x3b2ed __objc_methname debugDescription
+STRING 0x3b2fe __objc_methname decodeObjectForKey:
+STRING 0x3b312 __objc_methname defaultCenter
+STRING 0x3b320 __objc_methname defaultHeight
+STRING 0x3b32e __objc_methname defaultIconImageContinuousCornerRadius
+STRING 0x3b355 __objc_methname defaultIconImageSize
+STRING 0x3b36a __objc_methname defaultItems
+STRING 0x3b377 __objc_methname defaultManager
+STRING 0x3b386 __objc_methname defaultPrefs
+STRING 0x3b393 __objc_methname defaultVisibleIconImageSize
+STRING 0x3b3af __objc_methname delegate
+STRING 0x3b3b8 __objc_methname deleteRowsAtIndexPaths:withRowAnimation:
+STRING 0x3b3e1 __objc_methname dequeueReusableCellWithIdentifier:
+STRING 0x3b404 __objc_methname description
+STRING 0x3b410 __objc_methname deselectRowAtIndexPath:animated:
+STRING 0x3b431 __objc_methname dictionary
+STRING 0x3b43c __objc_methname dictionaryWithContentsOfFile:
+STRING 0x3b45a __objc_methname didMoveToSuperview
+STRING 0x3b46d __objc_methname disabledExtensions
+STRING 0x3b480 __objc_methname dismissViewControllerAnimated:completion:
+STRING 0x3b4aa __objc_methname displayName
+STRING 0x3b4b6 __objc_methname dockView
+STRING 0x3b4bf __objc_methname draggingRowHeight
+STRING 0x3b4d1 __objc_methname draggingView
+STRING 0x3b4de __objc_methname draggingViewOpacity
+STRING 0x3b4f2 __objc_methname drawAtPoint:
+STRING 0x3b4ff __objc_methname drawInRect:
+STRING 0x3b50b __objc_methname drawInRect:withFont:lineBreakMode:alignment:
+STRING 0x3b538 __objc_methname editButton
+STRING 0x3b543 __objc_methname enableButton
+STRING 0x3b550 __objc_methname enabledState
+STRING 0x3b55d __objc_methname enabledThemes
+STRING 0x3b56b __objc_methname encodeObject:forKey:
+STRING 0x3b580 __objc_methname encodeWithCoder:
+STRING 0x3b591 __objc_methname endUpdates
+STRING 0x3b59c __objc_methname enumerateObjectsUsingBlock:
+STRING 0x3b5b8 __objc_methname enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:
+STRING 0x3b5f9 __objc_methname extensionType
+STRING 0x3b607 __objc_methname extensions
+STRING 0x3b612 __objc_methname extensionsForType:
+STRING 0x3b625 __objc_methname extraSearchPaths
+STRING 0x3b636 __objc_methname fileExistsAtPath:
+STRING 0x3b648 __objc_methname fileExistsAtPath:isDirectory:
+STRING 0x3b666 __objc_methname fileHandleForReading
+STRING 0x3b67b __objc_methname fileSize
+STRING 0x3b684 __objc_methname fileSystemRepresentation
+STRING 0x3b69d __objc_methname filteredArrayUsingPredicate:
+STRING 0x3b6ba __objc_methname findIconForIdentifier:
+STRING 0x3b6d1 __objc_methname finishReorderingWithObject:atIndexPath:
+STRING 0x3b6f9 __objc_methname floatValue
+STRING 0x3b704 __objc_methname folderBackground
+STRING 0x3b715 __objc_methname folderGridImageAlpha
+STRING 0x3b72a __objc_methname folderMaskForegroundEffect
+STRING 0x3b745 __objc_methname folderMaskMaxBackground
+STRING 0x3b75d __objc_methname folderMaxBackground
+STRING 0x3b771 __objc_methname folderViewController
+STRING 0x3b786 __objc_methname font
+STRING 0x3b78b __objc_methname fontWithName:size:
+STRING 0x3b79e __objc_methname fontWithSize:
+STRING 0x3b7ac __objc_methname fontWithWeightString:andSize:
+STRING 0x3b7ca __objc_methname force3xIcons
+STRING 0x3b7d7 __objc_methname forceDismiss
+STRING 0x3b7e4 __objc_methname forceResizeForEffects
+STRING 0x3b7fa __objc_methname frame
+STRING 0x3b800 __objc_methname fulltitle
+STRING 0x3b80a __objc_methname fuzzyBundleIdentifiers
+STRING 0x3b821 __objc_methname generateIcon
+STRING 0x3b82e __objc_methname generateStackedImageWithArray:
+STRING 0x3b84d __objc_methname gestureRecognizer
+STRING 0x3b85f __objc_methname gestureRecognizer:
+STRING 0x3b872 __objc_methname getActiveMenuItems
+STRING 0x3b885 __objc_methname getOriginalIconFromId:
+STRING 0x3b89c __objc_methname getPrefForKey:
+STRING 0x3b8ab __objc_methname getPrefs
+STRING 0x3b8b4 __objc_methname getRed:green:blue:alpha:
+STRING 0x3b8cd __objc_methname getResourceValue:forKey:error:
+STRING 0x3b8ec __objc_methname goToExtensions
+STRING 0x3b8fb __objc_methname grayColor
+STRING 0x3b905 __objc_methname groupForTheme:
+STRING 0x3b914 __objc_methname hadFirstAppear
+STRING 0x3b923 __objc_methname handleCancel:
+STRING 0x3b931 __objc_methname handleLongPress:
+STRING 0x3b942 __objc_methname handleTap:
+STRING 0x3b94d __objc_methname handleTapWarning:
+STRING 0x3b95f __objc_methname hasForceRefreshedOnce
+STRING 0x3b975 __objc_methname hasPrefix:
+STRING 0x3b980 __objc_methname hasSuffix:
+STRING 0x3b98b __objc_methname hasUIExtension
+STRING 0x3b99a __objc_methname hash
+STRING 0x3b99f __objc_methname headerLabel
+STRING 0x3b9ab __objc_methname headerView
+STRING 0x3b9b6 __objc_methname holderWithBundleIdentifier:
+STRING 0x3b9d2 __objc_methname holderWithBundleIdentifier:inDictionary:
+STRING 0x3b9fb __objc_methname holderWithOnlyExistingIcons
+STRING 0x3ba17 __objc_methname hourHand
+STRING 0x3ba20 __objc_methname iIndexPath
+STRING 0x3ba2b __objc_methname iconImage
+STRING 0x3ba35 __objc_methname iconImagePath
+STRING 0x3ba43 __objc_methname iconImageView
+STRING 0x3ba51 __objc_methname iconPath
+STRING 0x3ba5a __objc_methname iconsTheme
+STRING 0x3ba65 __objc_methname identifier
+STRING 0x3ba70 __objc_methname image:isEqualTo:
+STRING 0x3ba81 __objc_methname imageForBundleIdentifier:withScale:
+STRING 0x3baa5 __objc_methname imageForBundleIdentifier:withScale:withOverrides:
+STRING 0x3bad7 __objc_methname imageOrientation
+STRING 0x3bae8 __objc_methname imagePathForBundleIdentifier:withScale:
+STRING 0x3bb10 __objc_methname imagePathForBundleIdentifier:withScale:withOverrides:
+STRING 0x3bb46 __objc_methname imagePathWithScale:
+STRING 0x3bb5a __objc_methname imagePaths
+STRING 0x3bb65 __objc_methname imageView
+STRING 0x3bb6f __objc_methname imageWithCGImage:scale:orientation:
+STRING 0x3bb93 __objc_methname imageWithContentsOfFile:
+STRING 0x3bbac __objc_methname imageWithData:
+STRING 0x3bbbb __objc_methname imageWithImage:scaledToSize:
+STRING 0x3bbd8 __objc_methname imageWithImage:withInsets:
+STRING 0x3bbf3 __objc_methname imageWithRenderingMode:
+STRING 0x3bc0b __objc_methname imageWithView:
+STRING 0x3bc1a __objc_methname imagesForTheme
+STRING 0x3bc29 __objc_methname indexPathForCell:
+STRING 0x3bc3b __objc_methname indexPathForPreferredFocusedViewInTableView:
+STRING 0x3bc68 __objc_methname indexPathForRow:inSection:
+STRING 0x3bc83 __objc_methname indexPathForRowAtPoint:
+STRING 0x3bc9b __objc_methname indexPathForSelectedRow
+STRING 0x3bcb3 __objc_methname indexPathForSortedTheme:
+STRING 0x3bccc __objc_methname indexPathForTheme:
+STRING 0x3bcdf __objc_methname indexPathsForVisibleRows
+STRING 0x3bcf8 __objc_methname indexSetWithIndex:
+STRING 0x3bd0b __objc_methname info
+STRING 0x3bd10 __objc_methname infoDictionary
+STRING 0x3bd1f __objc_methname init
+STRING 0x3bd24 __objc_methname initForExtensions
+STRING 0x3bd36 __objc_methname initWithApplication:
+STRING 0x3bd4b __objc_methname initWithBarButtonSystemItem:target:action:
+STRING 0x3bd76 __objc_methname initWithBundleIdentifier:andThemePath:
+STRING 0x3bd9d __objc_methname initWithCIImage:
+STRING 0x3bdae __objc_methname initWithCoder:
+STRING 0x3bdbd __objc_methname initWithContentsOfFile:
+STRING 0x3bdd5 __objc_methname initWithData:
+STRING 0x3bde3 __objc_methname initWithData:encoding:
+STRING 0x3bdfa __objc_methname initWithFrame:
+STRING 0x3be09 __objc_methname initWithFrame:style:
+STRING 0x3be1e __objc_methname initWithIdentifier:
+STRING 0x3be32 __objc_methname initWithImage:
+STRING 0x3be41 __objc_methname initWithSpecifier:
+STRING 0x3be54 __objc_methname initWithStyle:reuseIdentifier:
+STRING 0x3be73 __objc_methname initWithTarget:action:
+STRING 0x3be8a __objc_methname initWithTitle:
+STRING 0x3be99 __objc_methname initWithTitle:style:target:action:
+STRING 0x3bebc __objc_methname initialLoadComplete
+STRING 0x3bed0 __objc_methname initialize
+STRING 0x3bedb __objc_methname insertObject:atIndex:
+STRING 0x3bef1 __objc_methname insertRowsAtIndexPaths:withRowAnimation:
+STRING 0x3bf1a __objc_methname instance
+STRING 0x3bf23 __objc_methname instancesRespondToSelector:
+STRING 0x3bf3f __objc_methname intValue
+STRING 0x3bf48 __objc_methname invalidate
+STRING 0x3bf53 __objc_methname invertImage:
+STRING 0x3bf60 __objc_methname isAnimating
+STRING 0x3bf6c __objc_methname isApplication
+STRING 0x3bf7a __objc_methname isEnabled
+STRING 0x3bf84 __objc_methname isEqual:
+STRING 0x3bf8d __objc_methname isEqualToData:
+STRING 0x3bf9c __objc_methname isEqualToSet:
+STRING 0x3bfaa __objc_methname isEqualToString:
+STRING 0x3bfbb __objc_methname isExpanded
+STRING 0x3bfc6 __objc_methname isExtensions
+STRING 0x3bfd3 __objc_methname isGrouped
+STRING 0x3bfdd __objc_methname isHidden
+STRING 0x3bfe6 __objc_methname isImageDark:
+STRING 0x3bff3 __objc_methname isKindOfClass:
+STRING 0x3c002 __objc_methname isLegacy
+STRING 0x3c00b __objc_methname isLoaded
+STRING 0x3c014 __objc_methname isMemberOfClass:
+STRING 0x3c025 __objc_methname isOpaque
+STRING 0x3c02e __objc_methname isPathEnabled:
+STRING 0x3c03d __objc_methname isSystemApplication
+STRING 0x3c051 __objc_methname isiPhoneX
+STRING 0x3c05b __objc_methname italicSystemFontOfSize:
+STRING 0x3c073 __objc_methname items
+STRING 0x3c079 __objc_methname keyWindow
+STRING 0x3c083 __objc_methname largestImagePath
+STRING 0x3c094 __objc_methname lastObject
+STRING 0x3c09f __objc_methname lastPathComponent
+STRING 0x3c0b1 __objc_methname launch
+STRING 0x3c0b8 __objc_methname layer
+STRING 0x3c0be __objc_methname layoutIfNeeded
+STRING 0x3c0cd __objc_methname layoutLabels
+STRING 0x3c0da __objc_methname layoutSubviews
+STRING 0x3c0e9 __objc_methname length
+STRING 0x3c0f0 __objc_methname listLargeIcons
+STRING 0x3c0ff __objc_methname load
+STRING 0x3c104 __objc_methname loadExtensions
+STRING 0x3c113 __objc_methname loadExtensionsForceAll:
+STRING 0x3c12b __objc_methname loadLists
+STRING 0x3c135 __objc_methname loadOverrides
+STRING 0x3c143 __objc_methname loadPath:
+STRING 0x3c14d __objc_methname loadSpecifiersFromPlistName:target:
+STRING 0x3c171 __objc_methname loadSpecifiersFromPlistName:target:bundle:
+STRING 0x3c19c __objc_methname loadThemes
+STRING 0x3c1a7 __objc_methname loadedIcons
+STRING 0x3c1b3 __objc_methname loadedThemes
+STRING 0x3c1c0 __objc_methname loadedThemesOnlyExistingIcons
+STRING 0x3c1de __objc_methname localisedString:
+STRING 0x3c1ef __objc_methname localizedCaseInsensitiveCompare:
+STRING 0x3c210 __objc_methname longLongValue
+STRING 0x3c21e __objc_methname longPress
+STRING 0x3c228 __objc_methname mainBundle
+STRING 0x3c233 __objc_methname mainRunLoop
+STRING 0x3c23f __objc_methname mainScreen
+STRING 0x3c24a __objc_methname mainTitleLabel
+STRING 0x3c259 __objc_methname maskImage:
+STRING 0x3c264 __objc_methname maskImageWithPad:
+STRING 0x3c276 __objc_methname maskedCachedIcons
+STRING 0x3c288 __objc_methname maskedImage:
+STRING 0x3c295 __objc_methname maskedImage:withCrop:
+STRING 0x3c2ab __objc_methname maskedImage:withCrop:skipExtensions:
+STRING 0x3c2d0 __objc_methname maskedImage:withRadius:
+STRING 0x3c2e8 __objc_methname menuItems
+STRING 0x3c2f2 __objc_methname menuItemsDisabled
+STRING 0x3c304 __objc_methname minimisedCellHeight
+STRING 0x3c318 __objc_methname minuteHand
+STRING 0x3c323 __objc_methname model
+STRING 0x3c329 __objc_methname modern
+STRING 0x3c330 __objc_methname mutableCopy
+STRING 0x3c33c __objc_methname name
+STRING 0x3c341 __objc_methname namedFolderBackgrounds
+STRING 0x3c358 __objc_methname navbar
+STRING 0x3c35f __objc_methname navigationController
+STRING 0x3c374 __objc_methname navigationItem
+STRING 0x3c383 __objc_methname needsApply
+STRING 0x3c38e __objc_methname needsToApply
+STRING 0x3c39b __objc_methname notifyExtensionsOfReload
+STRING 0x3c3b4 __objc_methname numberOfRowsInSection:
+STRING 0x3c3cb __objc_methname numberOfSections
+STRING 0x3c3dc __objc_methname numberOfSectionsInTableView:
+STRING 0x3c3f9 __objc_methname numberWithDouble:
+STRING 0x3c40b __objc_methname numberWithFloat:
+STRING 0x3c41c __objc_methname numberWithInt:
+STRING 0x3c42b __objc_methname objectAtIndex:
+STRING 0x3c43a __objc_methname objectAtIndexedSubscript:
+STRING 0x3c454 __objc_methname objectForKey:
+STRING 0x3c462 __objc_methname objectForKeyedSubscript:
+STRING 0x3c47b __objc_methname onTapDone
+STRING 0x3c485 __objc_methname openURL:
+STRING 0x3c48e __objc_methname originalIconForBundleIdentifier:withScale:
+STRING 0x3c4b9 __objc_methname outputImage
+STRING 0x3c4c5 __objc_methname overrides
+STRING 0x3c4cf __objc_methname pContainsOversizedImages
+STRING 0x3c4e8 __objc_methname packageWithIdentifier:isRootPackage:
+STRING 0x3c50d __objc_methname padImage:
+STRING 0x3c517 __objc_methname parentVC
+STRING 0x3c520 __objc_methname path
+STRING 0x3c525 __objc_methname pathExtension
+STRING 0x3c533 __objc_methname pathForResource:ofType:
+STRING 0x3c54b __objc_methname pathToScale:
+STRING 0x3c558 __objc_methname performSelector:
+STRING 0x3c569 __objc_methname performSelector:withObject:
+STRING 0x3c585 __objc_methname performSelector:withObject:withObject:
+STRING 0x3c5ac __objc_methname pipe
+STRING 0x3c5b1 __objc_methname pointSize
+STRING 0x3c5bb __objc_methname popViewControllerAnimated:
+STRING 0x3c5d6 __objc_methname predicateWithFormat:
+STRING 0x3c5eb __objc_methname preferenceSpecifierNamed:target:set:get:detail:cell:edit:
+STRING 0x3c625 __objc_methname preferencesDictionary
+STRING 0x3c63b __objc_methname preferencesFilePath
+STRING 0x3c64f __objc_methname preferencesPlistPath
+STRING 0x3c664 __objc_methname preferredHeightForWidth:
+STRING 0x3c67d __objc_methname prefsBundle
+STRING 0x3c689 __objc_methname presentPreferences
+STRING 0x3c69c __objc_methname presentViewController:animated:completion:
+STRING 0x3c6c7 __objc_methname prevRadiusRequest
+STRING 0x3c6d9 __objc_methname prevScaleRequest
+STRING 0x3c6ea __objc_methname priority
+STRING 0x3c6f3 __objc_methname processIcon:
+STRING 0x3c700 __objc_methname processIcon:skipExtensions:
+STRING 0x3c71c __objc_methname processIconAsync:withHandler:
+STRING 0x3c73a __objc_methname processInfo
+STRING 0x3c746 __objc_methname processName
+STRING 0x3c752 __objc_methname properties
+STRING 0x3c75d __objc_methname pushViewController:animated:
+STRING 0x3c77a __objc_methname rangeOfString:
+STRING 0x3c789 __objc_methname rankForItemAtPath:didFind:
+STRING 0x3c7a4 __objc_methname readDataToEndOfFile
+STRING 0x3c7b8 __objc_methname readPreferenceValue:
+STRING 0x3c7cd __objc_methname receivedRemoteIcon:withIdentifier:
+STRING 0x3c7f0 __objc_methname rectForRowAtIndexPath:
+STRING 0x3c807 __objc_methname redDot
+STRING 0x3c80e __objc_methname registerForReceive
+STRING 0x3c821 __objc_methname registerForRemote
+STRING 0x3c833 __objc_methname reload
+STRING 0x3c83a __objc_methname reloadData
+STRING 0x3c845 __objc_methname reloadRowsAtIndexPaths:withRowAnimation:
+STRING 0x3c86e __objc_methname reloadSections:withRowAnimation:
+STRING 0x3c88f __objc_methname reloadSpecifierID:
+STRING 0x3c8a2 __objc_methname reloadSpecifiers
+STRING 0x3c8b3 __objc_methname reloadWithoutExtensions:
+STRING 0x3c8cc __objc_methname remoteProcessIcon:withIdentifier:withSender:
+STRING 0x3c8f9 __objc_methname removeFromSuperview
+STRING 0x3c90d __objc_methname removeItemAtPath:error:
+STRING 0x3c925 __objc_methname removeObject:
+STRING 0x3c933 __objc_methname removeObjectAtIndex:
+STRING 0x3c948 __objc_methname removeObjectForKey:
+STRING 0x3c95c __objc_methname removeObjectsInArray:
+STRING 0x3c972 __objc_methname removeOverrideForBundleIdentifier:
+STRING 0x3c995 __objc_methname removeTarget:action:forControlEvents:
+STRING 0x3c9bb __objc_methname renderInContext:
+STRING 0x3c9cc __objc_methname requestedFontSize
+STRING 0x3c9de __objc_methname requiresRespring
+STRING 0x3c9ef __objc_methname reset
+STRING 0x3c9f5 __objc_methname resizedCachedIcons
+STRING 0x3ca08 __objc_methname respondsToSelector:
+STRING 0x3ca1c __objc_methname respring
+STRING 0x3ca25 __objc_methname retain
+STRING 0x3ca2c __objc_methname retainCount
+STRING 0x3ca38 __objc_methname roundedRectImageFromImage:withRadius:
+STRING 0x3ca5e __objc_methname roundedRectImageFromImage:withRadius:withCrop:
+STRING 0x3ca8d __objc_methname sRate
+STRING 0x3ca93 __objc_methname safeAreaInsets
+STRING 0x3caa2 __objc_methname saveLists
+STRING 0x3caac __objc_methname saveObjectAndInsertBlankRowAtIndexPath:
+STRING 0x3cad4 __objc_methname saveOverrides
+STRING 0x3cae2 __objc_methname savePrefs:
+STRING 0x3caed __objc_methname savedObject
+STRING 0x3caf9 __objc_methname scale
+STRING 0x3caff __objc_methname scanHexInt:
+STRING 0x3cb0b __objc_methname scannerWithString:
+STRING 0x3cb1e __objc_methname screenRect
+STRING 0x3cb29 __objc_methname scrollTableWithCell:
+STRING 0x3cb3e __objc_methname scrollToRowAtIndexPath:atScrollPosition:animated:
+STRING 0x3cb70 __objc_methname scrollViewDidChangeAdjustedContentInset:
+STRING 0x3cb99 __objc_methname scrollViewDidEndDecelerating:
+STRING 0x3cbb7 __objc_methname scrollViewDidEndDragging:willDecelerate:
+STRING 0x3cbe0 __objc_methname scrollViewDidEndScrollingAnimation:
+STRING 0x3cc04 __objc_methname scrollViewDidEndZooming:withView:atScale:
+STRING 0x3cc2e __objc_methname scrollViewDidScroll:
+STRING 0x3cc43 __objc_methname scrollViewDidScrollToTop:
+STRING 0x3cc5d __objc_methname scrollViewDidZoom:
+STRING 0x3cc70 __objc_methname scrollViewShouldScrollToTop:
+STRING 0x3cc8d __objc_methname scrollViewWillBeginDecelerating:
+STRING 0x3ccae __objc_methname scrollViewWillBeginDragging:
+STRING 0x3cccb __objc_methname scrollViewWillBeginZooming:withView:
+STRING 0x3ccf0 __objc_methname scrollViewWillEndDragging:withVelocity:targetContentOffset:
+STRING 0x3cd2c __objc_methname secondHand
+STRING 0x3cd37 __objc_methname secondarySystemFillColor
+STRING 0x3cd50 __objc_methname selectRowAtIndexPath:animated:scrollPosition:
+STRING 0x3cd7e __objc_methname self
+STRING 0x3cd83 __objc_methname sendIconToSpringBoard:withIdentifier:
+STRING 0x3cda9 __objc_methname sendToSpringBoard:
+STRING 0x3cdbc __objc_methname setActiveMenuItems:
+STRING 0x3cdd0 __objc_methname setAdjustsFontSizeToFitWidth:
+STRING 0x3cdee __objc_methname setAllowsSelectionDuringEditing:
+STRING 0x3ce0f __objc_methname setAlpha:
+STRING 0x3ce19 __objc_methname setAltImagePaths:
+STRING 0x3ce2b __objc_methname setApplyView:
+STRING 0x3ce39 __objc_methname setApplyViewHidden:
+STRING 0x3ce4d __objc_methname setArguments:
+STRING 0x3ce5b __objc_methname setAutoresizingMask:
+STRING 0x3ce70 __objc_methname setBackgroundColor:
+STRING 0x3ce84 __objc_methname setBadgeBackground:
+STRING 0x3ce98 __objc_methname setBadgeSettings:
+STRING 0x3ceaa __objc_methname setBannerView:
+STRING 0x3ceb9 __objc_methname setBlackDot:
+STRING 0x3cec6 __objc_methname setBlacklistInApps:
+STRING 0x3ceda __objc_methname setBundle:
+STRING 0x3cee5 __objc_methname setBundleIdentifier:
+STRING 0x3cefa __objc_methname setCIndexPath:
+STRING 0x3cf09 __objc_methname setCachedBadgeBackground:
+STRING 0x3cf23 __objc_methname setCachedFuzzyBundleIdentifiers:
+STRING 0x3cf44 __objc_methname setCachedIconInfoField3:
+STRING 0x3cf5d __objc_methname setCachedImages:
+STRING 0x3cf6e __objc_methname setCachedMaskImage:forKey:
+STRING 0x3cf89 __objc_methname setCachedMaskImage:withIdentifier:andSize:andScale:
+STRING 0x3cfbd __objc_methname setCachedSBFloatingDockController:
+STRING 0x3cfe0 __objc_methname setCachedThemeImages:
+STRING 0x3cff6 __objc_methname setCachedThemeLogo:
+STRING 0x3d00a __objc_methname setCalendarDayNumberFont:
+STRING 0x3d024 __objc_methname setCalendarDayTextFont:
+STRING 0x3d03c __objc_methname setCalendarSettings:
+STRING 0x3d051 __objc_methname setCanReorder:
+STRING 0x3d060 __objc_methname setCenter:
+STRING 0x3d06b __objc_methname setCharactersToBeSkipped:
+STRING 0x3d085 __objc_methname setCheckmarkView:
+STRING 0x3d097 __objc_methname setClassName:
+STRING 0x3d0a5 __objc_methname setClipsToBounds:
+STRING 0x3d0b7 __objc_methname setClockBackground:
+STRING 0x3d0cb __objc_methname setClockIcons:
+STRING 0x3d0da __objc_methname setColour:
+STRING 0x3d0e5 __objc_methname setCompanionTweak:
+STRING 0x3d0f8 __objc_methname setContentInset:
+STRING 0x3d109 __objc_methname setContentOffset:
+STRING 0x3d11b __objc_methname setContentOffset:animated:
+STRING 0x3d136 __objc_methname setCornerRadius:
+STRING 0x3d147 __objc_methname setCurrentDirectoryPath:
+STRING 0x3d160 __objc_methname setCurrentReceiveHandlers:
+STRING 0x3d17b __objc_methname setCustomBackgroundColor:
+STRING 0x3d195 __objc_methname setDLink:
+STRING 0x3d19f __objc_methname setDataSource:
+STRING 0x3d1ae __objc_methname setDefaults
+STRING 0x3d1ba __objc_methname setDelegate:
+STRING 0x3d1c7 __objc_methname setDisabledColor:
+STRING 0x3d1d9 __objc_methname setDockView:
+STRING 0x3d1e6 __objc_methname setDraggingRowHeight:
+STRING 0x3d1fc __objc_methname setDraggingView:
+STRING 0x3d20d __objc_methname setDraggingViewOpacity:
+STRING 0x3d225 __objc_methname setEditButton:
+STRING 0x3d234 __objc_methname setEditing:
+STRING 0x3d240 __objc_methname setEditing:animated:
+STRING 0x3d255 __objc_methname setEnableButton:
+STRING 0x3d266 __objc_methname setEnabled:
+STRING 0x3d272 __objc_methname setEnabledState:
+STRING 0x3d283 __objc_methname setEnabledState:animated:
+STRING 0x3d29d __objc_methname setEnabledThemes:
+STRING 0x3d2af __objc_methname setEstimatedRowHeight:
+STRING 0x3d2c6 __objc_methname setExtensionType:
+STRING 0x3d2d8 __objc_methname setExtensions:
+STRING 0x3d2e7 __objc_methname setFolderBackground:
+STRING 0x3d2fc __objc_methname setFolderGridImageAlpha:
+STRING 0x3d315 __objc_methname setFolderMaskForegroundEffect:
+STRING 0x3d334 __objc_methname setFolderMaskMaxBackground:
+STRING 0x3d350 __objc_methname setFolderMaxBackground:
+STRING 0x3d368 __objc_methname setFolderViewController:
+STRING 0x3d381 __objc_methname setFont:
+STRING 0x3d38a __objc_methname setForceResizeForEffects:
+STRING 0x3d3a4 __objc_methname setFrame:
+STRING 0x3d3ae __objc_methname setFulltitle:
+STRING 0x3d3bc __objc_methname setFuzzyBundleIdentifiers:
+STRING 0x3d3d7 __objc_methname setGestureRecognizer:
+STRING 0x3d3ed __objc_methname setHadFirstAppear:
+STRING 0x3d400 __objc_methname setHasForceRefreshedOnce:
+STRING 0x3d41a __objc_methname setHeaderView:
+STRING 0x3d429 __objc_methname setHidden:
+STRING 0x3d434 __objc_methname setHidesBackButton:
+STRING 0x3d448 __objc_methname setHidesBackButton:animated:
+STRING 0x3d465 __objc_methname setHighlighted:animated:
+STRING 0x3d47e __objc_methname setHourHand:
+STRING 0x3d48b __objc_methname setIIndexPath:
+STRING 0x3d49a __objc_methname setIconImage:
+STRING 0x3d4a8 __objc_methname setIconImageView:
+STRING 0x3d4ba __objc_methname setIconPath:
+STRING 0x3d4c7 __objc_methname setIconsTheme:
+STRING 0x3d4d6 __objc_methname setIdentifier:
+STRING 0x3d4e5 __objc_methname setImage:
+STRING 0x3d4ef __objc_methname setImagePaths:
+STRING 0x3d4fe __objc_methname setInGroupedMode:
+STRING 0x3d510 __objc_methname setInitialLoadComplete:
+STRING 0x3d528 __objc_methname setInstance:
+STRING 0x3d535 __objc_methname setIsApplication:
+STRING 0x3d547 __objc_methname setIsDraggableCell:
+STRING 0x3d55b __objc_methname setIsEnabled:
+STRING 0x3d569 __objc_methname setIsExpanded:
+STRING 0x3d578 __objc_methname setIsExtensions:
+STRING 0x3d589 __objc_methname setIsGrouped:
+STRING 0x3d597 __objc_methname setIsGroupedMode
+STRING 0x3d5a8 __objc_methname setIsLegacy:
+STRING 0x3d5b5 __objc_methname setItems:
+STRING 0x3d5bf __objc_methname setLargestImagePath:
+STRING 0x3d5d4 __objc_methname setLaunchPath:
+STRING 0x3d5e3 __objc_methname setLoadedThemes:
+STRING 0x3d5f4 __objc_methname setLoadedThemesOnlyExistingIcons:
+STRING 0x3d616 __objc_methname setLongPress:
+STRING 0x3d624 __objc_methname setMask:
+STRING 0x3d62d __objc_methname setMaskedCachedIcons:
+STRING 0x3d643 __objc_methname setMasksToBounds:
+STRING 0x3d655 __objc_methname setMenuItems:
+STRING 0x3d663 __objc_methname setMenuItemsDisabled:
+STRING 0x3d679 __objc_methname setMinimumScaleFactor:
+STRING 0x3d690 __objc_methname setMinuteHand:
+STRING 0x3d69f __objc_methname setModalPresentationStyle:
+STRING 0x3d6ba __objc_methname setModern:
+STRING 0x3d6c5 __objc_methname setName:
+STRING 0x3d6ce __objc_methname setNamedFolderBackgrounds:
+STRING 0x3d6e9 __objc_methname setNotGroupedMode
+STRING 0x3d6fb __objc_methname setNumberOfLines:
+STRING 0x3d70d __objc_methname setObject:atIndexedSubscript:
+STRING 0x3d72b __objc_methname setObject:forKey:
+STRING 0x3d73d __objc_methname setOpacity:
+STRING 0x3d749 __objc_methname setOverrides:
+STRING 0x3d757 __objc_methname setOversizedWarningVisible:
+STRING 0x3d773 __objc_methname setPContainsOversizedImages:
+STRING 0x3d790 __objc_methname setParentVC:
+STRING 0x3d79d __objc_methname setPath:
+STRING 0x3d7a6 __objc_methname setPreferenceValue:specifier:
+STRING 0x3d7c4 __objc_methname setPreferencesPlistPath:
+STRING 0x3d7dd __objc_methname setPrefsIdentifier:
+STRING 0x3d7f1 __objc_methname setProperty:forKey:
+STRING 0x3d805 __objc_methname setRedDot:
+STRING 0x3d810 __objc_methname setRequestedFontSize:
+STRING 0x3d826 __objc_methname setResizedCachedIcons:
+STRING 0x3d83d __objc_methname setRightBarButtonItem:
+STRING 0x3d854 __objc_methname setSRate:
+STRING 0x3d85e __objc_methname setScanLocation:
+STRING 0x3d86f __objc_methname setSecondHand:
+STRING 0x3d87e __objc_methname setSelected:animated:
+STRING 0x3d894 __objc_methname setSelectionStyle:
+STRING 0x3d8a7 __objc_methname setSeparatorColor:
+STRING 0x3d8ba __objc_methname setShadowOffset:
+STRING 0x3d8cb __objc_methname setShadowOpacity:
+STRING 0x3d8dd __objc_methname setShadowRadius:
+STRING 0x3d8ee __objc_methname setShouldReload:
+STRING 0x3d8ff __objc_methname setShouldSendIconsToSpringBoard:
+STRING 0x3d920 __objc_methname setSortedThemeItem:
+STRING 0x3d934 __objc_methname setSortedThemes:
+STRING 0x3d945 __objc_methname setSpringboardTheme:
+STRING 0x3d95a __objc_methname setStandardOutput:
+STRING 0x3d96d __objc_methname setSubCellsHidden:
+STRING 0x3d980 __objc_methname setSubCellsHidden:animated:
+STRING 0x3d99c __objc_methname setSubCellsView:
+STRING 0x3d9ad __objc_methname setSubtitle:
+STRING 0x3d9ba __objc_methname setSubtitleLabel:
+STRING 0x3d9cc __objc_methname setSubtitleText:
+STRING 0x3d9dd __objc_methname setTableView:
+STRING 0x3d9eb __objc_methname setText:
+STRING 0x3d9f4 __objc_methname setTextAlignment:
+STRING 0x3da06 __objc_methname setTextColor:
+STRING 0x3da14 __objc_methname setTheme:enabled:
+STRING 0x3da26 __objc_methname setTheme:enabled:updateFile:
+STRING 0x3da43 __objc_methname setThemeGroup:
+STRING 0x3da52 __objc_methname setThemeGroup:enabled:
+STRING 0x3da69 __objc_methname setThemeItem:
+STRING 0x3da77 __objc_methname setThemeList:
+STRING 0x3da85 __objc_methname setThemePath:
+STRING 0x3da93 __objc_methname setThemeSettings:
+STRING 0x3daa5 __objc_methname setThemeType:
+STRING 0x3dab3 __objc_methname setThemeWarningItem:
+STRING 0x3dac8 __objc_methname setThemeWarningView:
+STRING 0x3dadd __objc_methname setTintColor:
+STRING 0x3daeb __objc_methname setTitle:
+STRING 0x3daf5 __objc_methname setTitle:forState:
+STRING 0x3db08 __objc_methname setTitleColor:forState:
+STRING 0x3db20 __objc_methname setTitleLabel:
+STRING 0x3db2f __objc_methname setTitleText:
+STRING 0x3db3d __objc_methname setTransform:
+STRING 0x3db4b __objc_methname setType:
+STRING 0x3db54 __objc_methname setUIKitReady
+STRING 0x3db62 __objc_methname setUnmaskedCachedIcons:
+STRING 0x3db7a __objc_methname setUserInteractionEnabled:
+STRING 0x3db95 __objc_methname setValue:forKey:
+STRING 0x3dba6 __objc_methname setVersion:
+STRING 0x3dbb2 __objc_methname setWaitingForLazyLoad:
+STRING 0x3dbc9 __objc_methname setWidgetDisplayName:
+STRING 0x3dbdf __objc_methname setWithArray:
+STRING 0x3dbed __objc_methname setXOffset:
+STRING 0x3dbf9 __objc_methname setYOffset:
+STRING 0x3dc05 __objc_methname settingsViewControllerClass
+STRING 0x3dc21 __objc_methname setup
+STRING 0x3dc27 __objc_methname sharedApplication
+STRING 0x3dc39 __objc_methname sharedInstance
+STRING 0x3dc48 __objc_methname shouldReload
+STRING 0x3dc55 __objc_methname shouldSendIconsToSpringBoard
+STRING 0x3dc72 __objc_methname showApplyAnimation
+STRING 0x3dc85 __objc_methname showNoThemesAlert
+STRING 0x3dc97 __objc_methname showThemeSelector
+STRING 0x3dca9 __objc_methname size
+STRING 0x3dcae __objc_methname sizeToFit
+STRING 0x3dcb8 __objc_methname sortDescriptorWithKey:ascending:selector:
+STRING 0x3dce2 __objc_methname sortThemes
+STRING 0x3dced __objc_methname sortUsingDescriptors:
+STRING 0x3dd03 __objc_methname sortedArrayUsingComparator:
+STRING 0x3dd1f __objc_methname sortedArrayUsingSelector:
+STRING 0x3dd39 __objc_methname sortedThemes
+STRING 0x3dd46 __objc_methname specifiers
+STRING 0x3dd51 __objc_methname springboardTheme
+STRING 0x3dd62 __objc_methname state
+STRING 0x3dd68 __objc_methname stringByDeletingLastPathComponent
+STRING 0x3dd8a __objc_methname stringByDeletingPathExtension
+STRING 0x3dda8 __objc_methname stringByReplacingOccurrencesOfString:withString:
+STRING 0x3ddd9 __objc_methname stringWithFormat:
+STRING 0x3ddeb __objc_methname stringWithUTF8String:
+STRING 0x3de01 __objc_methname subCellsView
+STRING 0x3de0e __objc_methname subSubTitleLabel
+STRING 0x3de1f __objc_methname subTitleLabel
+STRING 0x3de2d __objc_methname substringFromIndex:
+STRING 0x3de41 __objc_methname substringToIndex:
+STRING 0x3de53 __objc_methname subtitle
+STRING 0x3de5c __objc_methname subtitleLabel
+STRING 0x3de6a __objc_methname subviews
+STRING 0x3de73 __objc_methname superclass
+STRING 0x3de7e __objc_methname superview
+STRING 0x3de88 __objc_methname symbolCharacterSet
+STRING 0x3de9b __objc_methname systemFontOfSize:
+STRING 0x3dead __objc_methname systemFontOfSize:weight:
+STRING 0x3dec6 __objc_methname tabBarIcon
+STRING 0x3ded1 __objc_methname tabBarIconSize
+STRING 0x3dee0 __objc_methname tabBarTitle
+STRING 0x3deec __objc_methname tableView
+STRING 0x3def6 __objc_methname tableView:accessoryButtonTappedForRowWithIndexPath:
+STRING 0x3df2a __objc_methname tableView:accessoryTypeForRowWithIndexPath:
+STRING 0x3df56 __objc_methname tableView:canEditRowAtIndexPath:
+STRING 0x3df77 __objc_methname tableView:canFocusRowAtIndexPath:
+STRING 0x3df99 __objc_methname tableView:canMoveRowAtIndexPath:
+STRING 0x3dfba __objc_methname tableView:canPerformAction:forRowAtIndexPath:withSender:
+STRING 0x3dff3 __objc_methname tableView:canPerformPrimaryActionForRowAtIndexPath:
+STRING 0x3e027 __objc_methname tableView:cellForRowAtIndexPath:
+STRING 0x3e048 __objc_methname tableView:commitEditingStyle:forRowAtIndexPath:
+STRING 0x3e078 __objc_methname tableView:contextMenuConfigurationForRowAtIndexPath:point:
+STRING 0x3e0b3 __objc_methname tableView:didBeginMultipleSelectionInteractionAtIndexPath:
+STRING 0x3e0ee __objc_methname tableView:didDeselectRowAtIndexPath:
+STRING 0x3e113 __objc_methname tableView:didEndDisplayingCell:forRowAtIndexPath:
+STRING 0x3e145 __objc_methname tableView:didEndDisplayingFooterView:forSection:
+STRING 0x3e176 __objc_methname tableView:didEndDisplayingHeaderView:forSection:
+STRING 0x3e1a7 __objc_methname tableView:didEndEditingRowAtIndexPath:
+STRING 0x3e1ce __objc_methname tableView:didHighlightRowAtIndexPath:
+STRING 0x3e1f4 __objc_methname tableView:didSelectRowAtIndexPath:
+STRING 0x3e217 __objc_methname tableView:didUnhighlightRowAtIndexPath:
+STRING 0x3e23f __objc_methname tableView:didUpdateFocusInContext:withAnimationCoordinator:
+STRING 0x3e27b __objc_methname tableView:editActionsForRowAtIndexPath:
+STRING 0x3e2a3 __objc_methname tableView:editingStyleForRowAtIndexPath:
+STRING 0x3e2cc __objc_methname tableView:estimatedHeightForFooterInSection:
+STRING 0x3e2f9 __objc_methname tableView:estimatedHeightForHeaderInSection:
+STRING 0x3e326 __objc_methname tableView:estimatedHeightForRowAtIndexPath:
+STRING 0x3e352 __objc_methname tableView:heightForFooterInSection:
+STRING 0x3e376 __objc_methname tableView:heightForHeaderInSection:
+STRING 0x3e39a __objc_methname tableView:heightForRowAtIndexPath:
+STRING 0x3e3bd __objc_methname tableView:indentationLevelForRowAtIndexPath:
+STRING 0x3e3ea __objc_methname tableView:leadingSwipeActionsConfigurationForRowAtIndexPath:
+STRING 0x3e427 __objc_methname tableView:moveRowAtIndexPath:toIndexPath:
+STRING 0x3e451 __objc_methname tableView:numberOfRowsInSection:
+STRING 0x3e472 __objc_methname tableView:performAction:forRowAtIndexPath:withSender:
+STRING 0x3e4a8 __objc_methname tableView:performPrimaryActionForRowAtIndexPath:
+STRING 0x3e4d9 __objc_methname tableView:previewForDismissingContextMenuWithConfiguration:
+STRING 0x3e515 __objc_methname tableView:previewForHighlightingContextMenuWithConfiguration:
+STRING 0x3e553 __objc_methname tableView:sectionForSectionIndexTitle:atIndex:
+STRING 0x3e582 __objc_methname tableView:selectionFollowsFocusForRowAtIndexPath:
+STRING 0x3e5b4 __objc_methname tableView:shouldBeginMultipleSelectionInteractionAtIndexPath:
+STRING 0x3e5f2 __objc_methname tableView:shouldHighlightRowAtIndexPath:
+STRING 0x3e61b __objc_methname tableView:shouldIndentWhileEditingRowAtIndexPath:
+STRING 0x3e64d __objc_methname tableView:shouldShowMenuForRowAtIndexPath:
+STRING 0x3e678 __objc_methname tableView:shouldSpringLoadRowAtIndexPath:withContext:
+STRING 0x3e6ae __objc_methname tableView:shouldUpdateFocusInContext:
+STRING 0x3e6d4 __objc_methname tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:
+STRING 0x3e71c __objc_methname tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:
+STRING 0x3e759 __objc_methname tableView:titleForFooterInSection:
+STRING 0x3e77c __objc_methname tableView:titleForHeaderInSection:
+STRING 0x3e79f __objc_methname tableView:trailingSwipeActionsConfigurationForRowAtIndexPath:
+STRING 0x3e7dd __objc_methname tableView:viewForFooterInSection:
+STRING 0x3e7ff __objc_methname tableView:viewForHeaderInSection:
+STRING 0x3e821 __objc_methname tableView:willBeginEditingRowAtIndexPath:
+STRING 0x3e84b __objc_methname tableView:willDeselectRowAtIndexPath:
+STRING 0x3e871 __objc_methname tableView:willDisplayCell:forRowAtIndexPath:
+STRING 0x3e89e __objc_methname tableView:willDisplayContextMenuWithConfiguration:animator:
+STRING 0x3e8da __objc_methname tableView:willDisplayFooterView:forSection:
+STRING 0x3e906 __objc_methname tableView:willDisplayHeaderView:forSection:
+STRING 0x3e932 __objc_methname tableView:willEndContextMenuInteractionWithConfiguration:animator:
+STRING 0x3e975 __objc_methname tableView:willPerformPreviewActionForMenuWithConfiguration:animator:
+STRING 0x3e9ba __objc_methname tableView:willSelectRowAtIndexPath:
+STRING 0x3e9de __objc_methname tableViewDidEndMultipleSelectionInteraction:
+STRING 0x3ea0b __objc_methname textLabel
+STRING 0x3ea15 __objc_methname themeGroup
+STRING 0x3ea20 __objc_methname themeItem
+STRING 0x3ea2a __objc_methname themeList
+STRING 0x3ea34 __objc_methname themeLogo
+STRING 0x3ea3e __objc_methname themePath
+STRING 0x3ea48 __objc_methname themeSettings
+STRING 0x3ea56 __objc_methname themeType
+STRING 0x3ea60 __objc_methname themeWarningItem
+STRING 0x3ea71 __objc_methname themeWarningView
+STRING 0x3ea82 __objc_methname timeIntervalSinceDate:
+STRING 0x3ea99 __objc_methname title
+STRING 0x3ea9f __objc_methname titleLabel
+STRING 0x3eaaa __objc_methname transitionWithView:duration:options:animations:completion:
+STRING 0x3eae5 __objc_methname trueDefaultHeight
+STRING 0x3eaf7 __objc_methname twitterlink
+STRING 0x3eb03 __objc_methname twitterlinkdennis
+STRING 0x3eb15 __objc_methname type
+STRING 0x3eb1a __objc_methname uikitReady
+STRING 0x3eb25 __objc_methname unarchiveObjectWithData:
+STRING 0x3eb3e __objc_methname unmaskedCachedIcons
+STRING 0x3eb52 __objc_methname unmaskedIconImageWithInfo:
+STRING 0x3eb6d __objc_methname unmaskedImage
+STRING 0x3eb7b __objc_methname updateButtonState
+STRING 0x3eb8d __objc_methname updateButtonState:
+STRING 0x3eba0 __objc_methname updateButtonState:animated:
+STRING 0x3ebbc __objc_methname updateChangeCount
+STRING 0x3ebce __objc_methname updateChangeCount:
+STRING 0x3ebe1 __objc_methname updateCurrentLocation:
+STRING 0x3ebf8 __objc_methname updateEnabledState
+STRING 0x3ec0b __objc_methname updateHeaderCell
+STRING 0x3ec1c __objc_methname updateImageViewScale:
+STRING 0x3ec32 __objc_methname updateImageWithRadius:
+STRING 0x3ec49 __objc_methname updateImageWithScale:
+STRING 0x3ec5f __objc_methname updatePreferencesFile
+STRING 0x3ec75 __objc_methname updateSubCells
+STRING 0x3ec84 __objc_methname userInterfaceStyle
+STRING 0x3ec97 __objc_methname view
+STRING 0x3ec9c __objc_methname viewDidAppear:
+STRING 0x3ecab __objc_methname viewDidLayoutSubviews
+STRING 0x3ecc1 __objc_methname viewDidLoad
+STRING 0x3eccd __objc_methname viewForZoomingInScrollView:
+STRING 0x3ece9 __objc_methname viewWillDisappear:
+STRING 0x3ecfc __objc_methname visibleCells
+STRING 0x3ed09 __objc_methname waitingForLazyLoad
+STRING 0x3ed1c __objc_methname whiteColor
+STRING 0x3ed27 __objc_methname widgetDisplayName
+STRING 0x3ed39 __objc_methname wouldProcessIcon
+STRING 0x3ed4a __objc_methname wouldProcessIconWithExtensionIdentifier:
+STRING 0x3ed73 __objc_methname writeToFile:atomically:
+STRING 0x3ed8b __objc_methname zone
+CFSTRING 0x44cf0 Preferences
+CFSTRING 0x44d10 
+CFSTRING 0x44d30 /var/mobile/Library/Preferences/
+CFSTRING 0x44d50 %@prefs.plist
+CFSTRING 0x44d70 key
+CFSTRING 0x44d90 presetUserAgent
+CFSTRING 0x44db0 %@/%@
+CFSTRING 0x44dd0 device
+CFSTRING 0x44df0 iosVersion
+CFSTRING 0x44e10 default
+CFSTRING 0x44e30 User-Agent
+CFSTRING 0x44e50 EnableDataCollector
+CFSTRING 0x44e70 DATA_COLLECTION
+CFSTRING 0x44e90 DATA_COLLECTION_WARNING
+CFSTRING 0x44eb0 CONFIRM
+CFSTRING 0x44ed0 CANCEL
+CFSTRING 0x44ef0 PostNotification
+CFSTRING 0x44f10 SnowBoardLocalisation
+CFSTRING 0x44f30 SETTINGS
+CFSTRING 0x44f50 APPLY_ONE
+CFSTRING 0x44f70 SnowBoardThemeLoader
+CFSTRING 0x44f90 .SFUIText-Bold
+CFSTRING 0x44fb0 /Library/PreferenceBundles/SnowboardPrefs.bundle
+CFSTRING 0x44fd0 checkmark.png
+CFSTRING 0x44ff0 APPLY_REORDER
+CFSTRING 0x45010 APPLY_CHANGES
+CFSTRING 0x45030 %@
+CFSTRING 0x45050 IconBundles
+CFSTRING 0x45070 self ENDSWITH '.png'
+CFSTRING 0x45090 @
+CFSTRING 0x450b0 -large
+CFSTRING 0x450d0 %@ (%dpx, %dpx)
+CFSTRING 0x450f0 icon.png
+CFSTRING 0x45110 Icon.png
+CFSTRING 0x45130 com.apple.mobilephone
+CFSTRING 0x45150 placeholder-extension.png
+CFSTRING 0x45170 SnowBoardExtensionPreferencesViewController
+CFSTRING 0x45190 ENABLE
+CFSTRING 0x451b0 DISABLE
+CFSTRING 0x451d0 warning.png
+CFSTRING 0x451f0 placeholder.png
+CFSTRING 0x45210 %@ %@
+CFSTRING 0x45230 WARNING
+CFSTRING 0x45250 OVERSIZED_ICONS_WARNING
+CFSTRING 0x45270 OK
+CFSTRING 0x45290 LIST_LARGE_ICONS
+CFSTRING 0x452b0 %@
+%@
+CFSTRING 0x452d0 OVERSIZED_ICONS
+CFSTRING 0x452f0 %@: %@
+CFSTRING 0x45310 THEME_PACK
+CFSTRING 0x45330 THEME
+CFSTRING 0x45350 THEME_INFO
+CFSTRING 0x45370 ICONS_EXTENSIONS
+CFSTRING 0x45390 UITableViewCellReorderControl
+CFSTRING 0x453b0 SnowBoardPreferencesManager
+CFSTRING 0x453d0 GroupThemes
+CFSTRING 0x453f0 com.apple.Preferences
+CFSTRING 0x45410 THEMES
+CFSTRING 0x45430 EXTENSIONS
+CFSTRING 0x45450 /Library/Themes
+CFSTRING 0x45470 SnowBoardExtensionManager
+CFSTRING 0x45490 Info.plist
+CFSTRING 0x454b0 PackageName
+CFSTRING 0x454d0 .theme
+CFSTRING 0x454f0  
+CFSTRING 0x45510 title
+CFSTRING 0x45530 ActiveMenuItems
+CFSTRING 0x45550 snowBoardThemeCell
+CFSTRING 0x45570 /var/mobile/Library/Preferences
+CFSTRING 0x45590 com.spark.snowboardprefs
+CFSTRING 0x455b0 %@/%@.plist
+CFSTRING 0x455d0 Extensions
+CFSTRING 0x455f0 com.spark.snowboard.refresh
+CFSTRING 0x45610 [SnowBoard] Exception: %@
+CFSTRING 0x45630 GROUP
+CFSTRING 0x45650 UNGROUP
+CFSTRING 0x45670 RESPRING
+CFSTRING 0x45690 Cancel
+CFSTRING 0x456b0 NO_THEMES
+CFSTRING 0x456d0 INSTALL_THEMES
+CFSTRING 0x456f0 /Library/SnowBoard/Extensions
+CFSTRING 0x45710 SnowboardVersion
+CFSTRING 0x45730 [Snowboard] Extension out of date! %@
+CFSTRING 0x45750 CFBundleDisplayName
+CFSTRING 0x45770 ExtensionClass
+CFSTRING 0x45790 ExtensionType
+CFSTRING 0x457b0 CompanionTweak
+CFSTRING 0x457d0 icon
+CFSTRING 0x457f0 png
+CFSTRING 0x45810 0.0.0
+CFSTRING 0x45830 plist
+CFSTRING 0x45850 zoom
+CFSTRING 0x45870 Root
+CFSTRING 0x45890 IconOptions
+CFSTRING 0x458b0 PSSpecifier
+CFSTRING 0x458d0 %@...
+CFSTRING 0x458f0 isController
+CFSTRING 0x45910 enabled
+CFSTRING 0x45930 Force3Icons
+CFSTRING 0x45950 /var/mobile/Library/Preferences/com.spark.snowboardprefs.plist
+CFSTRING 0x45970 CustomCornerRadius
+CFSTRING 0x45990 CustomCornerRadiusEnabled
+CFSTRING 0x459b0 CustomIconSize
+CFSTRING 0x459d0 CustomIconSizeEnabled
+CFSTRING 0x459f0 letitsnow
+CFSTRING 0x45a10 com.spark.snowboard.letitsnow
+CFSTRING 0x45a30 ForceLegacyThemes
+CFSTRING 0x45a50 LEGACY_WARNING
+CFSTRING 0x45a70 HidePopUp
+CFSTRING 0x45a90 HIDE_POPUP_WARNING
+CFSTRING 0x45ab0 LegacyThemeSelector
+CFSTRING 0x45ad0 com.spark.snowboard.refreshNow
+CFSTRING 0x45af0 https://twitter.com/SparkDev_
+CFSTRING 0x45b10 https://twitter.com/DennisBednarz
+CFSTRING 0x45b30 com.spark.snowboard.clearOverrides
+CFSTRING 0x45b50 Cell
+CFSTRING 0x45b70 iconlarge.png
+CFSTRING 0x45b90 .SFUIDisplay
+CFSTRING 0x45bb0 SnowBoard
+CFSTRING 0x45bd0 Developed by SparkDev
+CFSTRING 0x45bf0 Designed by Dennis D. Bednarz
+CFSTRING 0x45c10 /iconlarge.png
+CFSTRING 0x45c30 com.spark.snowboard
+CFSTRING 0x45c50 %
+CFSTRING 0x45c70 DENNIS_TRIBUTE
+CFSTRING 0x45c90 .SFUIText
+CFSTRING 0x45cb0 ExtensionsBannerCell
+CFSTRING 0x45cd0 footerCellClass
+CFSTRING 0x45cf0 label
+CFSTRING 0x45d10 Respring...
+CFSTRING 0x45d30 SnowboardFooterCell
+CFSTRING 0x45d50 Unknown
+CFSTRING 0x45d70 1.5.37-Beta4-rootless
+CFSTRING 0x45d90 /var/jb/usr/bin/dpkg-query
+CFSTRING 0x45db0 /usr/bin/dpkg-query
+CFSTRING 0x45dd0 Unknown (dpkg-query not found)
+CFSTRING 0x45df0 /
+CFSTRING 0x45e10 -s
+CFSTRING 0x45e30 
+
+CFSTRING 0x45e50 : 
+CFSTRING 0x45e70 Version
+CFSTRING 0x45e90 Enabled - Tap/Drag to disable.
+CFSTRING 0x45eb0 Disabled - Tap/Drag to enable.
+CFSTRING 0x45ed0 No Themes Are Enabled...
+CFSTRING 0x45ef0 No Themes Are Disabled...
+CFSTRING 0x45f10 CIColorInvert
+CFSTRING 0x45f30 inputImage
+CFSTRING 0x45f50 Enabled
+CFSTRING 0x45f70 ForceCustomCornerRadius
+CFSTRING 0x45f90 CustomIconSizeBadgesEnabled
+CFSTRING 0x45fb0 HideLabels
+CFSTRING 0x45fd0 HideLabelDots
+CFSTRING 0x45ff0 CustomIconDockDisabled
+CFSTRING 0x46010 LoadInWidgets
+CFSTRING 0x46030 ShownWelcome
+CFSTRING 0x46050 HideIconOverlays
+CFSTRING 0x46070 CustomIconSizeWidgets
+CFSTRING 0x46090 LoadInCarPlay
+CFSTRING 0x460b0 BadgeTheming
+CFSTRING 0x460d0 com.apple.springboard
+CFSTRING 0x460f0 com.spark.snowboard.requestThemes
+CFSTRING 0x46110 com.spark.snowboard.receiveThemes
+CFSTRING 0x46130 LoadedThemes
+CFSTRING 0x46150 Overrides
+CFSTRING 0x46170 Icons
+CFSTRING 0x46190 CalendarIconDateSettings
+CFSTRING 0x461b0 .SFUIDisplay-Thin
+CFSTRING 0x461d0 FontName
+CFSTRING 0x461f0 FontSize
+CFSTRING 0x46210 FontWeight
+CFSTRING 0x46230 TextColor
+CFSTRING 0x46250 TextXoffset
+CFSTRING 0x46270 TextYoffset
+CFSTRING 0x46290 CalendarIconDaySettings
+CFSTRING 0x462b0 .SFUIText-SemiBold
+CFSTRING 0x462d0 BadgeSettings
+CFSTRING 0x462f0 ThemeLib-BadgeSettings
+CFSTRING 0x46310 FolderGridImageAlpha
+CFSTRING 0x46330 [SnowBoard] FolderGridImageAlpha: %f
+CFSTRING 0x46350 FolderMaskForegroundEffect
+CFSTRING 0x46370 [SnowBoard] FolderMaskForegroundEffect: %d
+CFSTRING 0x46390 ForceResizeForEffects
+CFSTRING 0x463b0 [SnowBoard] ForceResizeForEffects: %d
+CFSTRING 0x463d0 ThemeType
+CFSTRING 0x463f0 MaskFolderMaximisedBG
+CFSTRING 0x46410 FuzzyBundleIdentifiers
+CFSTRING 0x46430 Bundles
+CFSTRING 0x46450 ANEMFolderIconBG
+CFSTRING 0x46470 ANEMFolderIconBG-
+CFSTRING 0x46490 ANEMFolderBackground
+CFSTRING 0x464b0 ClockIconBackgroundSquare
+CFSTRING 0x464d0 SBBadgeBG
+CFSTRING 0x464f0 ClockIconHourHand
+CFSTRING 0x46510 Modern%@
+CFSTRING 0x46530 ClockIconMinuteHand
+CFSTRING 0x46550 ClockIconSecondHand
+CFSTRING 0x46570 ClockIconRedDot
+CFSTRING 0x46590 ClockIconBlackDot
+CFSTRING 0x465b0 appicon
+CFSTRING 0x465d0 icon@
+CFSTRING 0x465f0 %@-%d-%d
+CFSTRING 0x46610 Original-
+CFSTRING 0x46630 -
+CFSTRING 0x46650 [SnowBoard] Failed to load custom icon: %@
+CFSTRING 0x46670 com.apple.AppPredictionWidget.extension
+CFSTRING 0x46690 com.apple.Spotlight
+CFSTRING 0x466b0 SnowBoard Exception 3: %@ | %@
+CFSTRING 0x466d0 SnowBoard Exception 4: %@ | %@
+CFSTRING 0x466f0 %@-%@-%f
+CFSTRING 0x46710 SnowBoardIconMaskExtension
+CFSTRING 0x46730 SBIcon
+CFSTRING 0x46750 %@-alt
+CFSTRING 0x46770 SnowBoard Exception 1: %@ | %@
+CFSTRING 0x46790 IconOverrides
+CFSTRING 0x467b0 [SnowBoard] %@
+CFSTRING 0x467d0 /var/mobile/Media/Snowboard/CustomIcons/
+CFSTRING 0x467f0 [SnowBoard] Failed to load original icon for: %@
+CFSTRING 0x46810 .
+CFSTRING 0x46830 /Applications/%@.app
+CFSTRING 0x46850 %@/%s
+CFSTRING 0x46870 CFBundleIcons
+CFSTRING 0x46890 CFBundlePrimaryIcon
+CFSTRING 0x468b0 CFBundleIconFiles
+CFSTRING 0x468d0 %@/%@.png
+CFSTRING 0x468f0 AppIcon
+CFSTRING 0x46910 #
+CFSTRING 0x46930 (
+CFSTRING 0x46950 )
+CFSTRING 0x46970 ,
+CFSTRING 0x46990 rgb
+CFSTRING 0x469b0 transparent
+CFSTRING 0x469d0 %@Color
+CFSTRING 0x469f0 SnowBoard Exception 2: %@ | %@
+CFSTRING 0x46a10 bold
+CFSTRING 0x46a30 italic
+CFSTRING 0x46a50 heavy
+CFSTRING 0x46a70 light
+CFSTRING 0x46a90 thin
+CFSTRING 0x46ab0 ultralight
+CFSTRING 0x46ad0 medium
+CFSTRING 0x46af0 regular
+CFSTRING 0x46b10 semibold
+CFSTRING 0x46b30 .SF
+CFSTRING 0x46b50 STLPath
+CFSTRING 0x46b70 STLLoadedIcons
+CFSTRING 0x46b90 STLThemeSettings
+CFSTRING 0x46bb0 _alt
+CFSTRING 0x46bd0 _
+CFSTRING 0x46bf0 x
+CFSTRING 0x46c10 _alt.png
+CFSTRING 0x46c30 SIHBundleIdentifier
+CFSTRING 0x46c50 SIHThemePath
+CFSTRING 0x46c70 SIHImagePaths
+CFSTRING 0x46c90 SIHAltImagePaths
+CFSTRING 0x46cb0 com.spark.snowboard.remoteProcess
+CFSTRING 0x46cd0 com.spark.snowboard.remoteReceive.%@
+CFSTRING 0x46cf0 com.spark.snowboardapplication
+CFSTRING 0x46d10 InitInApps
+CFSTRING 0x46d30 *
+CFSTRING 0x46d50 |
+CFSTRING 0x46d70 BlackListInApps
+CFSTRING 0x46d90 [SnowBoardExtensionManager] Notifying extensions of icon reload...
+CFSTRING 0x46db0 [SnowBoardExtensionManager] Creating instance of icon extension: %@
+CFSTRING 0x46dd0 Extension %@ failed to load path %@ with exception %@
+CFSTRING 0x46df0 Icon
+CFSTRING 0x46e10 Identifier
+CFSTRING 0x46e30 Sender
+CFSTRING 0x46e50 com.spark.snowboard.ui
+CLASS 0x4e580 SnowBoardExtensionPreferencesViewController
+METHOD 0x84a8 -[SnowBoardExtensionPreferencesViewController specifiers] types=@16@0:8
+METHOD 0x855c -[SnowBoardExtensionPreferencesViewController viewDidLayoutSubviews] types=v16@0:8
+METHOD 0x88cc -[SnowBoardExtensionPreferencesViewController reloadSpecifiers] types=v16@0:8
+METHOD 0x8900 -[SnowBoardExtensionPreferencesViewController onTapDone] types=v16@0:8
+METHOD 0x890c -[SnowBoardExtensionPreferencesViewController readPreferenceValue:] types=@24@0:8@16
+METHOD 0x8c34 -[SnowBoardExtensionPreferencesViewController setPreferenceValue:specifier:] types=v32@0:8@16@24
+METHOD 0x9220 -[SnowBoardExtensionPreferencesViewController respring] types=v16@0:8
+METHOD 0x92a4 -[SnowBoardExtensionPreferencesViewController viewWillAppear:] types=v20@0:8B16
+METHOD 0x92f0 -[SnowBoardExtensionPreferencesViewController prefsBundle] types=@16@0:8
+METHOD 0x9300 -[SnowBoardExtensionPreferencesViewController setPrefsBundle:] types=v24@0:8@16
+METHOD 0x9314 -[SnowBoardExtensionPreferencesViewController widgetDisplayName] types=@16@0:8
+METHOD 0x9324 -[SnowBoardExtensionPreferencesViewController setWidgetDisplayName:] types=v24@0:8@16
+METHOD 0x9338 -[SnowBoardExtensionPreferencesViewController shouldReload] types=B16@0:8
+METHOD 0x9348 -[SnowBoardExtensionPreferencesViewController setShouldReload:] types=v20@0:8B16
+METHOD 0x9358 -[SnowBoardExtensionPreferencesViewController parentVC] types=@16@0:8
+METHOD 0x9368 -[SnowBoardExtensionPreferencesViewController setParentVC:] types=v24@0:8@16
+METHOD 0x937c -[SnowBoardExtensionPreferencesViewController .cxx_destruct] types=v16@0:8
+CLASS 0x4e5a8 meta SnowBoardExtensionPreferencesViewController
+CLASS 0x4e5d0 SnowBoardEditButton
+METHOD 0x93f8 -[SnowBoardEditButton initWithFrame:] types=@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0x9440 -[SnowBoardEditButton setup] types=v16@0:8
+CLASS 0x4e5f8 meta SnowBoardEditButton
+CLASS 0x4e620 SnowBoardApplyView
+METHOD 0x9650 -[SnowBoardApplyView initWithFrame:] types=@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0x9cd0 -[SnowBoardApplyView updateChangeCount:] types=v20@0:8i16
+METHOD 0x9dcc -[SnowBoardApplyView reset] types=v16@0:8
+METHOD 0x9e64 -[SnowBoardApplyView showApplyAnimation] types=v16@0:8
+METHOD 0xa1c4 -[SnowBoardApplyView handleTap:] types=v24@0:8@16
+METHOD 0xa210 -[SnowBoardApplyView setIsAnimating:] types=v20@0:8B16
+METHOD 0xa228 -[SnowBoardApplyView contentView] types=@16@0:8
+METHOD 0xa238 -[SnowBoardApplyView setContentView:] types=v24@0:8@16
+METHOD 0xa24c -[SnowBoardApplyView titleLabel] types=@16@0:8
+METHOD 0xa25c -[SnowBoardApplyView setTitleLabel:] types=v24@0:8@16
+METHOD 0xa270 -[SnowBoardApplyView checkmarkView] types=@16@0:8
+METHOD 0xa280 -[SnowBoardApplyView setCheckmarkView:] types=v24@0:8@16
+METHOD 0xa294 -[SnowBoardApplyView isAnimating] types=B16@0:8
+METHOD 0xa2a4 -[SnowBoardApplyView .cxx_destruct] types=v16@0:8
+CLASS 0x4e648 meta SnowBoardApplyView
+METHOD 0x95cc +[SnowBoardApplyView defaultHeight] types=f16@0:8
+METHOD 0x9644 +[SnowBoardApplyView trueDefaultHeight] types=f16@0:8
+CLASS 0x4e698 SnowBoardThemeItem
+METHOD 0xaa5c -[SnowBoardThemeItem generateIcon] types=@16@0:8
+METHOD 0xad58 -[SnowBoardThemeItem imagesForTheme] types=@16@0:8
+METHOD 0xb28c -[SnowBoardThemeItem title] types=@16@0:8
+METHOD 0xb294 -[SnowBoardThemeItem setTitle:] types=v24@0:8@16
+METHOD 0xb2a0 -[SnowBoardThemeItem fulltitle] types=@16@0:8
+METHOD 0xb2a8 -[SnowBoardThemeItem setFulltitle:] types=v24@0:8@16
+METHOD 0xb2b4 -[SnowBoardThemeItem identifier] types=@16@0:8
+METHOD 0xb2bc -[SnowBoardThemeItem setIdentifier:] types=v24@0:8@16
+METHOD 0xb2c8 -[SnowBoardThemeItem path] types=@16@0:8
+METHOD 0xb2d0 -[SnowBoardThemeItem setPath:] types=v24@0:8@16
+METHOD 0xb2dc -[SnowBoardThemeItem cachedThemeImages] types=@16@0:8
+METHOD 0xb2e4 -[SnowBoardThemeItem setCachedThemeImages:] types=v24@0:8@16
+METHOD 0xb2f0 -[SnowBoardThemeItem isEnabled] types=B16@0:8
+METHOD 0xb2f8 -[SnowBoardThemeItem setIsEnabled:] types=v20@0:8B16
+METHOD 0xb300 -[SnowBoardThemeItem .cxx_destruct] types=v16@0:8
+CLASS 0x4e670 meta SnowBoardThemeItem
+CLASS 0x4e6c0 SnowBoardSortedItem
+METHOD 0xb360 -[SnowBoardSortedItem init] types=@16@0:8
+METHOD 0xb3b8 -[SnowBoardSortedItem allOversizedIcons:] types=v24@0:8@?16
+METHOD 0xb91c -[SnowBoardSortedItem checkIfContainsOversizedImagesWithCompletion:] types=v24@0:8@?16
+METHOD 0xbe3c -[SnowBoardSortedItem updateEnabledState] types=v16@0:8
+METHOD 0xbf88 -[SnowBoardSortedItem generateIcon] types=@16@0:8
+METHOD 0xbfa4 -[SnowBoardSortedItem title] types=@16@0:8
+METHOD 0xbfac -[SnowBoardSortedItem setTitle:] types=v24@0:8@16
+METHOD 0xbfb8 -[SnowBoardSortedItem subtitle] types=@16@0:8
+METHOD 0xbfc0 -[SnowBoardSortedItem setSubtitle:] types=v24@0:8@16
+METHOD 0xbfcc -[SnowBoardSortedItem items] types=@16@0:8
+METHOD 0xbfd4 -[SnowBoardSortedItem setItems:] types=v24@0:8@16
+METHOD 0xbfe0 -[SnowBoardSortedItem iconsTheme] types=@16@0:8
+METHOD 0xbfe8 -[SnowBoardSortedItem setIconsTheme:] types=v24@0:8@16
+METHOD 0xbff4 -[SnowBoardSortedItem cachedThemeLogo] types=@16@0:8
+METHOD 0xbffc -[SnowBoardSortedItem setCachedThemeLogo:] types=v24@0:8@16
+METHOD 0xc008 -[SnowBoardSortedItem isExpanded] types=B16@0:8
+METHOD 0xc010 -[SnowBoardSortedItem setIsExpanded:] types=v20@0:8B16
+METHOD 0xc018 -[SnowBoardSortedItem enabledState] types=i16@0:8
+METHOD 0xc020 -[SnowBoardSortedItem setEnabledState:] types=v20@0:8i16
+METHOD 0xc028 -[SnowBoardSortedItem pContainsOversizedImages] types=i16@0:8
+METHOD 0xc030 -[SnowBoardSortedItem setPContainsOversizedImages:] types=v20@0:8i16
+METHOD 0xc038 -[SnowBoardSortedItem largestImagePath] types=@16@0:8
+METHOD 0xc040 -[SnowBoardSortedItem setLargestImagePath:] types=v24@0:8@16
+METHOD 0xc04c -[SnowBoardSortedItem .cxx_destruct] types=v16@0:8
+CLASS 0x4e6e8 meta SnowBoardSortedItem
+CLASS 0x4e738 SnowBoardSortedTheme
+METHOD 0xc0b8 -[SnowBoardSortedTheme sortThemes] types=v16@0:8
+METHOD 0xc494 -[SnowBoardSortedTheme themeLogo] types=@16@0:8
+METHOD 0xc7b8 -[SnowBoardSortedTheme generateIcon] types=@16@0:8
+CLASS 0x4e710 meta SnowBoardSortedTheme
+CLASS 0x4e788 SnowBoardSortedExtension
+METHOD 0xcc78 -[SnowBoardSortedExtension themeLogo] types=@16@0:8
+METHOD 0xcddc -[SnowBoardSortedExtension generateIcon] types=@16@0:8
+METHOD 0xcde0 -[SnowBoardSortedExtension updateEnabledState] types=v16@0:8
+METHOD 0xcde4 -[SnowBoardSortedExtension presentPreferences] types=v16@0:8
+METHOD 0xcf2c -[SnowBoardSortedExtension displayName] types=@16@0:8
+METHOD 0xcf3c -[SnowBoardSortedExtension setDisplayName:] types=v24@0:8@16
+METHOD 0xcf50 -[SnowBoardSortedExtension className] types=@16@0:8
+METHOD 0xcf60 -[SnowBoardSortedExtension setClassName:] types=v24@0:8@16
+METHOD 0xcf74 -[SnowBoardSortedExtension extensionType] types=@16@0:8
+METHOD 0xcf84 -[SnowBoardSortedExtension setExtensionType:] types=v24@0:8@16
+METHOD 0xcf98 -[SnowBoardSortedExtension bundleIdentifier] types=@16@0:8
+METHOD 0xcfa8 -[SnowBoardSortedExtension setBundleIdentifier:] types=v24@0:8@16
+METHOD 0xcfbc -[SnowBoardSortedExtension version] types=@16@0:8
+METHOD 0xcfcc -[SnowBoardSortedExtension setVersion:] types=v24@0:8@16
+METHOD 0xcfe0 -[SnowBoardSortedExtension companionTweak] types=@16@0:8
+METHOD 0xcff0 -[SnowBoardSortedExtension setCompanionTweak:] types=v24@0:8@16
+METHOD 0xd004 -[SnowBoardSortedExtension iconPath] types=@16@0:8
+METHOD 0xd014 -[SnowBoardSortedExtension setIconPath:] types=v24@0:8@16
+METHOD 0xd028 -[SnowBoardSortedExtension preferencesPlistPath] types=@16@0:8
+METHOD 0xd038 -[SnowBoardSortedExtension setPreferencesPlistPath:] types=v24@0:8@16
+METHOD 0xd04c -[SnowBoardSortedExtension bundle] types=@16@0:8
+METHOD 0xd05c -[SnowBoardSortedExtension setBundle:] types=v24@0:8@16
+METHOD 0xd070 -[SnowBoardSortedExtension .cxx_destruct] types=v16@0:8
+CLASS 0x4e760 meta SnowBoardSortedExtension
+CLASS 0x4e7b0 SnowBoardToggleButton
+METHOD 0xd13c -[SnowBoardToggleButton initWithFrame:] types=@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0xd184 -[SnowBoardToggleButton setup] types=v16@0:8
+METHOD 0xd2d0 -[SnowBoardToggleButton setEnabledState:] types=v20@0:8i16
+METHOD 0xd2d8 -[SnowBoardToggleButton setEnabledState:animated:] types=v24@0:8i16B20
+METHOD 0xd4d8 -[SnowBoardToggleButton enabledState] types=i16@0:8
+CLASS 0x4e7d8 meta SnowBoardToggleButton
+METHOD 0xd4c8 +[SnowBoardToggleButton setDisabledColor:] types=v24@0:8@16
+CLASS 0x4e800 SnowBoardThemeContentsCell
+METHOD 0xd4e8 -[SnowBoardThemeContentsCell initWithFrame:] types=@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0xd570 -[SnowBoardThemeContentsCell setup] types=v16@0:8
+METHOD 0xe1ec -[SnowBoardThemeContentsCell prepareForReuse] types=v16@0:8
+METHOD 0xe1f0 -[SnowBoardThemeContentsCell buttonTapped:] types=v24@0:8@16
+METHOD 0xe1f4 -[SnowBoardThemeContentsCell updateImageViewScale:] types=v20@0:8f16
+METHOD 0xe374 -[SnowBoardThemeContentsCell setTitleText:] types=v24@0:8@16
+METHOD 0xe3f4 -[SnowBoardThemeContentsCell setSubtitleText:] types=v24@0:8@16
+METHOD 0xe474 -[SnowBoardThemeContentsCell layoutLabels] types=v16@0:8
+METHOD 0xe6b0 -[SnowBoardThemeContentsCell setEnabled:] types=v20@0:8B16
+METHOD 0xe6b4 -[SnowBoardThemeContentsCell setIconImage:] types=v24@0:8@16
+METHOD 0xe85c -[SnowBoardThemeContentsCell updateButtonState:animated:] types=v24@0:8i16B20
+METHOD 0xe914 -[SnowBoardThemeContentsCell updateButtonState:] types=v20@0:8i16
+METHOD 0xe91c -[SnowBoardThemeContentsCell setIsDraggableCell:] types=v20@0:8B16
+METHOD 0xebe8 -[SnowBoardThemeContentsCell handleTapWarning:] types=v24@0:8@16
+METHOD 0xee60 -[SnowBoardThemeContentsCell listLargeIcons] types=v16@0:8
+METHOD 0xf1f8 -[SnowBoardThemeContentsCell headerLabel] types=@16@0:8
+METHOD 0xf208 -[SnowBoardThemeContentsCell setHeaderLabel:] types=v24@0:8@16
+METHOD 0xf21c -[SnowBoardThemeContentsCell subtitleLabel] types=@16@0:8
+METHOD 0xf22c -[SnowBoardThemeContentsCell setSubtitleLabel:] types=v24@0:8@16
+METHOD 0xf240 -[SnowBoardThemeContentsCell enableButton] types=@16@0:8
+METHOD 0xf250 -[SnowBoardThemeContentsCell setEnableButton:] types=v24@0:8@16
+METHOD 0xf264 -[SnowBoardThemeContentsCell editButton] types=@16@0:8
+METHOD 0xf274 -[SnowBoardThemeContentsCell setEditButton:] types=v24@0:8@16
+METHOD 0xf288 -[SnowBoardThemeContentsCell iconImageView] types=@16@0:8
+METHOD 0xf298 -[SnowBoardThemeContentsCell setIconImageView:] types=v24@0:8@16
+METHOD 0xf2ac -[SnowBoardThemeContentsCell contentView] types=@16@0:8
+METHOD 0xf2bc -[SnowBoardThemeContentsCell setContentView:] types=v24@0:8@16
+METHOD 0xf2d0 -[SnowBoardThemeContentsCell isDraggableCell] types=B16@0:8
+METHOD 0xf2e0 -[SnowBoardThemeContentsCell themeWarningView] types=@16@0:8
+METHOD 0xf2f0 -[SnowBoardThemeContentsCell setThemeWarningView:] types=v24@0:8@16
+METHOD 0xf304 -[SnowBoardThemeContentsCell themeWarningItem] types=@16@0:8
+METHOD 0xf314 -[SnowBoardThemeContentsCell setThemeWarningItem:] types=v24@0:8@16
+METHOD 0xf328 -[SnowBoardThemeContentsCell .cxx_destruct] types=v16@0:8
+CLASS 0x4e878 meta SnowBoardThemeContentsCell
+METHOD 0xd53c +[SnowBoardThemeContentsCell buttonSize] types={CGSize=dd}16@0:8
+METHOD 0xd54c +[SnowBoardThemeContentsCell padding] types=d16@0:8
+METHOD 0xd554 +[SnowBoardThemeContentsCell contentViewPadding] types={CGSize=dd}16@0:8
+METHOD 0xd560 +[SnowBoardThemeContentsCell setCustomBackgroundColor:] types=v24@0:8@16
+CLASS 0x4e8c8 SnowBoardThemeCellHeaderCell
+METHOD 0xf3e0 -[SnowBoardThemeCellHeaderCell buttonTapped:] types=v24@0:8@16
+METHOD 0xf46c -[SnowBoardThemeCellHeaderCell updateButtonState] types=v16@0:8
+METHOD 0xf4c4 -[SnowBoardThemeCellHeaderCell themeGroup] types=@16@0:8
+METHOD 0xf4d4 -[SnowBoardThemeCellHeaderCell setThemeGroup:] types=v24@0:8@16
+METHOD 0xf4e8 -[SnowBoardThemeCellHeaderCell .cxx_destruct] types=v16@0:8
+CLASS 0x4e8a0 meta SnowBoardThemeCellHeaderCell
+CLASS 0x4e850 SnowBoardThemeSubCell
+METHOD 0xf508 -[SnowBoardThemeSubCell initWithFrame:] types=@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0xf55c -[SnowBoardThemeSubCell setup] types=v16@0:8
+METHOD 0xf7e8 -[SnowBoardThemeSubCell buttonTapped:] types=v24@0:8@16
+METHOD 0xf8f8 -[SnowBoardThemeSubCell setThemeItem:] types=v24@0:8@16
+METHOD 0xf9ac -[SnowBoardThemeSubCell updateButtonState] types=v16@0:8
+METHOD 0xfa2c -[SnowBoardThemeSubCell handleLongPress:] types=v24@0:8@16
+METHOD 0xfcb4 -[SnowBoardThemeSubCell contentView] types=@16@0:8
+METHOD 0xfcc4 -[SnowBoardThemeSubCell setContentView:] types=v24@0:8@16
+METHOD 0xfcd8 -[SnowBoardThemeSubCell themeItem] types=@16@0:8
+METHOD 0xfce8 -[SnowBoardThemeSubCell longPress] types=@16@0:8
+METHOD 0xfcf8 -[SnowBoardThemeSubCell setLongPress:] types=v24@0:8@16
+METHOD 0xfd0c -[SnowBoardThemeSubCell .cxx_destruct] types=v16@0:8
+CLASS 0x4e8f0 meta SnowBoardThemeSubCell
+METHOD 0xf4fc +[SnowBoardThemeSubCell cellHeight] types=d16@0:8
+CLASS 0x4e918 SnowBoardThemeCell
+METHOD 0xfd60 -[SnowBoardThemeCell prepareForReuse] types=v16@0:8
+METHOD 0xfdf8 -[SnowBoardThemeCell setSortedThemeItem:] types=v24@0:8@16
+METHOD 0x107a8 -[SnowBoardThemeCell setSubCellsHidden:] types=v20@0:8B16
+METHOD 0x107b0 -[SnowBoardThemeCell setSubCellsHidden:animated:] types=v24@0:8B16B20
+METHOD 0x11d50 -[SnowBoardThemeCell layoutSubviews] types=v16@0:8
+METHOD 0x11f34 -[SnowBoardThemeCell updateSubCells] types=v16@0:8
+METHOD 0x12040 -[SnowBoardThemeCell updateHeaderCell] types=v16@0:8
+METHOD 0x12070 -[SnowBoardThemeCell setOversizedWarningVisible:] types=v20@0:8B16
+METHOD 0x12180 -[SnowBoardThemeCell sortedThemeItem] types=@16@0:8
+METHOD 0x12190 -[SnowBoardThemeCell headerView] types=@16@0:8
+METHOD 0x121a0 -[SnowBoardThemeCell setHeaderView:] types=v24@0:8@16
+METHOD 0x121b4 -[SnowBoardThemeCell subCellsView] types=@16@0:8
+METHOD 0x121c4 -[SnowBoardThemeCell setSubCellsView:] types=v24@0:8@16
+METHOD 0x121d8 -[SnowBoardThemeCell isGrouped] types=B16@0:8
+METHOD 0x121e8 -[SnowBoardThemeCell setIsGrouped:] types=v20@0:8B16
+METHOD 0x121f8 -[SnowBoardThemeCell .cxx_destruct] types=v16@0:8
+CLASS 0x4e940 meta SnowBoardThemeCell
+CLASS 0x4e828 SnowBoardThemeSelectorViewController
+METHOD 0x1224c -[SnowBoardThemeSelectorViewController initForExtensions] types=@16@0:8
+METHOD 0x12284 -[SnowBoardThemeSelectorViewController init] types=@16@0:8
+METHOD 0x12314 -[SnowBoardThemeSelectorViewController viewDidLoad] types=v16@0:8
+METHOD 0x1276c -[SnowBoardThemeSelectorViewController loadThemes] types=v16@0:8
+METHOD 0x138e8 -[SnowBoardThemeSelectorViewController tableView:cellForRowAtIndexPath:] types=@32@0:8@16@24
+METHOD 0x13adc -[SnowBoardThemeSelectorViewController numberOfSectionsInTableView:] types=q24@0:8@16
+METHOD 0x13ae4 -[SnowBoardThemeSelectorViewController tableView:numberOfRowsInSection:] types=q32@0:8@16q24
+METHOD 0x13b40 -[SnowBoardThemeSelectorViewController tableView:heightForRowAtIndexPath:] types=d32@0:8@16@24
+METHOD 0x13cd8 -[SnowBoardThemeSelectorViewController tableView:didSelectRowAtIndexPath:] types=v32@0:8@16@24
+METHOD 0x13ee4 -[SnowBoardThemeSelectorViewController scrollViewDidScroll:] types=v24@0:8@16
+METHOD 0x13f54 -[SnowBoardThemeSelectorViewController tableView:willSelectRowAtIndexPath:] types=@32@0:8@16@24
+METHOD 0x14010 -[SnowBoardThemeSelectorViewController tableView:didDeselectRowAtIndexPath:] types=v32@0:8@16@24
+METHOD 0x141f4 -[SnowBoardThemeSelectorViewController tableView:editingStyleForRowAtIndexPath:] types=q32@0:8@16@24
+METHOD 0x141fc -[SnowBoardThemeSelectorViewController tableView:shouldIndentWhileEditingRowAtIndexPath:] types=B32@0:8@16@24
+METHOD 0x14204 -[SnowBoardThemeSelectorViewController tableView:canMoveRowAtIndexPath:] types=B32@0:8@16@24
+METHOD 0x142b8 -[SnowBoardThemeSelectorViewController tableView:moveRowAtIndexPath:toIndexPath:] types=v40@0:8@16@24@32
+METHOD 0x144d8 -[SnowBoardThemeSelectorViewController tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:] types=@40@0:8@16@24@32
+METHOD 0x145d8 -[SnowBoardThemeSelectorViewController setThemeGroup:enabled:] types=v28@0:8@16B24
+METHOD 0x14cd0 -[SnowBoardThemeSelectorViewController setTheme:enabled:] types=v28@0:8@16B24
+METHOD 0x14cd8 -[SnowBoardThemeSelectorViewController setTheme:enabled:updateFile:] types=v32@0:8@16B24B28
+METHOD 0x15268 -[SnowBoardThemeSelectorViewController preferencesFilePath] types=@16@0:8
+METHOD 0x1532c -[SnowBoardThemeSelectorViewController preferencesDictionary] types=@16@0:8
+METHOD 0x153e0 -[SnowBoardThemeSelectorViewController updatePreferencesFile] types=v16@0:8
+METHOD 0x1584c -[SnowBoardThemeSelectorViewController isPathEnabled:] types=B24@0:8@16
+METHOD 0x15a10 -[SnowBoardThemeSelectorViewController rankForItemAtPath:didFind:] types=i32@0:8@16^B24
+METHOD 0x15bfc -[SnowBoardThemeSelectorViewController indexPathForSortedTheme:] types=@24@0:8@16
+METHOD 0x15d98 -[SnowBoardThemeSelectorViewController indexPathForTheme:] types=@24@0:8@16
+METHOD 0x15ff4 -[SnowBoardThemeSelectorViewController groupForTheme:] types=@24@0:8@16
+METHOD 0x16220 -[SnowBoardThemeSelectorViewController needsApply] types=v16@0:8
+METHOD 0x16234 -[SnowBoardThemeSelectorViewController updateChangeCount] types=v16@0:8
+METHOD 0x166e4 -[SnowBoardThemeSelectorViewController createGroupButton] types=v16@0:8
+METHOD 0x167cc -[SnowBoardThemeSelectorViewController createRespringButton] types=v16@0:8
+METHOD 0x16880 -[SnowBoardThemeSelectorViewController setNotGroupedMode] types=v16@0:8
+METHOD 0x16888 -[SnowBoardThemeSelectorViewController setIsGroupedMode] types=v16@0:8
+METHOD 0x16890 -[SnowBoardThemeSelectorViewController setInGroupedMode:] types=v20@0:8B16
+METHOD 0x16a9c -[SnowBoardThemeSelectorViewController setApplyViewHidden:] types=v20@0:8B16
+METHOD 0x16e90 -[SnowBoardThemeSelectorViewController callApply] types=v16@0:8
+METHOD 0x16f20 -[SnowBoardThemeSelectorViewController viewWillDisappear:] types=v20@0:8B16
+METHOD 0x16f78 -[SnowBoardThemeSelectorViewController handleCancel:] types=v24@0:8@16
+METHOD 0x16fcc -[SnowBoardThemeSelectorViewController viewWillAppear:] types=v20@0:8B16
+METHOD 0x1705c -[SnowBoardThemeSelectorViewController viewDidAppear:] types=v20@0:8B16
+METHOD 0x17090 -[SnowBoardThemeSelectorViewController forceDismiss] types=v16@0:8
+METHOD 0x17098 -[SnowBoardThemeSelectorViewController viewDidLayoutSubviews] types=v16@0:8
+METHOD 0x17138 -[SnowBoardThemeSelectorViewController showNoThemesAlert] types=v16@0:8
+METHOD 0x17310 -[SnowBoardThemeSelectorViewController disabledExtensions] types=@16@0:8
+METHOD 0x174a4 -[SnowBoardThemeSelectorViewController loadExtensions] types=v16@0:8
+METHOD 0x17ab8 -[SnowBoardThemeSelectorViewController respring] types=v16@0:8
+METHOD 0x17b3c -[SnowBoardThemeSelectorViewController tableView] types=@16@0:8
+METHOD 0x17b4c -[SnowBoardThemeSelectorViewController setTableView:] types=v24@0:8@16
+METHOD 0x17b60 -[SnowBoardThemeSelectorViewController isAnimating] types=B16@0:8
+METHOD 0x17b70 -[SnowBoardThemeSelectorViewController setIsAnimating:] types=v20@0:8B16
+METHOD 0x17b80 -[SnowBoardThemeSelectorViewController isGrouped] types=B16@0:8
+METHOD 0x17b90 -[SnowBoardThemeSelectorViewController setIsGrouped:] types=v20@0:8B16
+METHOD 0x17ba0 -[SnowBoardThemeSelectorViewController isExtensions] types=B16@0:8
+METHOD 0x17bb0 -[SnowBoardThemeSelectorViewController setIsExtensions:] types=v20@0:8B16
+METHOD 0x17bc0 -[SnowBoardThemeSelectorViewController applyView] types=@16@0:8
+METHOD 0x17bd0 -[SnowBoardThemeSelectorViewController setApplyView:] types=v24@0:8@16
+METHOD 0x17be4 -[SnowBoardThemeSelectorViewController themeList] types=@16@0:8
+METHOD 0x17bf4 -[SnowBoardThemeSelectorViewController setThemeList:] types=v24@0:8@16
+METHOD 0x17c08 -[SnowBoardThemeSelectorViewController sortedThemes] types=@16@0:8
+METHOD 0x17c18 -[SnowBoardThemeSelectorViewController setSortedThemes:] types=v24@0:8@16
+METHOD 0x17c2c -[SnowBoardThemeSelectorViewController enabledThemes] types=@16@0:8
+METHOD 0x17c3c -[SnowBoardThemeSelectorViewController setEnabledThemes:] types=v24@0:8@16
+METHOD 0x17c50 -[SnowBoardThemeSelectorViewController hadFirstAppear] types=B16@0:8
+METHOD 0x17c60 -[SnowBoardThemeSelectorViewController setHadFirstAppear:] types=v20@0:8B16
+METHOD 0x17c70 -[SnowBoardThemeSelectorViewController .cxx_destruct] types=v16@0:8
+CLASS 0x4e968 meta SnowBoardThemeSelectorViewController
+METHOD 0x13b34 +[SnowBoardThemeSelectorViewController minimisedCellHeight] types=d16@0:8
+CLASS 0x4e990 SnowBoardThemeTableView
+METHOD 0x17cec -[SnowBoardThemeTableView init] types=@16@0:8
+METHOD 0x17d00 -[SnowBoardThemeTableView initWithFrame:] types=@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0x17d08 -[SnowBoardThemeTableView initWithCoder:] types=@24@0:8@16
+METHOD 0x17d58 -[SnowBoardThemeTableView initWithFrame:style:] types=@56@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16q48
+METHOD 0x17da8 -[SnowBoardThemeTableView initialize] types=v16@0:8
+METHOD 0x17e18 -[SnowBoardThemeTableView setCanReorder:] types=v20@0:8B16
+METHOD 0x17e4c -[SnowBoardThemeTableView gestureRecognizer:] types=v24@0:8@16
+METHOD 0x18858 -[SnowBoardThemeTableView updateCurrentLocation:] types=v24@0:8@16
+METHOD 0x18b34 -[SnowBoardThemeTableView scrollTableWithCell:] types=v24@0:8@16
+METHOD 0x18ca0 -[SnowBoardThemeTableView cancelGesture] types=v16@0:8
+METHOD 0x18cd8 -[SnowBoardThemeTableView gestureRecognizer] types=@16@0:8
+METHOD 0x18ce8 -[SnowBoardThemeTableView setGestureRecognizer:] types=v24@0:8@16
+METHOD 0x18cfc -[SnowBoardThemeTableView dLink] types=@16@0:8
+METHOD 0x18d0c -[SnowBoardThemeTableView setDLink:] types=v24@0:8@16
+METHOD 0x18d20 -[SnowBoardThemeTableView sRate] types=d16@0:8
+METHOD 0x18d30 -[SnowBoardThemeTableView setSRate:] types=v24@0:8d16
+METHOD 0x18d40 -[SnowBoardThemeTableView cIndexPath] types=@16@0:8
+METHOD 0x18d50 -[SnowBoardThemeTableView setCIndexPath:] types=v24@0:8@16
+METHOD 0x18d64 -[SnowBoardThemeTableView draggingView] types=@16@0:8
+METHOD 0x18d74 -[SnowBoardThemeTableView setDraggingView:] types=v24@0:8@16
+METHOD 0x18d88 -[SnowBoardThemeTableView savedObject] types=@16@0:8
+METHOD 0x18d98 -[SnowBoardThemeTableView setSavedObject:] types=v24@0:8@16
+METHOD 0x18dac -[SnowBoardThemeTableView draggingRowHeight] types=d16@0:8
+METHOD 0x18dbc -[SnowBoardThemeTableView setDraggingRowHeight:] types=v24@0:8d16
+METHOD 0x18dcc -[SnowBoardThemeTableView draggingViewOpacity] types=d16@0:8
+METHOD 0x18ddc -[SnowBoardThemeTableView setDraggingViewOpacity:] types=v24@0:8d16
+METHOD 0x18dec -[SnowBoardThemeTableView iIndexPath] types=@16@0:8
+METHOD 0x18dfc -[SnowBoardThemeTableView setIIndexPath:] types=v24@0:8@16
+METHOD 0x18e10 -[SnowBoardThemeTableView .cxx_destruct] types=v16@0:8
+CLASS 0x4e9b8 meta SnowBoardThemeTableView
+CLASS 0x4e9e0 SnowboardprefsRootListController
+METHOD 0x18ea0 -[SnowboardprefsRootListController specifiers] types=@16@0:8
+METHOD 0x19408 -[SnowboardprefsRootListController goToExtensions] types=v16@0:8
+METHOD 0x19490 -[SnowboardprefsRootListController init] types=@16@0:8
+METHOD 0x194e0 -[SnowboardprefsRootListController readPreferenceValue:] types=@24@0:8@16
+METHOD 0x19784 -[SnowboardprefsRootListController setPreferenceValue:specifier:] types=v32@0:8@16@24
+METHOD 0x19f8c -[SnowboardprefsRootListController showThemeSelector] types=v16@0:8
+METHOD 0x1a060 -[SnowboardprefsRootListController applyChanges] types=v16@0:8
+METHOD 0x1a230 -[SnowboardprefsRootListController applyChangesNow] types=v16@0:8
+METHOD 0x1a3e8 -[SnowboardprefsRootListController respring] types=v16@0:8
+METHOD 0x1a46c -[SnowboardprefsRootListController twitterlink] types=v16@0:8
+METHOD 0x1a4d4 -[SnowboardprefsRootListController twitterlinkdennis] types=v16@0:8
+METHOD 0x1a53c -[SnowboardprefsRootListController clearalternatives] types=v16@0:8
+METHOD 0x1a578 -[SnowboardprefsRootListController name] types=@16@0:8
+METHOD 0x1a588 -[SnowboardprefsRootListController setName:] types=v24@0:8@16
+METHOD 0x1a59c -[SnowboardprefsRootListController .cxx_destruct] types=v16@0:8
+CLASS 0x4ea08 meta SnowboardprefsRootListController
+CLASS 0x4ea30 SnowboardBannerCell
+METHOD 0x1a5b0 -[SnowboardBannerCell initWithSpecifier:] types=@24@0:8@16
+METHOD 0x1ad14 -[SnowboardBannerCell preferredHeightForWidth:] types=d24@0:8d16
+METHOD 0x1ad20 -[SnowboardBannerCell roundedRectImageFromImage:withRadius:] types=@32@0:8@16d24
+METHOD 0x1ae40 -[SnowboardBannerCell layoutSubviews] types=v16@0:8
+METHOD 0x1ae74 -[SnowboardBannerCell setFrame:] types=v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0x1aee0 -[SnowboardBannerCell frame] types={CGRect={CGPoint=dd}{CGSize=dd}}16@0:8
+METHOD 0x1afa0 -[SnowboardBannerCell didMoveToSuperview] types=v16@0:8
+METHOD 0x1b000 -[SnowboardBannerCell updateImageWithRadius:] types=v20@0:8f16
+METHOD 0x1b39c -[SnowboardBannerCell updateImageWithScale:] types=v20@0:8f16
+METHOD 0x1b7cc -[SnowboardBannerCell bannerView] types=@16@0:8
+METHOD 0x1b7dc -[SnowboardBannerCell setBannerView:] types=v24@0:8@16
+METHOD 0x1b7f0 -[SnowboardBannerCell .cxx_destruct] types=v16@0:8
+CLASS 0x4ea58 meta SnowboardBannerCell
+CLASS 0x4ea80 SnowboardLogoCell
+METHOD 0x1b894 -[SnowboardLogoCell initWithSpecifier:] types=@24@0:8@16
+METHOD 0x1bbd4 -[SnowboardLogoCell preferredHeightForWidth:] types=d24@0:8d16
+METHOD 0x1bd20 -[SnowboardLogoCell roundedRectImageFromImage:withRadius:] types=@32@0:8@16d24
+METHOD 0x1be94 -[SnowboardLogoCell layoutSubviews] types=v16@0:8
+METHOD 0x1bee4 -[SnowboardLogoCell setFrame:] types=v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0x1bf50 -[SnowboardLogoCell frame] types={CGRect={CGPoint=dd}{CGSize=dd}}16@0:8
+METHOD 0x1c010 -[SnowboardLogoCell updateImageWithRadius:] types=v20@0:8f16
+METHOD 0x1c34c -[SnowboardLogoCell updateImageWithScale:] types=v20@0:8f16
+METHOD 0x1c77c -[SnowboardLogoCell bannerView] types=@16@0:8
+METHOD 0x1c78c -[SnowboardLogoCell setBannerView:] types=v24@0:8@16
+METHOD 0x1c7a0 -[SnowboardLogoCell .cxx_destruct] types=v16@0:8
+CLASS 0x4eaa8 meta SnowboardLogoCell
+CLASS 0x4ead0 SnowboardFooterCell
+METHOD 0x1c808 -[SnowboardFooterCell initWithSpecifier:] types=@24@0:8@16
+METHOD 0x1ca38 -[SnowboardFooterCell preferredHeightForWidth:] types=d24@0:8d16
+METHOD 0x1ca44 -[SnowboardFooterCell layoutSubviews] types=v16@0:8
+METHOD 0x1cafc -[SnowboardFooterCell setFrame:] types=v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0x1cb74 -[SnowboardFooterCell frame] types={CGRect={CGPoint=dd}{CGSize=dd}}16@0:8
+METHOD 0x1cc30 -[SnowboardFooterCell .cxx_destruct] types=v16@0:8
+CLASS 0x4eaf8 meta SnowboardFooterCell
+CLASS 0x4eb20 IconOptions
+METHOD 0x1cc44 -[IconOptions init] types=@16@0:8
+CLASS 0x4eb48 meta IconOptions
+CLASS 0x4eb70 ExtensionsBannerCell
+METHOD 0x1cc94 -[ExtensionsBannerCell initWithSpecifier:] types=@24@0:8@16
+METHOD 0x1ce30 -[ExtensionsBannerCell preferredHeightForWidth:] types=d24@0:8d16
+METHOD 0x1ce3c -[ExtensionsBannerCell setFrame:] types=v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+METHOD 0x1cf1c -[ExtensionsBannerCell frame] types={CGRect={CGPoint=dd}{CGSize=dd}}16@0:8
+METHOD 0x1cfd4 -[ExtensionsBannerCell .cxx_destruct] types=v16@0:8
+CLASS 0x4eb98 meta ExtensionsBannerCell
+CLASS 0x4ebc0 SnowBoardExtensions
+METHOD 0x1d014 -[SnowBoardExtensions init] types=@16@0:8
+METHOD 0x1d0a4 -[SnowBoardExtensions specifiers] types=@16@0:8
+METHOD 0x1d500 -[SnowBoardExtensions respring] types=v16@0:8
+METHOD 0x1d584 -[SnowBoardExtensions readPreferenceValue:] types=@24@0:8@16
+METHOD 0x1d76c -[SnowBoardExtensions setPreferenceValue:specifier:] types=v32@0:8@16@24
+CLASS 0x4ebe8 meta SnowBoardExtensions
+CLASS 0x4ec10 SparkPackage
+METHOD 0x1deac -[SparkPackage version] types=@16@0:8
+METHOD 0x1deb4 -[SparkPackage setVersion:] types=v24@0:8@16
+METHOD 0x1dec0 -[SparkPackage .cxx_destruct] types=v16@0:8
+CLASS 0x4ec38 meta SparkPackage
+METHOD 0x1d9a8 +[SparkPackage packageWithIdentifier:isRootPackage:] types=@28@0:8@16B24
+CLASS 0x4ec88 SparkThemeItem
+METHOD 0x1decc -[SparkThemeItem iconImage] types=@16@0:8
+METHOD 0x1e138 -[SparkThemeItem maskImage:] types=@24@0:8@16
+METHOD 0x1e290 -[SparkThemeItem imageWithImage:scaledToSize:] types=@40@0:8@16{CGSize=dd}24
+METHOD 0x1e310 -[SparkThemeItem padImage:] types=@24@0:8@16
+METHOD 0x1e3bc -[SparkThemeItem title] types=@16@0:8
+METHOD 0x1e3c4 -[SparkThemeItem setTitle:] types=v24@0:8@16
+METHOD 0x1e3d0 -[SparkThemeItem identifier] types=@16@0:8
+METHOD 0x1e3d8 -[SparkThemeItem setIdentifier:] types=v24@0:8@16
+METHOD 0x1e3e4 -[SparkThemeItem enabled] types=B16@0:8
+METHOD 0x1e3ec -[SparkThemeItem setEnabled:] types=v20@0:8B16
+METHOD 0x1e3f4 -[SparkThemeItem cachedImage] types=@16@0:8
+METHOD 0x1e3fc -[SparkThemeItem setCachedImage:] types=v24@0:8@16
+METHOD 0x1e408 -[SparkThemeItem .cxx_destruct] types=v16@0:8
+CLASS 0x4ec60 meta SparkThemeItem
+CLASS 0x4ecb0 SparkThemeSorter
+METHOD 0x1e444 -[SparkThemeSorter initWithIdentifier:] types=@24@0:8@16
+METHOD 0x1e4b0 -[SparkThemeSorter viewDidLoad] types=v16@0:8
+METHOD 0x1e510 -[SparkThemeSorter tableView:editingStyleForRowAtIndexPath:] types=q32@0:8@16@24
+METHOD 0x1e518 -[SparkThemeSorter tableView:shouldIndentWhileEditingRowAtIndexPath:] types=B32@0:8@16@24
+METHOD 0x1e520 -[SparkThemeSorter tableView:canEditRowAtIndexPath:] types=B32@0:8@16@24
+METHOD 0x1e5d4 -[SparkThemeSorter tableView:moveRowAtIndexPath:toIndexPath:] types=v40@0:8@16@24@32
+METHOD 0x1e944 -[SparkThemeSorter numberOfSectionsInTableView:] types=q24@0:8@16
+METHOD 0x1e94c -[SparkThemeSorter tableView:titleForHeaderInSection:] types=@32@0:8@16q24
+METHOD 0x1e968 -[SparkThemeSorter tableView:numberOfRowsInSection:] types=q32@0:8@16q24
+METHOD 0x1ea44 -[SparkThemeSorter tableView:cellForRowAtIndexPath:] types=@32@0:8@16@24
+METHOD 0x1ee5c -[SparkThemeSorter tableView:didSelectRowAtIndexPath:] types=v32@0:8@16@24
+METHOD 0x1f098 -[SparkThemeSorter loadLists] types=v16@0:8
+METHOD 0x1f720 -[SparkThemeSorter saveLists] types=v16@0:8
+METHOD 0x1f9b0 -[SparkThemeSorter defaultItems] types=@16@0:8
+METHOD 0x1ff84 -[SparkThemeSorter isImageDark:] types=B24@0:8@16
+METHOD 0x200a0 -[SparkThemeSorter invertImage:] types=@24@0:8@16
+METHOD 0x20174 -[SparkThemeSorter menuItems] types=@16@0:8
+METHOD 0x20184 -[SparkThemeSorter setMenuItems:] types=v24@0:8@16
+METHOD 0x20198 -[SparkThemeSorter menuItemsDisabled] types=@16@0:8
+METHOD 0x201a8 -[SparkThemeSorter setMenuItemsDisabled:] types=v24@0:8@16
+METHOD 0x201bc -[SparkThemeSorter prefsIdentifier] types=@16@0:8
+METHOD 0x201cc -[SparkThemeSorter setPrefsIdentifier:] types=v24@0:8@16
+METHOD 0x201e0 -[SparkThemeSorter .cxx_destruct] types=v16@0:8
+CLASS 0x4ecd8 meta SparkThemeSorter
+CLASS 0x4ed00 SnowBoardPreferencesManager
+CLASS 0x4ed28 meta SnowBoardPreferencesManager
+METHOD 0x20234 +[SnowBoardPreferencesManager defaultPrefs] types=@16@0:8
+METHOD 0x20240 +[SnowBoardPreferencesManager getPrefForKey:] types=@24@0:8@16
+METHOD 0x203c0 +[SnowBoardPreferencesManager getPrefs] types=@16@0:8
+METHOD 0x204dc +[SnowBoardPreferencesManager savePrefs:] types=v24@0:8@16
+METHOD 0x205a4 +[SnowBoardPreferencesManager clearCache] types=v16@0:8
+METHOD 0x205b4 +[SnowBoardPreferencesManager kCurrentVersion] types=@16@0:8
+METHOD 0x205c4 +[SnowBoardPreferencesManager setActiveMenuItems:] types=v24@0:8@16
+METHOD 0x20670 +[SnowBoardPreferencesManager getActiveMenuItems] types=@16@0:8
+CLASS 0x4ed50 SnowBoardThemeLoader
+METHOD 0x20a84 -[SnowBoardThemeLoader reload] types=v16@0:8
+METHOD 0x20a8c -[SnowBoardThemeLoader reloadWithoutExtensions:] types=v20@0:8B16
+METHOD 0x20ee0 -[SnowBoardThemeLoader activeThemes] types=@16@0:8
+METHOD 0x20ef4 -[SnowBoardThemeLoader notifyObservers] types=v16@0:8
+METHOD 0x21294 -[SnowBoardThemeLoader loadPath:] types=@24@0:8@16
+METHOD 0x23d78 -[SnowBoardThemeLoader imageForBundleIdentifier:withScale:] types=@28@0:8@16i24
+METHOD 0x23d98 -[SnowBoardThemeLoader imageForBundleIdentifier:withScale:withOverrides:] types=@32@0:8@16i24B28
+METHOD 0x24674 -[SnowBoardThemeLoader imagePathForBundleIdentifier:withScale:] types=@28@0:8@16i24
+METHOD 0x24694 -[SnowBoardThemeLoader imagePathForBundleIdentifier:withScale:withOverrides:] types=@32@0:8@16i24B28
+METHOD 0x24964 -[SnowBoardThemeLoader dataForBundleIdentifier:] types=@24@0:8@16
+METHOD 0x257a0 -[SnowBoardThemeLoader holderWithBundleIdentifier:] types=@24@0:8@16
+METHOD 0x25944 -[SnowBoardThemeLoader holderWithBundleIdentifier:inDictionary:] types=@32@0:8@16@24
+METHOD 0x25cec -[SnowBoardThemeLoader allIconPathsForBundleIdentifier:] types=@24@0:8@16
+METHOD 0x25f7c -[SnowBoardThemeLoader allIconPaths] types=@16@0:8
+METHOD 0x26360 -[SnowBoardThemeLoader addOverride:forBundleIdentifier:] types=v32@0:8@16@24
+METHOD 0x265d8 -[SnowBoardThemeLoader removeOverrideForBundleIdentifier:] types=v24@0:8@16
+METHOD 0x266e0 -[SnowBoardThemeLoader getOverrideForBundleIdentifier:] types=@24@0:8@16
+METHOD 0x2678c -[SnowBoardThemeLoader loadOverrides] types=v16@0:8
+METHOD 0x267ec -[SnowBoardThemeLoader saveOverrides] types=v16@0:8
+METHOD 0x26ba0 -[SnowBoardThemeLoader calendarSettings] types=@16@0:8
+METHOD 0x26c1c -[SnowBoardThemeLoader dockView] types=@16@0:8
+METHOD 0x26c98 -[SnowBoardThemeLoader clockIcons] types=@16@0:8
+METHOD 0x2a53c -[SnowBoardThemeLoader loadedThemes] types=@16@0:8
+METHOD 0x2a544 -[SnowBoardThemeLoader setLoadedThemes:] types=v24@0:8@16
+METHOD 0x2a550 -[SnowBoardThemeLoader loadedThemesOnlyExistingIcons] types=@16@0:8
+METHOD 0x2a558 -[SnowBoardThemeLoader setLoadedThemesOnlyExistingIcons:] types=v24@0:8@16
+METHOD 0x2a564 -[SnowBoardThemeLoader springboardTheme] types=@16@0:8
+METHOD 0x2a56c -[SnowBoardThemeLoader setSpringboardTheme:] types=v24@0:8@16
+METHOD 0x2a578 -[SnowBoardThemeLoader setCalendarSettings:] types=v24@0:8@16
+METHOD 0x2a584 -[SnowBoardThemeLoader setDockView:] types=v24@0:8@16
+METHOD 0x2a590 -[SnowBoardThemeLoader setClockIcons:] types=v24@0:8@16
+METHOD 0x2a59c -[SnowBoardThemeLoader folderViewController] types=@16@0:8
+METHOD 0x2a5a4 -[SnowBoardThemeLoader setFolderViewController:] types=v24@0:8@16
+METHOD 0x2a5b0 -[SnowBoardThemeLoader badgeSettings] types=@16@0:8
+METHOD 0x2a5b8 -[SnowBoardThemeLoader setBadgeSettings:] types=v24@0:8@16
+METHOD 0x2a5c4 -[SnowBoardThemeLoader folderGridImageAlpha] types=f16@0:8
+METHOD 0x2a5cc -[SnowBoardThemeLoader setFolderGridImageAlpha:] types=v20@0:8f16
+METHOD 0x2a5d4 -[SnowBoardThemeLoader folderMaskMaxBackground] types=B16@0:8
+METHOD 0x2a5dc -[SnowBoardThemeLoader setFolderMaskMaxBackground:] types=v20@0:8B16
+METHOD 0x2a5e4 -[SnowBoardThemeLoader initialLoadComplete] types=B16@0:8
+METHOD 0x2a5ec -[SnowBoardThemeLoader setInitialLoadComplete:] types=v20@0:8B16
+METHOD 0x2a5f4 -[SnowBoardThemeLoader folderMaskForegroundEffect] types=B16@0:8
+METHOD 0x2a5fc -[SnowBoardThemeLoader setFolderMaskForegroundEffect:] types=v20@0:8B16
+METHOD 0x2a604 -[SnowBoardThemeLoader forceResizeForEffects] types=B16@0:8
+METHOD 0x2a60c -[SnowBoardThemeLoader setForceResizeForEffects:] types=v20@0:8B16
+METHOD 0x2a614 -[SnowBoardThemeLoader hasForceRefreshedOnce] types=B16@0:8
+METHOD 0x2a61c -[SnowBoardThemeLoader setHasForceRefreshedOnce:] types=v20@0:8B16
+METHOD 0x2a624 -[SnowBoardThemeLoader waitingForLazyLoad] types=B16@0:8
+METHOD 0x2a62c -[SnowBoardThemeLoader setWaitingForLazyLoad:] types=v20@0:8B16
+METHOD 0x2a634 -[SnowBoardThemeLoader overrides] types=@16@0:8
+METHOD 0x2a63c -[SnowBoardThemeLoader setOverrides:] types=v24@0:8@16
+METHOD 0x2a648 -[SnowBoardThemeLoader unmaskedCachedIcons] types=@16@0:8
+METHOD 0x2a650 -[SnowBoardThemeLoader setUnmaskedCachedIcons:] types=v24@0:8@16
+METHOD 0x2a65c -[SnowBoardThemeLoader maskedCachedIcons] types=@16@0:8
+METHOD 0x2a664 -[SnowBoardThemeLoader setMaskedCachedIcons:] types=v24@0:8@16
+METHOD 0x2a670 -[SnowBoardThemeLoader resizedCachedIcons] types=@16@0:8
+METHOD 0x2a678 -[SnowBoardThemeLoader setResizedCachedIcons:] types=v24@0:8@16
+METHOD 0x2a684 -[SnowBoardThemeLoader fuzzyBundleIdentifiers] types=@16@0:8
+METHOD 0x2a68c -[SnowBoardThemeLoader setFuzzyBundleIdentifiers:] types=v24@0:8@16
+METHOD 0x2a698 -[SnowBoardThemeLoader cachedFuzzyBundleIdentifiers] types=@16@0:8
+METHOD 0x2a6a0 -[SnowBoardThemeLoader setCachedFuzzyBundleIdentifiers:] types=v24@0:8@16
+METHOD 0x2a6ac -[SnowBoardThemeLoader cachedSBFloatingDockController] types=@16@0:8
+METHOD 0x2a6b4 -[SnowBoardThemeLoader setCachedSBFloatingDockController:] types=v24@0:8@16
+METHOD 0x2a6c0 -[SnowBoardThemeLoader .cxx_destruct] types=v16@0:8
+CLASS 0x4ee68 meta SnowBoardThemeLoader
+METHOD 0x20684 +[SnowBoardThemeLoader sharedInstance] types=@16@0:8
+METHOD 0x24b04 +[SnowBoardThemeLoader cachedMaskImageKeyWithIdentifier:andSize:andScale:] types=@48@0:8@16{CGSize=dd}24d40
+METHOD 0x24bd8 +[SnowBoardThemeLoader setCachedMaskImage:withIdentifier:andSize:andScale:] types=v56@0:8@16@24{CGSize=dd}32d48
+METHOD 0x24cb0 +[SnowBoardThemeLoader cachedMaskImageWithIdentifier:andSize:andScale:] types=@48@0:8@16{CGSize=dd}24d40
+METHOD 0x24d7c +[SnowBoardThemeLoader setCachedMaskImage:forKey:] types=v32@0:8@16@24
+METHOD 0x24e50 +[SnowBoardThemeLoader cachedMaskImageForKey:] types=@24@0:8@16
+METHOD 0x24f14 +[SnowBoardThemeLoader maskedImage:] types=@24@0:8@16
+METHOD 0x24f34 +[SnowBoardThemeLoader maskedImage:withCrop:] types=@28@0:8@16B24
+METHOD 0x24f54 +[SnowBoardThemeLoader maskedImage:withCrop:skipExtensions:] types=@36@0:8@16B24@28
+METHOD 0x253f8 +[SnowBoardThemeLoader maskedImage:withRadius:] types=@32@0:8@16d24
+METHOD 0x25414 +[SnowBoardThemeLoader roundedRectImageFromImage:withRadius:] types=@32@0:8@16d24
+METHOD 0x25574 +[SnowBoardThemeLoader roundedRectImageFromImage:withRadius:withCrop:] types=@36@0:8@16d24B32
+METHOD 0x2694c +[SnowBoardThemeLoader imageWithImage:withInsets:] types=@56@0:8@16{UIEdgeInsets=dddd}24
+METHOD 0x26a50 +[SnowBoardThemeLoader imageWithImage:scaledToSize:] types=@40@0:8@16{CGSize=dd}24
+METHOD 0x26d14 +[SnowBoardThemeLoader imageWithView:] types=@24@0:8@16
+METHOD 0x26dfc +[SnowBoardThemeLoader colorFromHexString:] types=@24@0:8@16
+METHOD 0x26eb8 +[SnowBoardThemeLoader clearOverrides] types=v16@0:8
+METHOD 0x270b8 +[SnowBoardThemeLoader originalIconForBundleIdentifier:withScale:] types=@28@0:8@16i24
+METHOD 0x275e4 +[SnowBoardThemeLoader getOriginalIconFromId:] types=@24@0:8@16
+METHOD 0x28020 +[SnowBoardThemeLoader image:isEqualTo:] types=B32@0:8@16@24
+METHOD 0x280dc +[SnowBoardThemeLoader screenRect] types={CGRect={CGPoint=dd}{CGSize=dd}}16@0:8
+METHOD 0x281b4 +[SnowBoardThemeLoader isiPhoneX] types=B16@0:8
+METHOD 0x281e0 +[SnowBoardThemeLoader croppedImage:] types=@24@0:8@16
+METHOD 0x283a0 +[SnowBoardThemeLoader croppedInsetsForImage:] types={UIEdgeInsets=dddd}24@0:8@16
+METHOD 0x28608 +[SnowBoardThemeLoader customCornerRadius] types=d16@0:8
+METHOD 0x28708 +[SnowBoardThemeLoader force3xIcons] types=B16@0:8
+METHOD 0x28768 +[SnowBoardThemeLoader colourWithHexString:] types=@24@0:8@16
+METHOD 0x288c0 +[SnowBoardThemeLoader colourWithRGBString:] types=@24@0:8@16
+METHOD 0x28ba0 +[SnowBoardThemeLoader colourWithString:] types=@24@0:8@16
+METHOD 0x28e44 +[SnowBoardThemeLoader cachedIconInfoField3] types=d16@0:8
+METHOD 0x28e50 +[SnowBoardThemeLoader setCachedIconInfoField3:] types=v24@0:8d16
+METHOD 0x28e5c +[SnowBoardThemeLoader setUIKitReady] types=v16@0:8
+METHOD 0x28e6c +[SnowBoardThemeLoader uikitReady] types=B16@0:8
+METHOD 0x28f08 +[SnowBoardThemeLoader fontWithWeightString:andSize:] types=@28@0:8@16f24
+METHOD 0x29128 +[SnowBoardThemeLoader fontWithName:size:] types=@32@0:8@16d24
+METHOD 0x292f8 +[SnowBoardThemeLoader checkIfImage:] types=B24@0:8@16
+METHOD 0x2941c +[SnowBoardThemeLoader buildCalendarImage:withWidth:withDayTextStr:andDayNumberStr:] types=@44@0:8@16f24@28@36
+CLASS 0x4ed78 SparkThemeHolder
+METHOD 0x2a78c -[SparkThemeHolder encodeWithCoder:] types=v24@0:8@16
+METHOD 0x2a87c -[SparkThemeHolder initWithCoder:] types=@24@0:8@16
+METHOD 0x2a988 -[SparkThemeHolder holderWithOnlyExistingIcons] types=@16@0:8
+METHOD 0x2adb4 -[SparkThemeHolder path] types=@16@0:8
+METHOD 0x2adbc -[SparkThemeHolder setPath:] types=v24@0:8@16
+METHOD 0x2adc8 -[SparkThemeHolder loadedIcons] types=@16@0:8
+METHOD 0x2add0 -[SparkThemeHolder setLoadedIcons:] types=v24@0:8@16
+METHOD 0x2addc -[SparkThemeHolder themeSettings] types=@16@0:8
+METHOD 0x2ade4 -[SparkThemeHolder setThemeSettings:] types=v24@0:8@16
+METHOD 0x2adf0 -[SparkThemeHolder themeType] types=@16@0:8
+METHOD 0x2adf8 -[SparkThemeHolder setThemeType:] types=v24@0:8@16
+METHOD 0x2ae04 -[SparkThemeHolder .cxx_destruct] types=v16@0:8
+CLASS 0x4ee90 meta SparkThemeHolder
+CLASS 0x4eda0 SparkSpringBoardThemeHolder
+METHOD 0x2ae4c -[SparkSpringBoardThemeHolder folderBackground] types=@16@0:8
+METHOD 0x2aec8 -[SparkSpringBoardThemeHolder folderMaxBackground] types=@16@0:8
+METHOD 0x2af44 -[SparkSpringBoardThemeHolder badgeBackground] types=@16@0:8
+METHOD 0x2afc0 -[SparkSpringBoardThemeHolder clockBackground] types=@16@0:8
+METHOD 0x2b03c -[SparkSpringBoardThemeHolder setFolderBackground:] types=v24@0:8@16
+METHOD 0x2b048 -[SparkSpringBoardThemeHolder setFolderMaxBackground:] types=v24@0:8@16
+METHOD 0x2b054 -[SparkSpringBoardThemeHolder setBadgeBackground:] types=v24@0:8@16
+METHOD 0x2b060 -[SparkSpringBoardThemeHolder setClockBackground:] types=v24@0:8@16
+METHOD 0x2b06c -[SparkSpringBoardThemeHolder namedFolderBackgrounds] types=@16@0:8
+METHOD 0x2b074 -[SparkSpringBoardThemeHolder setNamedFolderBackgrounds:] types=v24@0:8@16
+METHOD 0x2b080 -[SparkSpringBoardThemeHolder cachedBadgeBackground] types=@16@0:8
+METHOD 0x2b088 -[SparkSpringBoardThemeHolder setCachedBadgeBackground:] types=v24@0:8@16
+METHOD 0x2b094 -[SparkSpringBoardThemeHolder .cxx_destruct] types=v16@0:8
+CLASS 0x4eeb8 meta SparkSpringBoardThemeHolder
+CLASS 0x4edf0 SparkCalendarSettings
+METHOD 0x2b0f4 -[SparkCalendarSettings calendarDayTextFont] types=@16@0:8
+METHOD 0x2b0fc -[SparkCalendarSettings setCalendarDayTextFont:] types=v24@0:8@16
+METHOD 0x2b108 -[SparkCalendarSettings calendarDayNumberFont] types=@16@0:8
+METHOD 0x2b110 -[SparkCalendarSettings setCalendarDayNumberFont:] types=v24@0:8@16
+METHOD 0x2b11c -[SparkCalendarSettings .cxx_destruct] types=v16@0:8
+CLASS 0x4eee0 meta SparkCalendarSettings
+CLASS 0x4ee18 SparkFontSettings
+METHOD 0x2b14c -[SparkFontSettings font] types=@16@0:8
+METHOD 0x2b154 -[SparkFontSettings setFont:] types=v24@0:8@16
+METHOD 0x2b160 -[SparkFontSettings colour] types=@16@0:8
+METHOD 0x2b168 -[SparkFontSettings setColour:] types=v24@0:8@16
+METHOD 0x2b174 -[SparkFontSettings yOffset] types=@16@0:8
+METHOD 0x2b17c -[SparkFontSettings setYOffset:] types=v24@0:8@16
+METHOD 0x2b188 -[SparkFontSettings xOffset] types=@16@0:8
+METHOD 0x2b190 -[SparkFontSettings setXOffset:] types=v24@0:8@16
+METHOD 0x2b19c -[SparkFontSettings requestedFontSize] types=f16@0:8
+METHOD 0x2b1a4 -[SparkFontSettings setRequestedFontSize:] types=v20@0:8f16
+METHOD 0x2b1ac -[SparkFontSettings .cxx_destruct] types=v16@0:8
+CLASS 0x4ef08 meta SparkFontSettings
+CLASS 0x4edc8 SparkClockInnerIcons
+METHOD 0x2b1f4 -[SparkClockInnerIcons hourHand] types=@16@0:8
+METHOD 0x2b1fc -[SparkClockInnerIcons setHourHand:] types=v24@0:8@16
+METHOD 0x2b208 -[SparkClockInnerIcons minuteHand] types=@16@0:8
+METHOD 0x2b210 -[SparkClockInnerIcons setMinuteHand:] types=v24@0:8@16
+METHOD 0x2b21c -[SparkClockInnerIcons secondHand] types=@16@0:8
+METHOD 0x2b224 -[SparkClockInnerIcons setSecondHand:] types=v24@0:8@16
+METHOD 0x2b230 -[SparkClockInnerIcons redDot] types=@16@0:8
+METHOD 0x2b238 -[SparkClockInnerIcons setRedDot:] types=v24@0:8@16
+METHOD 0x2b244 -[SparkClockInnerIcons blackDot] types=@16@0:8
+METHOD 0x2b24c -[SparkClockInnerIcons setBlackDot:] types=v24@0:8@16
+METHOD 0x2b258 -[SparkClockInnerIcons .cxx_destruct] types=v16@0:8
+CLASS 0x4ef30 meta SparkClockInnerIcons
+CLASS 0x4ee40 SnowBoardClockIconHolder
+METHOD 0x2b2ac -[SnowBoardClockIconHolder initWithBundleIdentifier:andThemePath:] types=@32@0:8@16@24
+METHOD 0x2b364 -[SnowBoardClockIconHolder modern] types=B16@0:8
+METHOD 0x2b374 -[SnowBoardClockIconHolder setModern:] types=v20@0:8B16
+CLASS 0x4ef58 meta SnowBoardClockIconHolder
+CLASS 0x4ef80 SnowBoardIconHolder
+METHOD 0x2b3a0 -[SnowBoardIconHolder initWithBundleIdentifier:andThemePath:] types=@32@0:8@16@24
+METHOD 0x2b458 -[SnowBoardIconHolder pathToScale:] types=i24@0:8@16
+METHOD 0x2b700 -[SnowBoardIconHolder addImagePath:] types=v24@0:8@16
+METHOD 0x2b930 -[SnowBoardIconHolder addAltPath:] types=v24@0:8@16
+METHOD 0x2bb24 -[SnowBoardIconHolder imagePathWithScale:] types=@20@0:8i16
+METHOD 0x2bc58 -[SnowBoardIconHolder altImagePathWithScale:] types=@20@0:8i16
+METHOD 0x2bd8c -[SnowBoardIconHolder imageWithScale:] types=@20@0:8i16
+METHOD 0x2be48 -[SnowBoardIconHolder altImageWithScale:] types=@20@0:8i16
+METHOD 0x2bf04 -[SnowBoardIconHolder encodeWithCoder:] types=v24@0:8@16
+METHOD 0x2bff8 -[SnowBoardIconHolder initWithCoder:] types=@24@0:8@16
+METHOD 0x2c0f8 -[SnowBoardIconHolder cachedImageWithScale:] types=@24@0:8d16
+METHOD 0x2c260 -[SnowBoardIconHolder bundleIdentifier] types=@16@0:8
+METHOD 0x2c268 -[SnowBoardIconHolder setBundleIdentifier:] types=v24@0:8@16
+METHOD 0x2c274 -[SnowBoardIconHolder themePath] types=@16@0:8
+METHOD 0x2c27c -[SnowBoardIconHolder setThemePath:] types=v24@0:8@16
+METHOD 0x2c288 -[SnowBoardIconHolder imagePaths] types=@16@0:8
+METHOD 0x2c290 -[SnowBoardIconHolder setImagePaths:] types=v24@0:8@16
+METHOD 0x2c29c -[SnowBoardIconHolder altImagePaths] types=@16@0:8
+METHOD 0x2c2a4 -[SnowBoardIconHolder setAltImagePaths:] types=v24@0:8@16
+METHOD 0x2c2b0 -[SnowBoardIconHolder cachedImages] types=@16@0:8
+METHOD 0x2c2b8 -[SnowBoardIconHolder setCachedImages:] types=v24@0:8@16
+METHOD 0x2c2c4 -[SnowBoardIconHolder isLegacy] types=B16@0:8
+METHOD 0x2c2cc -[SnowBoardIconHolder setIsLegacy:] types=v20@0:8B16
+METHOD 0x2c2d4 -[SnowBoardIconHolder isApplication] types=B16@0:8
+METHOD 0x2c2dc -[SnowBoardIconHolder setIsApplication:] types=v20@0:8B16
+METHOD 0x2c2e4 -[SnowBoardIconHolder .cxx_destruct] types=v16@0:8
+CLASS 0x4efa8 meta SnowBoardIconHolder
+CLASS 0x4efd0 SnowBoardExtensionManager
+METHOD 0x2c448 -[SnowBoardExtensionManager registerForRemote] types=v16@0:8
+METHOD 0x2c5e4 -[SnowBoardExtensionManager registerForReceive] types=v16@0:8
+METHOD 0x2c81c -[SnowBoardExtensionManager loadExtensions] types=v16@0:8
+METHOD 0x2c824 -[SnowBoardExtensionManager loadExtensionsForceAll:] types=v20@0:8B16
+METHOD 0x2d3b8 -[SnowBoardExtensionManager extensionsForType:] types=@24@0:8@16
+METHOD 0x2d708 -[SnowBoardExtensionManager notifyExtensionsOfReload] types=v16@0:8
+METHOD 0x2d92c -[SnowBoardExtensionManager loadPath:] types=v24@0:8@16
+METHOD 0x2dda8 -[SnowBoardExtensionManager processIconAsync:withHandler:] types=v32@0:8@16@?24
+METHOD 0x2dff4 -[SnowBoardExtensionManager processIcon:] types=@24@0:8@16
+METHOD 0x2e014 -[SnowBoardExtensionManager processIcon:skipExtensions:] types=@32@0:8@16@24
+METHOD 0x2e59c -[SnowBoardExtensionManager wouldProcessIconWithExtensionIdentifier:] types=B24@0:8@16
+METHOD 0x2ea1c -[SnowBoardExtensionManager wouldProcessIcon] types=B16@0:8
+METHOD 0x2ea24 -[SnowBoardExtensionManager sendToSpringBoard:] types=v20@0:8B16
+METHOD 0x2ea34 -[SnowBoardExtensionManager remoteProcessIcon:withIdentifier:withSender:] types=v40@0:8@16@24@32
+METHOD 0x2edd8 -[SnowBoardExtensionManager sendIconToSpringBoard:withIdentifier:] types=v32@0:8@16@24
+METHOD 0x2ef44 -[SnowBoardExtensionManager receivedRemoteIcon:withIdentifier:] types=v32@0:8@16@24
+METHOD 0x2f018 -[SnowBoardExtensionManager checkIfNeedsRespring] types=@16@0:8
+METHOD 0x2f238 -[SnowBoardExtensionManager checkIfNeedsUICache] types=B16@0:8
+METHOD 0x2f410 -[SnowBoardExtensionManager hasUIExtension] types=B16@0:8
+METHOD 0x2f5b0 -[SnowBoardExtensionManager extensions] types=@16@0:8
+METHOD 0x2f610 -[SnowBoardExtensionManager setExtensions:] types=v24@0:8@16
+METHOD 0x2f61c -[SnowBoardExtensionManager waitingForLazyLoad] types=B16@0:8
+METHOD 0x2f624 -[SnowBoardExtensionManager setWaitingForLazyLoad:] types=v20@0:8B16
+METHOD 0x2f62c -[SnowBoardExtensionManager shouldSendIconsToSpringBoard] types=B16@0:8
+METHOD 0x2f634 -[SnowBoardExtensionManager setShouldSendIconsToSpringBoard:] types=v20@0:8B16
+METHOD 0x2f63c -[SnowBoardExtensionManager currentReceiveHandlers] types=@16@0:8
+METHOD 0x2f644 -[SnowBoardExtensionManager setCurrentReceiveHandlers:] types=v24@0:8@16
+METHOD 0x2f650 -[SnowBoardExtensionManager .cxx_destruct] types=v16@0:8
+CLASS 0x4f020 meta SnowBoardExtensionManager
+METHOD 0x2c338 +[SnowBoardExtensionManager sharedInstance] types=@16@0:8
+CLASS 0x4eff8 SnowBoardExtensionHolder
+METHOD 0x2f680 -[SnowBoardExtensionHolder bundleIdentifier] types=@16@0:8
+METHOD 0x2f688 -[SnowBoardExtensionHolder setBundleIdentifier:] types=v24@0:8@16
+METHOD 0x2f694 -[SnowBoardExtensionHolder displayName] types=@16@0:8
+METHOD 0x2f69c -[SnowBoardExtensionHolder setDisplayName:] types=v24@0:8@16
+METHOD 0x2f6a8 -[SnowBoardExtensionHolder className] types=@16@0:8
+METHOD 0x2f6b0 -[SnowBoardExtensionHolder setClassName:] types=v24@0:8@16
+METHOD 0x2f6bc -[SnowBoardExtensionHolder bundle] types=@16@0:8
+METHOD 0x2f6c4 -[SnowBoardExtensionHolder setBundle:] types=v24@0:8@16
+METHOD 0x2f6d0 -[SnowBoardExtensionHolder type] types=@16@0:8
+METHOD 0x2f6d8 -[SnowBoardExtensionHolder setType:] types=v24@0:8@16
+METHOD 0x2f6e4 -[SnowBoardExtensionHolder blacklistInApps] types=@16@0:8
+METHOD 0x2f6ec -[SnowBoardExtensionHolder setBlacklistInApps:] types=v24@0:8@16
+METHOD 0x2f6f8 -[SnowBoardExtensionHolder enabled] types=B16@0:8
+METHOD 0x2f700 -[SnowBoardExtensionHolder setEnabled:] types=v20@0:8B16
+METHOD 0x2f708 -[SnowBoardExtensionHolder instance] types=@16@0:8
+METHOD 0x2f710 -[SnowBoardExtensionHolder setInstance:] types=v24@0:8@16
+METHOD 0x2f71c -[SnowBoardExtensionHolder .cxx_destruct] types=v16@0:8
+CLASS 0x4f048 meta SnowBoardExtensionHolder
+SELREF 0x4c6f0 .cxx_destruct
+SELREF 0x4c6f8 CGColor
+SELREF 0x4c700 CGImage
+SELREF 0x4c708 CGPath
+SELREF 0x4c710 CIImage
+SELREF 0x4c718 URLWithString:
+SELREF 0x4c720 UTF8String
+SELREF 0x4c728 UUID
+SELREF 0x4c730 UUIDString
+SELREF 0x4c738 __loadUnmaskedIconImageForFormat:
+SELREF 0x4c740 __loadUnmaskedIconImageForFormat:bundleIdentifier:
+SELREF 0x4c748 _appInfo
+SELREF 0x4c750 _imageWithSize:
+SELREF 0x4c758 absoluteString
+SELREF 0x4c760 actionWithTitle:style:handler:
+SELREF 0x4c768 activeThemes
+SELREF 0x4c770 addAction:
+SELREF 0x4c778 addAltPath:
+SELREF 0x4c780 addClip
+SELREF 0x4c788 addEntriesFromDictionary:
+SELREF 0x4c790 addGestureRecognizer:
+SELREF 0x4c798 addImagePath:
+SELREF 0x4c7a0 addObject:
+SELREF 0x4c7a8 addObjectsFromArray:
+SELREF 0x4c7b0 addObserver:selector:name:object:
+SELREF 0x4c7b8 addOverride:forBundleIdentifier:
+SELREF 0x4c7c0 addSubview:
+SELREF 0x4c7c8 addTarget:action:forControlEvents:
+SELREF 0x4c7d0 addToRunLoop:forMode:
+SELREF 0x4c7d8 alertControllerWithTitle:message:preferredStyle:
+SELREF 0x4c7e0 allIconPaths
+SELREF 0x4c7e8 allIconPathsForBundleIdentifier:
+SELREF 0x4c7f0 allOversizedIcons:
+SELREF 0x4c7f8 allValues
+SELREF 0x4c800 altImagePathWithScale:
+SELREF 0x4c808 altImagePaths
+SELREF 0x4c810 altImageWithScale:
+SELREF 0x4c818 animateWithDuration:animations:
+SELREF 0x4c820 animateWithDuration:animations:completion:
+SELREF 0x4c828 animateWithDuration:delay:options:animations:completion:
+SELREF 0x4c830 applicationIconForBundleIdentifier:
+SELREF 0x4c838 applicationIconForDisplayIdentifier:
+SELREF 0x4c840 applicationWithBundleIdentifier:
+SELREF 0x4c848 applicationWithDisplayIdentifier:
+SELREF 0x4c850 applyChanges
+SELREF 0x4c858 applyChangesNow
+SELREF 0x4c860 applyView
+SELREF 0x4c868 archivedDataWithRootObject:
+SELREF 0x4c870 arrayWithObject:
+SELREF 0x4c878 arrayWithObjects:count:
+SELREF 0x4c880 attributesOfItemAtPath:error:
+SELREF 0x4c888 backgroundColor
+SELREF 0x4c890 badgeBackground
+SELREF 0x4c898 badgeSettings
+SELREF 0x4c8a0 bannerView
+SELREF 0x4c8a8 beginAnimations:context:
+SELREF 0x4c8b0 beginUpdates
+SELREF 0x4c8b8 bezierPathWithCGPath:
+SELREF 0x4c8c0 bezierPathWithRoundedRect:byRoundingCorners:cornerRadii:
+SELREF 0x4c8c8 bezierPathWithRoundedRect:cornerRadius:
+SELREF 0x4c8d0 blackColor
+SELREF 0x4c8d8 blackDot
+SELREF 0x4c8e0 blacklistInApps
+SELREF 0x4c8e8 boldSystemFontOfSize:
+SELREF 0x4c8f0 boolValue
+SELREF 0x4c8f8 bounds
+SELREF 0x4c900 buildCalendarImage:withWidth:withDayTextStr:andDayNumberStr:
+SELREF 0x4c908 bundle
+SELREF 0x4c910 bundleContainerURL
+SELREF 0x4c918 bundleIdentifier
+SELREF 0x4c920 bundleWithPath:
+SELREF 0x4c928 buttonSize
+SELREF 0x4c930 buttonTapped:
+SELREF 0x4c938 cIndexPath
+SELREF 0x4c940 cachedBadgeBackground
+SELREF 0x4c948 cachedFuzzyBundleIdentifiers
+SELREF 0x4c950 cachedIconInfoField3
+SELREF 0x4c958 cachedImage
+SELREF 0x4c960 cachedImageWithScale:
+SELREF 0x4c968 cachedImages
+SELREF 0x4c970 cachedMaskImageForKey:
+SELREF 0x4c978 cachedMaskImageKeyWithIdentifier:andSize:andScale:
+SELREF 0x4c980 cachedMaskImageWithIdentifier:andSize:andScale:
+SELREF 0x4c988 cachedSBFloatingDockController
+SELREF 0x4c990 cachedThemeImages
+SELREF 0x4c998 cachedThemeLogo
+SELREF 0x4c9a0 calendarDayNumberFont
+SELREF 0x4c9a8 calendarDayTextFont
+SELREF 0x4c9b0 calendarSettings
+SELREF 0x4c9b8 callApply
+SELREF 0x4c9c0 callStackSymbols
+SELREF 0x4c9c8 cancelGesture
+SELREF 0x4c9d0 caseInsensitiveCompare:
+SELREF 0x4c9d8 cellForRowAtIndexPath:
+SELREF 0x4c9e0 cellHeight
+SELREF 0x4c9e8 center
+SELREF 0x4c9f0 checkIfContainsOversizedImagesWithCompletion:
+SELREF 0x4c9f8 checkIfImage
+SELREF 0x4ca00 checkIfImage:
+SELREF 0x4ca08 checkIfNeedsRespring
+SELREF 0x4ca10 checkIfNeedsUICache
+SELREF 0x4ca18 checkmarkView
+SELREF 0x4ca20 className
+SELREF 0x4ca28 clearCache
+SELREF 0x4ca30 clearColor
+SELREF 0x4ca38 clearOverrides
+SELREF 0x4ca40 clearThemes
+SELREF 0x4ca48 clearalternatives
+SELREF 0x4ca50 clockBackground
+SELREF 0x4ca58 clockIcons
+SELREF 0x4ca60 colorFromHexString:
+SELREF 0x4ca68 colorWithAlphaComponent:
+SELREF 0x4ca70 colorWithRed:green:blue:alpha:
+SELREF 0x4ca78 colour
+SELREF 0x4ca80 colourWithHexString:
+SELREF 0x4ca88 colourWithRGBString:
+SELREF 0x4ca90 colourWithString:
+SELREF 0x4ca98 commitAnimations
+SELREF 0x4caa0 companionTweak
+SELREF 0x4caa8 componentsSeparatedByString:
+SELREF 0x4cab0 conformsToProtocol:
+SELREF 0x4cab8 contains:
+SELREF 0x4cac0 containsObject:
+SELREF 0x4cac8 containsString:
+SELREF 0x4cad0 contentInset
+SELREF 0x4cad8 contentOffset
+SELREF 0x4cae0 contentSize
+SELREF 0x4cae8 contentView
+SELREF 0x4caf0 contentViewPadding
+SELREF 0x4caf8 contentsOfDirectoryAtPath:error:
+SELREF 0x4cb00 copy
+SELREF 0x4cb08 count
+SELREF 0x4cb10 countByEnumeratingWithState:objects:count:
+SELREF 0x4cb18 createDirectoryAtPath:withIntermediateDirectories:attributes:error:
+SELREF 0x4cb20 createGroupButton
+SELREF 0x4cb28 createPlaceHolder
+SELREF 0x4cb30 createRespringButton
+SELREF 0x4cb38 croppedImage:
+SELREF 0x4cb40 croppedInsetsForImage:
+SELREF 0x4cb48 currentInstance
+SELREF 0x4cb50 currentReceiveHandlers
+SELREF 0x4cb58 currentTraitCollection
+SELREF 0x4cb60 customCornerRadius
+SELREF 0x4cb68 dLink
+SELREF 0x4cb70 darkGrayColor
+SELREF 0x4cb78 dataForBundleIdentifier:
+SELREF 0x4cb80 dataSource
+SELREF 0x4cb88 dataWithContentsOfFile:
+SELREF 0x4cb90 date
+SELREF 0x4cb98 decodeObjectForKey:
+SELREF 0x4cba0 defaultCenter
+SELREF 0x4cba8 defaultHeight
+SELREF 0x4cbb0 defaultIconImageContinuousCornerRadius
+SELREF 0x4cbb8 defaultIconImageSize
+SELREF 0x4cbc0 defaultItems
+SELREF 0x4cbc8 defaultManager
+SELREF 0x4cbd0 defaultPrefs
+SELREF 0x4cbd8 defaultVisibleIconImageSize
+SELREF 0x4cbe0 delegate
+SELREF 0x4cbe8 deleteRowsAtIndexPaths:withRowAnimation:
+SELREF 0x4cbf0 dequeueReusableCellWithIdentifier:
+SELREF 0x4cbf8 deselectRowAtIndexPath:animated:
+SELREF 0x4cc00 detailTextLabel
+SELREF 0x4cc08 dictionary
+SELREF 0x4cc10 dictionaryWithContentsOfFile:
+SELREF 0x4cc18 didMoveToSuperview
+SELREF 0x4cc20 disabledExtensions
+SELREF 0x4cc28 dismissViewControllerAnimated:completion:
+SELREF 0x4cc30 displayLinkWithTarget:selector:
+SELREF 0x4cc38 displayName
+SELREF 0x4cc40 dockView
+SELREF 0x4cc48 draggingRowHeight
+SELREF 0x4cc50 draggingView
+SELREF 0x4cc58 draggingViewOpacity
+SELREF 0x4cc60 drawAtPoint:
+SELREF 0x4cc68 drawInRect:
+SELREF 0x4cc70 drawInRect:withFont:lineBreakMode:alignment:
+SELREF 0x4cc78 editButton
+SELREF 0x4cc80 enableButton
+SELREF 0x4cc88 enabled
+SELREF 0x4cc90 enabledState
+SELREF 0x4cc98 enabledThemes
+SELREF 0x4cca0 encodeObject:forKey:
+SELREF 0x4cca8 encodeWithCoder:
+SELREF 0x4ccb0 endUpdates
+SELREF 0x4ccb8 enumerateObjectsUsingBlock:
+SELREF 0x4ccc0 enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:
+SELREF 0x4ccc8 extensionType
+SELREF 0x4ccd0 extensions
+SELREF 0x4ccd8 extensionsForType:
+SELREF 0x4cce0 extraSearchPaths
+SELREF 0x4cce8 fileExistsAtPath:
+SELREF 0x4ccf0 fileExistsAtPath:isDirectory:
+SELREF 0x4ccf8 fileHandleForReading
+SELREF 0x4cd00 fileSize
+SELREF 0x4cd08 fileSystemRepresentation
+SELREF 0x4cd10 filterWithName:
+SELREF 0x4cd18 filteredArrayUsingPredicate:
+SELREF 0x4cd20 findIconForIdentifier:
+SELREF 0x4cd28 finishReorderingWithObject:atIndexPath:
+SELREF 0x4cd30 floatValue
+SELREF 0x4cd38 folderBackground
+SELREF 0x4cd40 folderGridImageAlpha
+SELREF 0x4cd48 folderMaskForegroundEffect
+SELREF 0x4cd50 folderMaskMaxBackground
+SELREF 0x4cd58 folderMaxBackground
+SELREF 0x4cd60 folderViewController
+SELREF 0x4cd68 font
+SELREF 0x4cd70 fontWithName:size:
+SELREF 0x4cd78 fontWithSize:
+SELREF 0x4cd80 fontWithWeightString:andSize:
+SELREF 0x4cd88 force3xIcons
+SELREF 0x4cd90 forceDismiss
+SELREF 0x4cd98 forceResizeForEffects
+SELREF 0x4cda0 frame
+SELREF 0x4cda8 fulltitle
+SELREF 0x4cdb0 fuzzyBundleIdentifiers
+SELREF 0x4cdb8 generateIcon
+SELREF 0x4cdc0 generateStackedImageWithArray:
+SELREF 0x4cdc8 gestureRecognizer
+SELREF 0x4cdd0 gestureRecognizer:
+SELREF 0x4cdd8 getActiveMenuItems
+SELREF 0x4cde0 getOriginalIconFromId:
+SELREF 0x4cde8 getOverrideForBundleIdentifier:
+SELREF 0x4cdf0 getPrefForKey:
+SELREF 0x4cdf8 getPrefs
+SELREF 0x4ce00 getRed:green:blue:alpha:
+SELREF 0x4ce08 getResourceValue:forKey:error:
+SELREF 0x4ce10 goToExtensions
+SELREF 0x4ce18 grayColor
+SELREF 0x4ce20 groupForTheme:
+SELREF 0x4ce28 hadFirstAppear
+SELREF 0x4ce30 handleCancel:
+SELREF 0x4ce38 handleLongPress:
+SELREF 0x4ce40 handleTap:
+SELREF 0x4ce48 handleTapWarning:
+SELREF 0x4ce50 hasForceRefreshedOnce
+SELREF 0x4ce58 hasPrefix:
+SELREF 0x4ce60 hasSuffix:
+SELREF 0x4ce68 hasUIExtension
+SELREF 0x4ce70 headerLabel
+SELREF 0x4ce78 headerView
+SELREF 0x4ce80 holderWithBundleIdentifier:
+SELREF 0x4ce88 holderWithBundleIdentifier:inDictionary:
+SELREF 0x4ce90 holderWithOnlyExistingIcons
+SELREF 0x4ce98 hourHand
+SELREF 0x4cea0 iIndexPath
+SELREF 0x4cea8 iconImage
+SELREF 0x4ceb0 iconImagePath
+SELREF 0x4ceb8 iconImageView
+SELREF 0x4cec0 iconPath
+SELREF 0x4cec8 iconsTheme
+SELREF 0x4ced0 identifier
+SELREF 0x4ced8 image:isEqualTo:
+SELREF 0x4cee0 imageForBundleIdentifier:withScale:
+SELREF 0x4cee8 imageForBundleIdentifier:withScale:withOverrides:
+SELREF 0x4cef0 imageOrientation
+SELREF 0x4cef8 imagePathForBundleIdentifier:withScale:
+SELREF 0x4cf00 imagePathForBundleIdentifier:withScale:withOverrides:
+SELREF 0x4cf08 imagePathWithScale:
+SELREF 0x4cf10 imagePaths
+SELREF 0x4cf18 imageView
+SELREF 0x4cf20 imageWithCGImage:scale:orientation:
+SELREF 0x4cf28 imageWithContentsOfFile:
+SELREF 0x4cf30 imageWithData:
+SELREF 0x4cf38 imageWithImage:scaledToSize:
+SELREF 0x4cf40 imageWithImage:withInsets:
+SELREF 0x4cf48 imageWithRenderingMode:
+SELREF 0x4cf50 imageWithScale:
+SELREF 0x4cf58 imageWithShadow
+SELREF 0x4cf60 imageWithView:
+SELREF 0x4cf68 imagesForTheme
+SELREF 0x4cf70 indexPathForCell:
+SELREF 0x4cf78 indexPathForRow:inSection:
+SELREF 0x4cf80 indexPathForRowAtPoint:
+SELREF 0x4cf88 indexPathForSelectedRow
+SELREF 0x4cf90 indexPathForSortedTheme:
+SELREF 0x4cf98 indexPathForTheme:
+SELREF 0x4cfa0 indexPathsForVisibleRows
+SELREF 0x4cfa8 indexSetWithIndex:
+SELREF 0x4cfb0 info
+SELREF 0x4cfb8 infoDictionary
+SELREF 0x4cfc0 init
+SELREF 0x4cfc8 initForExtensions
+SELREF 0x4cfd0 initWithApplication:
+SELREF 0x4cfd8 initWithBarButtonSystemItem:target:action:
+SELREF 0x4cfe0 initWithBundleIdentifier:andThemePath:
+SELREF 0x4cfe8 initWithCIImage:
+SELREF 0x4cff0 initWithCoder:
+SELREF 0x4cff8 initWithContentsOfFile:
+SELREF 0x4d000 initWithData:
+SELREF 0x4d008 initWithData:encoding:
+SELREF 0x4d010 initWithFrame:
+SELREF 0x4d018 initWithFrame:style:
+SELREF 0x4d020 initWithIdentifier:
+SELREF 0x4d028 initWithImage:
+SELREF 0x4d030 initWithSpecifier:
+SELREF 0x4d038 initWithStyle:reuseIdentifier:
+SELREF 0x4d040 initWithTarget:action:
+SELREF 0x4d048 initWithTitle:
+SELREF 0x4d050 initWithTitle:style:target:action:
+SELREF 0x4d058 initialLoadComplete
+SELREF 0x4d060 initialize
+SELREF 0x4d068 insertObject:atIndex:
+SELREF 0x4d070 insertRowsAtIndexPaths:withRowAnimation:
+SELREF 0x4d078 instance
+SELREF 0x4d080 instancesRespondToSelector:
+SELREF 0x4d088 intValue
+SELREF 0x4d090 invalidate
+SELREF 0x4d098 invertImage:
+SELREF 0x4d0a0 isAnimating
+SELREF 0x4d0a8 isApplication
+SELREF 0x4d0b0 isDraggableCell
+SELREF 0x4d0b8 isEnabled
+SELREF 0x4d0c0 isEqual:
+SELREF 0x4d0c8 isEqualToData:
+SELREF 0x4d0d0 isEqualToSet:
+SELREF 0x4d0d8 isEqualToString:
+SELREF 0x4d0e0 isExpanded
+SELREF 0x4d0e8 isExtensions
+SELREF 0x4d0f0 isGrouped
+SELREF 0x4d0f8 isHidden
+SELREF 0x4d100 isImageDark:
+SELREF 0x4d108 isLegacy
+SELREF 0x4d110 isLoaded
+SELREF 0x4d118 isOpaque
+SELREF 0x4d120 isPathEnabled:
+SELREF 0x4d128 isSystemApplication
+SELREF 0x4d130 isiPhoneX
+SELREF 0x4d138 italicSystemFontOfSize:
+SELREF 0x4d140 items
+SELREF 0x4d148 kCurrentVersion
+SELREF 0x4d150 keyWindow
+SELREF 0x4d158 largestImagePath
+SELREF 0x4d160 lastObject
+SELREF 0x4d168 lastPathComponent
+SELREF 0x4d170 launch
+SELREF 0x4d178 layer
+SELREF 0x4d180 layoutIfNeeded
+SELREF 0x4d188 layoutLabels
+SELREF 0x4d190 layoutSubviews
+SELREF 0x4d198 length
+SELREF 0x4d1a0 listLargeIcons
+SELREF 0x4d1a8 load
+SELREF 0x4d1b0 loadExtensions
+SELREF 0x4d1b8 loadExtensionsForceAll:
+SELREF 0x4d1c0 loadLists
+SELREF 0x4d1c8 loadOverrides
+SELREF 0x4d1d0 loadPath:
+SELREF 0x4d1d8 loadSpecifiersFromPlistName:target:
+SELREF 0x4d1e0 loadSpecifiersFromPlistName:target:bundle:
+SELREF 0x4d1e8 loadThemes
+SELREF 0x4d1f0 loadedIcons
+SELREF 0x4d1f8 loadedThemes
+SELREF 0x4d200 loadedThemesOnlyExistingIcons
+SELREF 0x4d208 localisedString:
+SELREF 0x4d210 localizedCaseInsensitiveCompare:
+SELREF 0x4d218 locationInView:
+SELREF 0x4d220 longLongValue
+SELREF 0x4d228 longPress
+SELREF 0x4d230 lowercaseString
+SELREF 0x4d238 mainBundle
+SELREF 0x4d240 mainRunLoop
+SELREF 0x4d248 mainScreen
+SELREF 0x4d250 maskImage:
+SELREF 0x4d258 maskImageWithPad:
+SELREF 0x4d260 maskedCachedIcons
+SELREF 0x4d268 maskedImage:
+SELREF 0x4d270 maskedImage:withCrop:
+SELREF 0x4d278 maskedImage:withCrop:skipExtensions:
+SELREF 0x4d280 maskedImage:withRadius:
+SELREF 0x4d288 menuItems
+SELREF 0x4d290 menuItemsDisabled
+SELREF 0x4d298 minimisedCellHeight
+SELREF 0x4d2a0 minuteHand
+SELREF 0x4d2a8 model
+SELREF 0x4d2b0 modern
+SELREF 0x4d2b8 moveRowAtIndexPath:toIndexPath:
+SELREF 0x4d2c0 mutableCopy
+SELREF 0x4d2c8 name
+SELREF 0x4d2d0 namedFolderBackgrounds
+SELREF 0x4d2d8 navigationController
+SELREF 0x4d2e0 navigationItem
+SELREF 0x4d2e8 needsApply
+SELREF 0x4d2f0 notifyExtensionsOfReload
+SELREF 0x4d2f8 notifyObservers
+SELREF 0x4d300 numberOfRowsInSection:
+SELREF 0x4d308 numberOfSections
+SELREF 0x4d310 numberOfSectionsInTableView:
+SELREF 0x4d318 numberWithBool:
+SELREF 0x4d320 numberWithDouble:
+SELREF 0x4d328 numberWithFloat:
+SELREF 0x4d330 numberWithInt:
+SELREF 0x4d338 objectAtIndex:
+SELREF 0x4d340 objectAtIndexedSubscript:
+SELREF 0x4d348 objectForKey:
+SELREF 0x4d350 objectForKeyedSubscript:
+SELREF 0x4d358 onTapDone
+SELREF 0x4d360 openURL:
+SELREF 0x4d368 originalIconForBundleIdentifier:withScale:
+SELREF 0x4d370 outputImage
+SELREF 0x4d378 overrides
+SELREF 0x4d380 pContainsOversizedImages
+SELREF 0x4d388 packageWithIdentifier:isRootPackage:
+SELREF 0x4d390 padImage:
+SELREF 0x4d398 padding
+SELREF 0x4d3a0 parentVC
+SELREF 0x4d3a8 path
+SELREF 0x4d3b0 pathExtension
+SELREF 0x4d3b8 pathForResource:ofType:
+SELREF 0x4d3c0 pathToScale:
+SELREF 0x4d3c8 performSelector:
+SELREF 0x4d3d0 pipe
+SELREF 0x4d3d8 pointSize
+SELREF 0x4d3e0 popViewControllerAnimated:
+SELREF 0x4d3e8 predicateWithFormat:
+SELREF 0x4d3f0 preferenceSpecifierNamed:target:set:get:detail:cell:edit:
+SELREF 0x4d3f8 preferencesDictionary
+SELREF 0x4d400 preferencesFilePath
+SELREF 0x4d408 preferencesPlistPath
+SELREF 0x4d410 preferredHeightForWidth:
+SELREF 0x4d418 prefsBundle
+SELREF 0x4d420 prefsIdentifier
+SELREF 0x4d428 prepareForReuse
+SELREF 0x4d430 presentPreferences
+SELREF 0x4d438 presentViewController:animated:completion:
+SELREF 0x4d440 priority
+SELREF 0x4d448 processIcon:
+SELREF 0x4d450 processIcon:skipExtensions:
+SELREF 0x4d458 processIconAsync:withHandler:
+SELREF 0x4d460 processInfo
+SELREF 0x4d468 processName
+SELREF 0x4d470 properties
+SELREF 0x4d478 pushViewController:animated:
+SELREF 0x4d480 rangeOfString:
+SELREF 0x4d488 rankForItemAtPath:didFind:
+SELREF 0x4d490 readDataToEndOfFile
+SELREF 0x4d498 readPreferenceValue:
+SELREF 0x4d4a0 receivedRemoteIcon:withIdentifier:
+SELREF 0x4d4a8 rectForRowAtIndexPath:
+SELREF 0x4d4b0 redDot
+SELREF 0x4d4b8 registerForReceive
+SELREF 0x4d4c0 registerForRemote
+SELREF 0x4d4c8 reload
+SELREF 0x4d4d0 reloadData
+SELREF 0x4d4d8 reloadRowsAtIndexPaths:withRowAnimation:
+SELREF 0x4d4e0 reloadSections:withRowAnimation:
+SELREF 0x4d4e8 reloadSpecifierID:
+SELREF 0x4d4f0 reloadSpecifiers
+SELREF 0x4d4f8 reloadWithoutExtensions:
+SELREF 0x4d500 remoteProcessIcon:withIdentifier:withSender:
+SELREF 0x4d508 removeFromSuperview
+SELREF 0x4d510 removeItemAtPath:error:
+SELREF 0x4d518 removeObject:
+SELREF 0x4d520 removeObjectAtIndex:
+SELREF 0x4d528 removeObjectForKey:
+SELREF 0x4d530 removeObjectsInArray:
+SELREF 0x4d538 removeOverrideForBundleIdentifier:
+SELREF 0x4d540 removeTarget:action:forControlEvents:
+SELREF 0x4d548 renderInContext:
+SELREF 0x4d550 requestedFontSize
+SELREF 0x4d558 requiresRespring
+SELREF 0x4d560 requiresUICache
+SELREF 0x4d568 reset
+SELREF 0x4d570 resizedCachedIcons
+SELREF 0x4d578 respring
+SELREF 0x4d580 roundedRectImageFromImage:withRadius:
+SELREF 0x4d588 roundedRectImageFromImage:withRadius:withCrop:
+SELREF 0x4d590 row
+SELREF 0x4d598 sRate
+SELREF 0x4d5a0 safeAreaInsets
+SELREF 0x4d5a8 saveLists
+SELREF 0x4d5b0 saveObjectAndInsertBlankRowAtIndexPath:
+SELREF 0x4d5b8 saveOverrides
+SELREF 0x4d5c0 savePrefs:
+SELREF 0x4d5c8 savedObject
+SELREF 0x4d5d0 scale
+SELREF 0x4d5d8 scanHexInt:
+SELREF 0x4d5e0 scannerWithString:
+SELREF 0x4d5e8 screenRect
+SELREF 0x4d5f0 scrollTableWithCell:
+SELREF 0x4d5f8 scrollToRowAtIndexPath:atScrollPosition:animated:
+SELREF 0x4d600 scrollViewDidScroll:
+SELREF 0x4d608 secondHand
+SELREF 0x4d610 secondarySystemFillColor
+SELREF 0x4d618 section
+SELREF 0x4d620 selectRowAtIndexPath:animated:scrollPosition:
+SELREF 0x4d628 sendIconToSpringBoard:withIdentifier:
+SELREF 0x4d630 sendToSpringBoard:
+SELREF 0x4d638 set
+SELREF 0x4d640 setActiveMenuItems:
+SELREF 0x4d648 setAdjustsFontSizeToFitWidth:
+SELREF 0x4d650 setAllowsSelectionDuringEditing:
+SELREF 0x4d658 setAlpha:
+SELREF 0x4d660 setAltImagePaths:
+SELREF 0x4d668 setApplyView:
+SELREF 0x4d670 setApplyViewHidden:
+SELREF 0x4d678 setArguments:
+SELREF 0x4d680 setAutoresizingMask:
+SELREF 0x4d688 setBackgroundColor:
+SELREF 0x4d690 setBadgeBackground:
+SELREF 0x4d698 setBadgeSettings:
+SELREF 0x4d6a0 setBannerView:
+SELREF 0x4d6a8 setBlackDot:
+SELREF 0x4d6b0 setBlacklistInApps:
+SELREF 0x4d6b8 setBundle:
+SELREF 0x4d6c0 setBundleIdentifier:
+SELREF 0x4d6c8 setCIndexPath:
+SELREF 0x4d6d0 setCachedBadgeBackground:
+SELREF 0x4d6d8 setCachedFuzzyBundleIdentifiers:
+SELREF 0x4d6e0 setCachedIconInfoField3:
+SELREF 0x4d6e8 setCachedImage:
+SELREF 0x4d6f0 setCachedImages:
+SELREF 0x4d6f8 setCachedMaskImage:forKey:
+SELREF 0x4d700 setCachedMaskImage:withIdentifier:andSize:andScale:
+SELREF 0x4d708 setCachedSBFloatingDockController:
+SELREF 0x4d710 setCachedThemeImages:
+SELREF 0x4d718 setCachedThemeLogo:
+SELREF 0x4d720 setCalendarDayNumberFont:
+SELREF 0x4d728 setCalendarDayTextFont:
+SELREF 0x4d730 setCalendarSettings:
+SELREF 0x4d738 setCanReorder:
+SELREF 0x4d740 setCenter:
+SELREF 0x4d748 setCharactersToBeSkipped:
+SELREF 0x4d750 setCheckmarkView:
+SELREF 0x4d758 setClassName:
+SELREF 0x4d760 setClipsToBounds:
+SELREF 0x4d768 setClockBackground:
+SELREF 0x4d770 setClockIcons:
+SELREF 0x4d778 setColour:
+SELREF 0x4d780 setCompanionTweak:
+SELREF 0x4d788 setContentInset:
+SELREF 0x4d790 setContentMode:
+SELREF 0x4d798 setContentOffset:
+SELREF 0x4d7a0 setContentOffset:animated:
+SELREF 0x4d7a8 setContentView:
+SELREF 0x4d7b0 setCornerRadius:
+SELREF 0x4d7b8 setCurrentDirectoryPath:
+SELREF 0x4d7c0 setCurrentReceiveHandlers:
+SELREF 0x4d7c8 setCustomBackgroundColor:
+SELREF 0x4d7d0 setDLink:
+SELREF 0x4d7d8 setDataSource:
+SELREF 0x4d7e0 setDefaults
+SELREF 0x4d7e8 setDelegate:
+SELREF 0x4d7f0 setDisabledColor:
+SELREF 0x4d7f8 setDisplayName:
+SELREF 0x4d800 setDockView:
+SELREF 0x4d808 setDraggingRowHeight:
+SELREF 0x4d810 setDraggingView:
+SELREF 0x4d818 setDraggingViewOpacity:
+SELREF 0x4d820 setEditButton:
+SELREF 0x4d828 setEditing:
+SELREF 0x4d830 setEditing:animated:
+SELREF 0x4d838 setEnableButton:
+SELREF 0x4d840 setEnabled:
+SELREF 0x4d848 setEnabledState:
+SELREF 0x4d850 setEnabledState:animated:
+SELREF 0x4d858 setEnabledThemes:
+SELREF 0x4d860 setEstimatedRowHeight:
+SELREF 0x4d868 setExtensionType:
+SELREF 0x4d870 setExtensions:
+SELREF 0x4d878 setFolderBackground:
+SELREF 0x4d880 setFolderGridImageAlpha:
+SELREF 0x4d888 setFolderMaskForegroundEffect:
+SELREF 0x4d890 setFolderMaskMaxBackground:
+SELREF 0x4d898 setFolderMaxBackground:
+SELREF 0x4d8a0 setFolderViewController:
+SELREF 0x4d8a8 setFont:
+SELREF 0x4d8b0 setForceResizeForEffects:
+SELREF 0x4d8b8 setFrame:
+SELREF 0x4d8c0 setFulltitle:
+SELREF 0x4d8c8 setFuzzyBundleIdentifiers:
+SELREF 0x4d8d0 setGestureRecognizer:
+SELREF 0x4d8d8 setHadFirstAppear:
+SELREF 0x4d8e0 setHasForceRefreshedOnce:
+SELREF 0x4d8e8 setHeaderLabel:
+SELREF 0x4d8f0 setHeaderView:
+SELREF 0x4d8f8 setHidden:
+SELREF 0x4d900 setHidesBackButton:
+SELREF 0x4d908 setHidesBackButton:animated:
+SELREF 0x4d910 setHighlighted:animated:
+SELREF 0x4d918 setHourHand:
+SELREF 0x4d920 setIIndexPath:
+SELREF 0x4d928 setIconImage:
+SELREF 0x4d930 setIconImageView:
+SELREF 0x4d938 setIconPath:
+SELREF 0x4d940 setIconsTheme:
+SELREF 0x4d948 setIdentifier:
+SELREF 0x4d950 setImage:
+SELREF 0x4d958 setImagePaths:
+SELREF 0x4d960 setInGroupedMode:
+SELREF 0x4d968 setInitialLoadComplete:
+SELREF 0x4d970 setInstance:
+SELREF 0x4d978 setIsAnimating:
+SELREF 0x4d980 setIsApplication:
+SELREF 0x4d988 setIsDraggableCell:
+SELREF 0x4d990 setIsEnabled:
+SELREF 0x4d998 setIsExpanded:
+SELREF 0x4d9a0 setIsExtensions:
+SELREF 0x4d9a8 setIsGrouped:
+SELREF 0x4d9b0 setIsGroupedMode
+SELREF 0x4d9b8 setIsLegacy:
+SELREF 0x4d9c0 setItems:
+SELREF 0x4d9c8 setLargestImagePath:
+SELREF 0x4d9d0 setLaunchPath:
+SELREF 0x4d9d8 setLoadedIcons:
+SELREF 0x4d9e0 setLoadedThemes:
+SELREF 0x4d9e8 setLoadedThemesOnlyExistingIcons:
+SELREF 0x4d9f0 setLongPress:
+SELREF 0x4d9f8 setMask:
+SELREF 0x4da00 setMaskedCachedIcons:
+SELREF 0x4da08 setMasksToBounds:
+SELREF 0x4da10 setMenuItems:
+SELREF 0x4da18 setMenuItemsDisabled:
+SELREF 0x4da20 setMinimumScaleFactor:
+SELREF 0x4da28 setMinuteHand:
+SELREF 0x4da30 setModalPresentationStyle:
+SELREF 0x4da38 setModern:
+SELREF 0x4da40 setName:
+SELREF 0x4da48 setNamedFolderBackgrounds:
+SELREF 0x4da50 setNotGroupedMode
+SELREF 0x4da58 setNumberOfLines:
+SELREF 0x4da60 setObject:atIndexedSubscript:
+SELREF 0x4da68 setObject:forKey:
+SELREF 0x4da70 setOpacity:
+SELREF 0x4da78 setOverrides:
+SELREF 0x4da80 setOversizedWarningVisible:
+SELREF 0x4da88 setPContainsOversizedImages:
+SELREF 0x4da90 setParentVC:
+SELREF 0x4da98 setPath:
+SELREF 0x4daa0 setPreferenceValue:specifier:
+SELREF 0x4daa8 setPreferencesPlistPath:
+SELREF 0x4dab0 setPrefsBundle:
+SELREF 0x4dab8 setPrefsIdentifier:
+SELREF 0x4dac0 setProperty:forKey:
+SELREF 0x4dac8 setRedDot:
+SELREF 0x4dad0 setRequestedFontSize:
+SELREF 0x4dad8 setResizedCachedIcons:
+SELREF 0x4dae0 setRightBarButtonItem:
+SELREF 0x4dae8 setSRate:
+SELREF 0x4daf0 setSavedObject:
+SELREF 0x4daf8 setScanLocation:
+SELREF 0x4db00 setSecondHand:
+SELREF 0x4db08 setSelected:animated:
+SELREF 0x4db10 setSelectionStyle:
+SELREF 0x4db18 setSeparatorColor:
+SELREF 0x4db20 setShadowColor:
+SELREF 0x4db28 setShadowOffset:
+SELREF 0x4db30 setShadowOpacity:
+SELREF 0x4db38 setShadowRadius:
+SELREF 0x4db40 setShouldReload:
+SELREF 0x4db48 setShouldSendIconsToSpringBoard:
+SELREF 0x4db50 setSortedThemeItem:
+SELREF 0x4db58 setSortedThemes:
+SELREF 0x4db60 setSpringboardTheme:
+SELREF 0x4db68 setStandardOutput:
+SELREF 0x4db70 setSubCellsHidden:
+SELREF 0x4db78 setSubCellsHidden:animated:
+SELREF 0x4db80 setSubCellsView:
+SELREF 0x4db88 setSubtitle:
+SELREF 0x4db90 setSubtitleLabel:
+SELREF 0x4db98 setSubtitleText:
+SELREF 0x4dba0 setTableView:
+SELREF 0x4dba8 setText:
+SELREF 0x4dbb0 setTextAlignment:
+SELREF 0x4dbb8 setTextColor:
+SELREF 0x4dbc0 setTheme:enabled:
+SELREF 0x4dbc8 setTheme:enabled:updateFile:
+SELREF 0x4dbd0 setThemeGroup:
+SELREF 0x4dbd8 setThemeGroup:enabled:
+SELREF 0x4dbe0 setThemeItem:
+SELREF 0x4dbe8 setThemeList:
+SELREF 0x4dbf0 setThemePath:
+SELREF 0x4dbf8 setThemeSettings:
+SELREF 0x4dc00 setThemeType:
+SELREF 0x4dc08 setThemeWarningItem:
+SELREF 0x4dc10 setThemeWarningView:
+SELREF 0x4dc18 setTintColor:
+SELREF 0x4dc20 setTitle:
+SELREF 0x4dc28 setTitle:forState:
+SELREF 0x4dc30 setTitleColor:forState:
+SELREF 0x4dc38 setTitleLabel:
+SELREF 0x4dc40 setTitleText:
+SELREF 0x4dc48 setTransform:
+SELREF 0x4dc50 setType:
+SELREF 0x4dc58 setUIKitReady
+SELREF 0x4dc60 setUnmaskedCachedIcons:
+SELREF 0x4dc68 setUserInteractionEnabled:
+SELREF 0x4dc70 setValue:forKey:
+SELREF 0x4dc78 setVersion:
+SELREF 0x4dc80 setWaitingForLazyLoad:
+SELREF 0x4dc88 setWidgetDisplayName:
+SELREF 0x4dc90 setWithArray:
+SELREF 0x4dc98 setXOffset:
+SELREF 0x4dca0 setYOffset:
+SELREF 0x4dca8 setup
+SELREF 0x4dcb0 sharedApplication
+SELREF 0x4dcb8 sharedInstance
+SELREF 0x4dcc0 shouldReload
+SELREF 0x4dcc8 shouldSendIconsToSpringBoard
+SELREF 0x4dcd0 showApplyAnimation
+SELREF 0x4dcd8 showNoThemesAlert
+SELREF 0x4dce0 showThemeSelector
+SELREF 0x4dce8 size
+SELREF 0x4dcf0 sizeToFit
+SELREF 0x4dcf8 sortDescriptorWithKey:ascending:selector:
+SELREF 0x4dd00 sortThemes
+SELREF 0x4dd08 sortUsingDescriptors:
+SELREF 0x4dd10 sortedArrayUsingComparator:
+SELREF 0x4dd18 sortedArrayUsingSelector:
+SELREF 0x4dd20 sortedThemeItem
+SELREF 0x4dd28 sortedThemes
+SELREF 0x4dd30 specifiers
+SELREF 0x4dd38 springboardTheme
+SELREF 0x4dd40 state
+SELREF 0x4dd48 stringByAppendingPathComponent:
+SELREF 0x4dd50 stringByDeletingLastPathComponent
+SELREF 0x4dd58 stringByDeletingPathExtension
+SELREF 0x4dd60 stringByReplacingOccurrencesOfString:withString:
+SELREF 0x4dd68 stringByResolvingSymlinksInPath
+SELREF 0x4dd70 stringWithFormat:
+SELREF 0x4dd78 stringWithUTF8String:
+SELREF 0x4dd80 subCellsView
+SELREF 0x4dd88 substringFromIndex:
+SELREF 0x4dd90 substringToIndex:
+SELREF 0x4dd98 subtitle
+SELREF 0x4dda0 subtitleLabel
+SELREF 0x4dda8 subviews
+SELREF 0x4ddb0 superview
+SELREF 0x4ddb8 symbolCharacterSet
+SELREF 0x4ddc0 systemFontOfSize:
+SELREF 0x4ddc8 systemFontOfSize:weight:
+SELREF 0x4ddd0 tableView
+SELREF 0x4ddd8 tableView:canEditRowAtIndexPath:
+SELREF 0x4dde0 tableView:canMoveRowAtIndexPath:
+SELREF 0x4dde8 tableView:cellForRowAtIndexPath:
+SELREF 0x4ddf0 tableView:didDeselectRowAtIndexPath:
+SELREF 0x4ddf8 tableView:didSelectRowAtIndexPath:
+SELREF 0x4de00 tableView:editingStyleForRowAtIndexPath:
+SELREF 0x4de08 tableView:heightForRowAtIndexPath:
+SELREF 0x4de10 tableView:moveRowAtIndexPath:toIndexPath:
+SELREF 0x4de18 tableView:numberOfRowsInSection:
+SELREF 0x4de20 tableView:shouldIndentWhileEditingRowAtIndexPath:
+SELREF 0x4de28 tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:
+SELREF 0x4de30 tableView:titleForHeaderInSection:
+SELREF 0x4de38 tableView:willSelectRowAtIndexPath:
+SELREF 0x4de40 textLabel
+SELREF 0x4de48 themeGroup
+SELREF 0x4de50 themeItem
+SELREF 0x4de58 themeList
+SELREF 0x4de60 themeLogo
+SELREF 0x4de68 themePath
+SELREF 0x4de70 themeSettings
+SELREF 0x4de78 themeType
+SELREF 0x4de80 themeWarningItem
+SELREF 0x4de88 themeWarningView
+SELREF 0x4de90 timeIntervalSinceDate:
+SELREF 0x4de98 title
+SELREF 0x4dea0 titleLabel
+SELREF 0x4dea8 transitionWithView:duration:options:animations:completion:
+SELREF 0x4deb0 trueDefaultHeight
+SELREF 0x4deb8 twitterlink
+SELREF 0x4dec0 twitterlinkdennis
+SELREF 0x4dec8 type
+SELREF 0x4ded0 uikitReady
+SELREF 0x4ded8 unarchiveObjectWithData:
+SELREF 0x4dee0 unmaskedCachedIcons
+SELREF 0x4dee8 unmaskedIconImageWithInfo:
+SELREF 0x4def0 updateButtonState
+SELREF 0x4def8 updateButtonState:
+SELREF 0x4df00 updateButtonState:animated:
+SELREF 0x4df08 updateChangeCount
+SELREF 0x4df10 updateChangeCount:
+SELREF 0x4df18 updateCurrentLocation:
+SELREF 0x4df20 updateEnabledState
+SELREF 0x4df28 updateHeaderCell
+SELREF 0x4df30 updateImageViewScale:
+SELREF 0x4df38 updateImageWithRadius:
+SELREF 0x4df40 updateImageWithScale:
+SELREF 0x4df48 updatePreferencesFile
+SELREF 0x4df50 updateSubCells
+SELREF 0x4df58 userInterfaceStyle
+SELREF 0x4df60 version
+SELREF 0x4df68 view
+SELREF 0x4df70 viewDidAppear:
+SELREF 0x4df78 viewDidLayoutSubviews
+SELREF 0x4df80 viewDidLoad
+SELREF 0x4df88 viewWillAppear:
+SELREF 0x4df90 viewWillDisappear:
+SELREF 0x4df98 visibleCells
+SELREF 0x4dfa0 waitingForLazyLoad
+SELREF 0x4dfa8 webClip
+SELREF 0x4dfb0 whiteColor
+SELREF 0x4dfb8 widgetDisplayName
+SELREF 0x4dfc0 wouldProcessIcon
+SELREF 0x4dfc8 wouldProcessIconWithExtensionIdentifier:
+SELREF 0x4dfd0 writeToFile:atomically:
+SELREF 0x4dfd8 xOffset
+SELREF 0x4dfe0 yOffset

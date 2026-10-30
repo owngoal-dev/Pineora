@@ -1,0 +1,17 @@
+#!/bin/bash
+if [ -d "/var/jb" ];
+then
+    mkdir -p /var/jb/Library/Themes || true
+    chmod 775 /var/jb/Library/Themes || true
+
+    if [ ! -d "/var/jb/var/mobile/Library/Preferences/" ] 
+    then
+        mkdir -p "/var/jb/var/mobile/Library/Preferences/" || true
+        chmod 775 "/var/jb/var/mobile/Library/Preferences/" || true
+    fi
+else
+    mkdir -p /Library/Themes || true
+    chmod 775 /Library/Themes || true
+fi
+
+killall -9 sharingd || true

@@ -1,0 +1,235 @@
+=== Research/unpacked/var/jb/Library/MobileSubstrate/DynamicLibraries/AAASnowBoardStub.plist
+{
+    Filter =     {
+        Bundles =         (
+            "com.apple.springboard"
+        );
+    };
+}
+=== Research/unpacked/var/jb/Library/MobileSubstrate/DynamicLibraries/Snowboard.plist
+{
+    Filter =     {
+        Bundles =         (
+            "com.apple.UIKit"
+        );
+        Executables =         (
+            CarPlay,
+            AppPredictionWidget,
+            Spotlight,
+            ShareUI,
+            WeatherAppTodayWidget,
+            sharingd
+        );
+    };
+}
+=== Research/unpacked/var/jb/Library/PreferenceBundles/SnowboardPrefs.bundle/Root.plist
+{
+    items =     (
+                {
+            cell = PSGroupCell;
+            footerCellClass = SnowboardBannerCell;
+        },
+                {
+            cell = PSGroupCell;
+            label = "ICON_SETTINGS";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 1;
+            defaults = "com.spark.snowboardprefs";
+            key = Enabled;
+            label = ENABLED;
+        },
+                {
+            action = showThemeSelector;
+            cell = PSButtonCell;
+            label = "SELECT_THEME";
+        },
+                {
+            cell = PSGroupCell;
+            label = "";
+        },
+                {
+            cell = PSLinkCell;
+            detail = IconOptions;
+            isController = 1;
+            key = IconOptions;
+            label = "ICON_OPTIONS";
+        },
+                {
+            cell = PSGroupCell;
+            label = "";
+        },
+                {
+            action = twitterlink;
+            cell = PSButtonCell;
+            icon = "twitter.png";
+            label = "FOLLOW_SPARK";
+        },
+                {
+            action = twitterlinkdennis;
+            cell = PSButtonCell;
+            icon = "twitter.png";
+            label = "FOLLOW_DENNIS";
+        },
+                {
+            cell = PSGroupCell;
+            footerCellClass = SnowboardFooterCell;
+        }
+    );
+    title = "";
+}
+=== Research/unpacked/var/jb/Library/PreferenceBundles/SnowboardPrefs.bundle/IconOptions.plist
+{
+    items =     (
+                {
+            cell = PSGroupCell;
+            footerCellClass = SnowboardLogoCell;
+        },
+                {
+            cell = PSGroupCell;
+            label = "";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 0;
+            defaults = "com.spark.snowboardprefs";
+            key = CustomCornerRadiusEnabled;
+            label = "CUSTOM_CORNER_RADIUS";
+        },
+                {
+            cell = PSSliderCell;
+            default = 13;
+            defaults = "com.spark.snowboardprefs";
+            isSegmented = 1;
+            key = CustomCornerRadius;
+            max = 30;
+            min = 0;
+            segmentCount = 30;
+            showValue = 1;
+        },
+                {
+            cell = PSSwitchCell;
+            default = 0;
+            defaults = "com.spark.snowboardprefs";
+            key = CustomIconSizeEnabled;
+            label = "CUSTOM_ICON_SCALE";
+        },
+                {
+            cell = PSSliderCell;
+            default = 1;
+            defaults = "com.spark.snowboardprefs";
+            isSegmented = 1;
+            key = CustomIconSize;
+            max = "1.5";
+            min = "0.3";
+            segmentCount = 24;
+            showValue = 1;
+        },
+                {
+            cell = PSSwitchCell;
+            default = 1;
+            defaults = "com.spark.snowboardprefs";
+            key = CustomIconSizeBadgesEnabled;
+            label = "SCALE_BADGES";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 0;
+            defaults = "com.spark.snowboardprefs";
+            key = HideLabels;
+            label = "HIDE_LABELS";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 0;
+            defaults = "com.spark.snowboardprefs";
+            key = HideLabelDots;
+            label = "HIDE_LABEL_DOTS";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 0;
+            defaults = "com.spark.snowboardprefs";
+            key = HideIconOverlays;
+            label = "HIDE_ICON_TOUCH_OVERLAYS";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 0;
+            defaults = "com.spark.snowboardprefs";
+            key = ForceLegacyThemes;
+            label = "FORCE_LEGACY";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 0;
+            defaults = "com.spark.snowboardprefs";
+            key = Force3Icons;
+            label = "FORCE_3X_ICONS";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 0;
+            defaults = "com.spark.snowboardprefs";
+            key = HidePopUp;
+            label = "HIDE_POPUP_LABEL";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 0;
+            defaults = "com.spark.snowboardprefs";
+            key = LoadInCarPlay;
+            label = "ENABLE_CARPLAY_LABEL";
+        },
+                {
+            cell = PSSwitchCell;
+            default = 1;
+            defaults = "com.spark.snowboardprefs";
+            key = BadgeTheming;
+            label = "ENABLE_BADGE_THEME_LABEL";
+        },
+                {
+            cell = PSGroupCell;
+            label = "";
+        },
+                {
+            action = clearalternatives;
+            cell = PSButtonCell;
+            label = "CLEAR_ALTERNATIVE_ICONS";
+        },
+                {
+            action = applyChanges;
+            cell = PSButtonCell;
+            label = "FORCE_REFRESH";
+        },
+                {
+            cell = PSGroupCell;
+            footerCellClass = SnowboardFooterCell;
+        }
+    );
+    title = "ICON_OPTIONS";
+}
+=== Research/unpacked/var/jb/Library/PreferenceBundles/SnowboardPrefs.bundle/Info.plist
+{
+    CFBundleDevelopmentRegion = English;
+    CFBundleExecutable = SnowboardPrefs;
+    CFBundleIdentifier = "com.spark.snowboardprefs";
+    CFBundleInfoDictionaryVersion = "6.0";
+    CFBundlePackageType = BNDL;
+    CFBundleShortVersionString = "1.0.0";
+    CFBundleSignature = "????";
+    CFBundleVersion = "1.0";
+    NSPrincipalClass = SnowboardprefsRootListController;
+}
+=== Research/unpacked/var/jb/Library/PreferenceLoader/Preferences/SnowboardPrefs.plist
+{
+    entry =     {
+        bundle = SnowboardPrefs;
+        cell = PSLinkCell;
+        detail = SnowboardprefsRootListController;
+        icon = "icon.png";
+        isController = 1;
+        label = SnowBoard;
+    };
+}

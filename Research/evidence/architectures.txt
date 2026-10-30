@@ -1,0 +1,5 @@
+Architectures in the fat file: Research/unpacked/var/jb/usr/lib/SnowBoardBase.dylib are: arm64 arm64e 
+Architectures in the fat file: Research/unpacked/var/jb/Library/MobileSubstrate/DynamicLibraries/AAASnowBoardStub.dylib are: arm64 arm64e 
+Architectures in the fat file: Research/unpacked/var/jb/Library/MobileSubstrate/DynamicLibraries/Snowboard.dylib are: arm64 arm64e 
+Architectures in the fat file: Research/unpacked/var/jb/Library/PreferenceBundles/SnowboardPrefs.bundle/SnowboardPrefs are: arm64 arm64e 
+Architectures in the fat file: Research/unpacked/var/jb/usr/local/bin/snowboardutil are: arm64 arm64e 

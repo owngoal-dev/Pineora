@@ -1,0 +1,14 @@
+# SnowBoard 样本解包产物：只用于静态研究，绝不进版本库
+Research/unpacked/
+Research/work/
+
+# 研究工具编译出来的可执行文件（源码保留）
+Research/tools/macho-read
+Research/tools/stubsel
+Research/tools/textrefs
+
+# 构建与临时产物
+build/
+*.deb
+*.dSYM/
+.DS_Store

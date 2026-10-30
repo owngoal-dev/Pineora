@@ -1,0 +1,8 @@
+Origin: SparkDev
+Label: SparkDev
+Suite: stable
+Version: 1.0
+Codename: SparkDev
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: SparkDev
