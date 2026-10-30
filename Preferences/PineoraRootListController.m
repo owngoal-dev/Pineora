@@ -49,8 +49,32 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    // 从别处回来时主题目录或设置可能变了。
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    // 从后台回来不保证再次调用 viewWillAppear:，需要单独监听应用恢复活跃。
+    // 只在本页面显示期间监听，避免设置的其它页面触发无用扫描。
+    [center removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
+    [center addObserver:self selector:@selector(pineoraApplicationDidBecomeActive:)
+                   name:UIApplicationDidBecomeActiveNotification object:nil];
     [self.page reloadFromStore];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+        name:UIApplicationDidBecomeActiveNotification object:nil];
+}
+
+- (void)pineoraApplicationDidBecomeActive:(NSNotification *)notification {
+    (void)notification;
+    if (self.viewIfLoaded.window == nil) {
+        return;
+    }
+    // 仅刷新列表和预览；保留已有选择及“未应用”状态，不发送引擎刷新通知。
+    [self.page reloadFromStore];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
