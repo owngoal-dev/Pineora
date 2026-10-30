@@ -1,0 +1,23 @@
+/* Pineora settings — Japanese. */
+"settings.subtitle" = "ホーム画面のアイコンテーマ";
+"themes.active" = "有効なテーマ";
+"themes.available" = "利用可能なテーマ";
+"themes.list_separator" = "、";
+"settings.disabled_footer" = "無効にすると、ホーム画面に標準のアイコンが表示されます。";
+"themes.install_footer" = ".theme フォルダを次のいずれかの場所に配置してください：\n%@";
+"themes.order_footer" = "リストの上にあるテーマが優先されます。テーマをタップすると有効・無効を切り替えられます。右側のハンドルをドラッグすると順序を変更できます。";
+"themes.default_footer" = "ここでテーマを選択するまでは、既存のテーマ選択を使用します。選択がない場合は、すべてのテーマが有効になります。";
+"themes.missing_footer" = "次の選択済みテーマが見つかりません。再インストールしてください：%@";
+"settings.unapplied_footer" = "変更は未適用です。「変更を適用」をタップしてホーム画面のアイコンを更新してください。";
+"settings.apply_footer" = "設定やテーマファイルを変更したら、「変更を適用」をタップしてホーム画面のアイコンを更新してください。";
+"settings.enable" = "有効にする";
+"themes.empty" = "テーマが見つかりません";
+"themes.none_active" = "有効なテーマはありません";
+"settings.applied" = "適用済み";
+"settings.apply" = "変更を適用";
+"theme.icon_count" = "アイコン：%ld個";
+"theme.icon_mask" = "アイコンマスク";
+"theme.badge_style" = "バッジスタイル";
+"theme.clock_style" = "時計スタイル";
+"theme.calendar_style" = "カレンダースタイル";
+"theme.no_content" = "対応する内容がありません。別のテーマを選択してください。";

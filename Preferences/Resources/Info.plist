@@ -3,7 +3,14 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleDevelopmentRegion</key>
-    <string>zh_CN</string>
+    <string>en</string>
+    <key>CFBundleLocalizations</key>
+    <array>
+        <string>zh-Hans</string>
+        <string>ja</string>
+        <string>en</string>
+        <string>ko</string>
+    </array>
     <key>CFBundleExecutable</key>
     <string>PineoraPrefs</string>
     <key>CFBundleIdentifier</key>
@@ -13,9 +20,9 @@
     <key>CFBundlePackageType</key>
     <string>BNDL</string>
     <key>CFBundleShortVersionString</key>
-    <string>0.0.1</string>
+    <string>0.0.2</string>
     <key>CFBundleVersion</key>
-    <string>0.0.1</string>
+    <string>0.0.2</string>
     <key>NSPrincipalClass</key>
     <string>PineoraRootListController</string>
 </dict>

@@ -18,6 +18,7 @@
 #import "TECompat.h"
 #import "TEIconStore.h"
 #import "TELog.h"
+#import "TEExtensions.h"
 
 #pragma mark - 取 bundle id
 
@@ -43,16 +44,8 @@ static NSString *TEInferBundleIdentifier(id icon) {
     return [identifier containsString:@"."] ? identifier : nil;
 }
 
-static NSInteger TEScreenScale(void) {
-    CGFloat scale = [UIScreen mainScreen].scale;
-    if (scale < 1) {
-        scale = 2;
-    }
-    return (NSInteger)lround(scale);
-}
-
 /// 主题图；没有命中时返回 nil，调用方继续走系统实现。
-static UIImage *TEThemedImageForIcon(id icon) {
+static UIImage *TEThemedImageForIcon(id cache, id icon, BOOL masked) {
     if (icon == nil) {
         return nil;
     }
@@ -64,7 +57,9 @@ static UIImage *TEThemedImageForIcon(id icon) {
     if (bundleIdentifier == nil) {
         return nil;
     }
-    return [store imageForBundleIdentifier:bundleIdentifier scale:TEScreenScale()];
+    TEIconImageInfo info = TEImageInfoForObject(cache);
+    return [store imageForBundleIdentifier:bundleIdentifier size:info.size scale:info.scale
+                             cornerRadius:info.continuousCornerRadius masked:masked];
 }
 
 #pragma mark - 钩子
@@ -75,7 +70,7 @@ static UIImage *(*TEOriginalCachedIconCacheImage)(id, SEL, id);
 static UIImage *(*TEOriginalUnmaskedIconCacheImage)(id, SEL, id);
 
 static UIImage *TEHookIconCacheImage(id self, SEL _cmd, id icon) {
-    UIImage *image = TEThemedImageForIcon(icon);
+    UIImage *image = TEThemedImageForIcon(self, icon, YES);
     if (image != nil) {
         return image;
     }
@@ -83,15 +78,28 @@ static UIImage *TEHookIconCacheImage(id self, SEL _cmd, id icon) {
 }
 
 static UIImage *TEHookCachedIconCacheImage(id self, SEL _cmd, id icon) {
-    UIImage *image = TEThemedImageForIcon(icon);
+    UIImage *image = TEThemedImageForIcon(self, icon, YES);
     return image != nil ? image : (TEOriginalCachedIconCacheImage != NULL
         ? TEOriginalCachedIconCacheImage(self, _cmd, icon) : nil);
 }
 
 static UIImage *TEHookUnmaskedIconCacheImage(id self, SEL _cmd, id icon) {
-    UIImage *image = TEThemedImageForIcon(icon);
+    UIImage *image = TEThemedImageForIcon(self, icon, NO);
     return image != nil ? image : (TEOriginalUnmaskedIconCacheImage != NULL
         ? TEOriginalUnmaskedIconCacheImage(self, _cmd, icon) : nil);
+}
+
+static UIImage *(*TEOriginalImageWithOptions)(id, SEL, id, NSUInteger);
+static UIImage *TEImageWithOptions(id self, SEL cmd, id icon, NSUInteger options) {
+    return TEThemedImageForIcon(self, icon, YES) ?: TEOriginalImageWithOptions(self, cmd, icon, options);
+}
+static UIImage *(*TEOriginalUnmaskedWithOptions)(id, SEL, id, NSUInteger);
+static UIImage *TEUnmaskedWithOptions(id self, SEL cmd, id icon, NSUInteger options) {
+    return TEThemedImageForIcon(self, icon, NO) ?: TEOriginalUnmaskedWithOptions(self, cmd, icon, options);
+}
+static UIImage *(*TEOriginalCachedUnmasked)(id, SEL, id);
+static UIImage *TECachedUnmasked(id self, SEL cmd, id icon) {
+    return TEThemedImageForIcon(self, icon, NO) ?: TEOriginalCachedUnmasked(self, cmd, icon);
 }
 
 /// SBIconController.sharedInstance -> iconManager（SpringBoard 的运行期对象图）。
@@ -138,9 +146,20 @@ static void TEPurgeIconCaches(void) {
 }
 
 static void TEReloadThemes(void) {
-    NSInteger count = [[TEIconStore sharedStore] reload];
-    TEPurgeIconCaches();
-    os_log(TELog(), "TEReload themes=%ld", (long)count);
+    static dispatch_queue_t queue;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{ queue = dispatch_queue_create("pineora.theme-reload", DISPATCH_QUEUE_SERIAL); });
+    // 主题枚举和索引不占用 SpringBoard 主线程。
+    dispatch_async(queue, ^{
+        @autoreleasepool {
+            NSInteger count = [[TEIconStore sharedStore] reload];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                TEPurgeIconCaches();
+                TERefreshExtensionViews();
+                os_log(TELog(), "TEReload themes=%ld", (long)count);
+            });
+        }
+    });
 }
 
 #pragma mark - 通知
@@ -157,6 +176,15 @@ static void TERegisterNotifications(void) {
         return;
     }
     registered = YES;
+    for (NSString *notification in @[UIApplicationSignificantTimeChangeNotification,
+            NSSystemTimeZoneDidChangeNotification, NSCurrentLocaleDidChangeNotification]) {
+        [[NSNotificationCenter defaultCenter] addObserverForName:notification object:nil
+            queue:NSOperationQueue.mainQueue usingBlock:^(__unused NSNotification *note) {
+                [[TEIconStore sharedStore] invalidateImageCache];
+                TEPurgeIconCaches();
+                TERefreshExtensionViews();
+            }];
+    }
     for (NSString *name in names) {
         int token = 0;
         uint32_t status = notify_register_dispatch(name.UTF8String, &token,
@@ -195,22 +223,25 @@ __attribute__((constructor)) static void TweakInitialize(void) {
         return;  // 过滤器只指向 SpringBoard，其它进程直接退出。
     }
 
-    // 先准备好主题表，避免 SpringBoard 第一批取图时才做磁盘扫描。
-    [[TEIconStore sharedStore] reload];
+    // 初始索引在启动完成后异步加载，加载前沿用系统图标。
+    TEInstallExtensionHooks();
 
-    // 目标方法经本机 SpringBoardHome 反射确认（Research/tools/TEProbe.m）：
-    //   SBHIconImageCache -imageForIcon: / -cachedImageForIcon: / -unmaskedImageForIcon:
-    // 两个带 options 参数的变体没有钩：参数类型未证实，猜错会破坏调用约定。
+    // 本机探针同时核实了 options 为 NSUInteger（Q），安装前再次严格校验签名。
     NSMutableArray<NSString *> *hooked = [NSMutableArray array];
-    NSArray<NSString *> *selectorNames = @[@"imageForIcon:", @"cachedImageForIcon:", @"unmaskedImageForIcon:"];
+    NSArray<NSString *> *selectorNames = @[@"imageForIcon:", @"cachedImageForIcon:", @"unmaskedImageForIcon:",
+        @"imageForIcon:options:", @"unmaskedImageForIcon:options:", @"cachedUnmaskedImageForIcon:"];
     IMP replacements[] = {(IMP)TEHookIconCacheImage, (IMP)TEHookCachedIconCacheImage,
-                          (IMP)TEHookUnmaskedIconCacheImage};
+        (IMP)TEHookUnmaskedIconCacheImage, (IMP)TEImageWithOptions, (IMP)TEUnmaskedWithOptions, (IMP)TECachedUnmasked};
     IMP *originals[] = {(IMP *)&TEOriginalIconCacheImage, (IMP *)&TEOriginalCachedIconCacheImage,
-                        (IMP *)&TEOriginalUnmaskedIconCacheImage};
+        (IMP *)&TEOriginalUnmaskedIconCacheImage, (IMP *)&TEOriginalImageWithOptions,
+        (IMP *)&TEOriginalUnmaskedWithOptions, (IMP *)&TEOriginalCachedUnmasked};
+    Class cacheClass = objc_getClass("SBHIconImageCache");
     for (NSUInteger index = 0; index < selectorNames.count; index++) {
         NSString *selectorName = selectorNames[index];
-        if (TEInstallInstanceHook(@"SBHIconImageCache", selectorName,
-                                  replacements[index], originals[index])) {
+        Method method = class_getInstanceMethod(cacheClass, NSSelectorFromString(selectorName));
+        const char *expected = (index == 3 || index == 4) ? "@32@0:8@16Q24" : "@24@0:8@16";
+        if (method && strcmp(method_getTypeEncoding(method), expected) == 0 &&
+            TEInstallInstanceHook(@"SBHIconImageCache", selectorName, replacements[index], originals[index])) {
             [hooked addObject:selectorName];
         }
     }

@@ -1,0 +1,23 @@
+/* Pineora settings — English. */
+"settings.subtitle" = "Home Screen Icon Themes";
+"themes.active" = "Enabled Themes";
+"themes.available" = "Available Themes";
+"themes.list_separator" = ", ";
+"settings.disabled_footer" = "When disabled, the Home Screen uses system icons.";
+"themes.install_footer" = "Place .theme folders in any of these locations:\n%@";
+"themes.order_footer" = "Themes higher in the list take priority. Tap a theme to enable or disable it. Drag the handles on the right to reorder themes.";
+"themes.default_footer" = "Until you choose themes here, Pineora uses the existing theme selection, or all themes if none are selected.";
+"themes.missing_footer" = "These selected themes could not be found. Reinstall them: %@";
+"settings.unapplied_footer" = "Changes have not been applied. Tap Apply Changes to refresh Home Screen icons.";
+"settings.apply_footer" = "After changing settings or theme files, tap Apply Changes to refresh Home Screen icons.";
+"settings.enable" = "Enable";
+"themes.empty" = "No themes found";
+"themes.none_active" = "No themes enabled";
+"settings.applied" = "Applied";
+"settings.apply" = "Apply Changes";
+"theme.icon_count" = "Icons: %ld";
+"theme.icon_mask" = "Icon Mask";
+"theme.badge_style" = "Badge Style";
+"theme.clock_style" = "Clock Style";
+"theme.calendar_style" = "Calendar Style";
+"theme.no_content" = "No compatible content. Choose another theme.";

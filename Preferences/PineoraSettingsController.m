@@ -1,5 +1,6 @@
 #import "PineoraSettingsController.h"
 #import "PineoraStore.h"
+#import "PineoraLocalization.h"
 
 typedef NS_ENUM(NSInteger, PineoraSection) {
     PineoraSectionEnable,
@@ -14,6 +15,7 @@ static NSString *const kPineoraCell = @"cell";
 @interface PineoraSettingsController ()
 @property (nonatomic, strong) PineoraStore *store;
 @property (nonatomic, assign) BOOL justApplied;
+@property (nonatomic, assign) NSUInteger applyGeneration;
 @end
 
 @implementation PineoraSettingsController
@@ -23,6 +25,9 @@ static NSString *const kPineoraCell = @"cell";
     self.store = [PineoraStore new];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kPineoraCell];
     self.tableView.tableHeaderView = [self makeHeaderView];
+    // Keep reorder handles available without a separate Edit/Done mode.
+    self.tableView.allowsSelectionDuringEditing = YES;
+    [self setEditing:YES animated:NO];
     [self reloadFromStore];
 }
 
@@ -59,7 +64,7 @@ static NSString *const kPineoraCell = @"cell";
     title.textAlignment = NSTextAlignmentCenter;
 
     UILabel *subtitle = [UILabel new];
-    subtitle.text = @"主屏图标主题";
+    subtitle.text = PineoraLocalizedString(@"settings.subtitle");
     subtitle.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
     subtitle.textColor = [UIColor secondaryLabelColor];
     subtitle.textAlignment = NSTextAlignmentCenter;
@@ -84,13 +89,12 @@ static NSString *const kPineoraCell = @"cell";
     return header;
 }
 
-#pragma mark - 编辑
+#pragma mark - 排序模式
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
-    [super setEditing:editing animated:animated];
-    // 编辑态只用来排序；“可用主题”和“应用”在编辑时没意义。
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(PineoraSectionAvailable, 2)]
-                  withRowAnimation:UITableViewRowAnimationFade];
+    // Sorting is always available; there is no separate editing UI.
+    (void)editing;
+    [super setEditing:YES animated:animated];
 }
 
 #pragma mark - 数据源
@@ -108,9 +112,9 @@ static NSString *const kPineoraCell = @"cell";
         case PineoraSectionActive:
             return MAX((NSInteger)self.store.activeThemes.count, 1);  // 空时放一行说明
         case PineoraSectionAvailable:
-            return self.editing ? 0 : (NSInteger)self.store.inactiveThemes.count;
+            return (NSInteger)self.store.inactiveThemes.count;
         case PineoraSectionApply:
-            return self.editing ? 0 : 1;
+            return 1;
         default:
             return 0;
     }
@@ -120,9 +124,9 @@ static NSString *const kPineoraCell = @"cell";
     (void)tableView;
     switch (section) {
         case PineoraSectionActive:
-            return @"已启用的主题";
+            return PineoraLocalizedString(@"themes.active");
         case PineoraSectionAvailable:
-            return self.editing || self.store.inactiveThemes.count == 0 ? nil : @"可用主题";
+            return self.store.inactiveThemes.count == 0 ? nil : PineoraLocalizedString(@"themes.available");
         default:
             return nil;
     }
@@ -133,31 +137,28 @@ static NSString *const kPineoraCell = @"cell";
     PineoraStore *store = self.store;
     switch (section) {
         case PineoraSectionEnable:
-            return @"关闭后主屏显示系统原图标。";
+            return PineoraLocalizedString(@"settings.disabled_footer");
         case PineoraSectionActive: {
             NSMutableArray<NSString *> *lines = [NSMutableArray array];
             if (store.activeThemes.count == 0 && store.inactiveThemes.count == 0) {
-                [lines addObject:[NSString stringWithFormat:@"把 .theme 放进以下目录：\n%@",
+                [lines addObject:[NSString stringWithFormat:PineoraLocalizedString(@"themes.install_footer"),
                                   [store.searchDirectories componentsJoinedByString:@"\n"]]];
             } else {
-                [lines addObject:@"排在上面的主题优先；点右上角“编辑”拖动排序，点主题停用它。"];
+                [lines addObject:PineoraLocalizedString(@"themes.order_footer")];
             }
             if (!store.hasExplicitSelection) {
-                [lines addObject:@"尚未选择：引擎沿用 SnowBoard 的已选主题，没有时启用全部主题。"];
+                [lines addObject:PineoraLocalizedString(@"themes.default_footer")];
             }
             if (store.missingThemeNames.count > 0) {
-                [lines addObject:[NSString stringWithFormat:@"已保存但找不到：%@",
-                                  [store.missingThemeNames componentsJoinedByString:@"、"]]];
+                [lines addObject:[NSString stringWithFormat:PineoraLocalizedString(@"themes.missing_footer"),
+                                  [store.missingThemeNames componentsJoinedByString:PineoraLocalizedString(@"themes.list_separator")]]];
             }
             return [lines componentsJoinedByString:@"\n\n"];
         }
         case PineoraSectionApply:
-            if (self.editing) {
-                return nil;
-            }
             return store.hasUnappliedChanges
-                ? @"有未应用的更改。"
-                : @"改动或更新主题文件后点这里，主屏会重新读取主题。";
+                ? PineoraLocalizedString(@"settings.unapplied_footer")
+                : PineoraLocalizedString(@"settings.apply_footer");
         default:
             return nil;
     }
@@ -167,13 +168,14 @@ static NSString *const kPineoraCell = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kPineoraCell forIndexPath:indexPath];
     cell.accessoryView = nil;
     cell.accessoryType = UITableViewCellAccessoryNone;
+    cell.showsReorderControl = indexPath.section == PineoraSectionActive && self.store.activeThemes.count > 1;
     cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     UIListContentConfiguration *content = [UIListContentConfiguration subtitleCellConfiguration];
 
     switch (indexPath.section) {
         case PineoraSectionEnable: {
             content = [UIListContentConfiguration cellConfiguration];
-            content.text = @"启用";
+            content.text = PineoraLocalizedString(@"settings.enable");
             UISwitch *toggle = [UISwitch new];
             toggle.on = self.store.enabled;
             [toggle addTarget:self action:@selector(enabledChanged:) forControlEvents:UIControlEventValueChanged];
@@ -184,7 +186,7 @@ static NSString *const kPineoraCell = @"cell";
         case PineoraSectionActive:
             if (self.store.activeThemes.count == 0) {
                 content = [UIListContentConfiguration cellConfiguration];
-                content.text = self.store.inactiveThemes.count == 0 ? @"没有找到主题" : @"未启用主题";
+                content.text = self.store.inactiveThemes.count == 0 ? PineoraLocalizedString(@"themes.empty") : PineoraLocalizedString(@"themes.none_active");
                 content.textProperties.color = [UIColor secondaryLabelColor];
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
             } else {
@@ -196,9 +198,7 @@ static NSString *const kPineoraCell = @"cell";
             [self configure:content theme:self.store.inactiveThemes[indexPath.row]];
             break;
         case PineoraSectionApply:
-            content = [UIListContentConfiguration cellConfiguration];
-            content.text = self.justApplied ? @"已应用" : @"应用更改";
-            content.textProperties.color = self.view.tintColor;
+            content = [self applyContent];
             break;
         default:
             break;
@@ -207,9 +207,16 @@ static NSString *const kPineoraCell = @"cell";
     return cell;
 }
 
+- (UIListContentConfiguration *)applyContent {
+    UIListContentConfiguration *content = [UIListContentConfiguration cellConfiguration];
+    content.text = self.justApplied ? PineoraLocalizedString(@"settings.applied") : PineoraLocalizedString(@"settings.apply");
+    content.textProperties.color = self.view.tintColor;
+    return content;
+}
+
 - (void)configure:(UIListContentConfiguration *)content theme:(PineoraThemeItem *)theme {
     content.text = theme.title;
-    content.secondaryText = theme.iconCount < 0 ? @" " : [NSString stringWithFormat:@"%ld 个图标", (long)theme.iconCount];
+    content.secondaryText = theme.summary ?: (theme.iconCount < 0 ? @" " : [NSString stringWithFormat:PineoraLocalizedString(@"theme.icon_count"), (long)theme.iconCount]);
     content.secondaryTextProperties.color = [UIColor secondaryLabelColor];
     UIImage *placeholder = [UIImage systemImageNamed:@"square.dashed"];
     content.image = theme.preview ?: placeholder;
@@ -266,7 +273,8 @@ static NSString *const kPineoraCell = @"cell";
 #pragma mark - 选择
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    // “应用”行的文字切换不要任何动画，连取消高亮也直接完成。
+    [tableView deselectRowAtIndexPath:indexPath animated:indexPath.section != PineoraSectionApply];
     switch (indexPath.section) {
         case PineoraSectionActive:
             if (self.store.activeThemes.count > 0) {
@@ -285,9 +293,15 @@ static NSString *const kPineoraCell = @"cell";
             [[UINotificationFeedbackGenerator new] notificationOccurred:UINotificationFeedbackTypeSuccess];
             self.justApplied = YES;
             [self reloadApplySection];
+            // 连点时只让最后一次的计时把文字改回去。
+            NSUInteger generation = ++self.applyGeneration;
+            __weak __typeof__(self) weakSelf = self;
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                self.justApplied = NO;
-                [self reloadApplySection];
+                if (weakSelf == nil || weakSelf.applyGeneration != generation) {
+                    return;
+                }
+                weakSelf.justApplied = NO;
+                [weakSelf reloadApplySection];
             });
             break;
         }
@@ -304,16 +318,40 @@ static NSString *const kPineoraCell = @"cell";
 
 - (void)markChanged {
     self.justApplied = NO;
+    self.applyGeneration++;
 }
 
 - (void)reloadThemeSections {
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(PineoraSectionActive, 3)]
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(PineoraSectionActive, 2)]
                   withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self reloadApplySection];
 }
 
+/// 原地改“应用”行和它的脚注，不 reloadSections：重载会换一个新 cell，
+/// 新旧 cell 在过渡里叠在一起，正好撞上取消选中的动画，就是截图里的重影。
 - (void)reloadApplySection {
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:PineoraSectionApply]
-                  withRowAnimation:UITableViewRowAnimationNone];
+    NSIndexPath *row = [NSIndexPath indexPathForRow:0 inSection:PineoraSectionApply];
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:row];
+    UITableViewHeaderFooterView *footer = [self.tableView footerViewForSection:PineoraSectionApply];
+    NSString *footerText = [self tableView:self.tableView titleForFooterInSection:PineoraSectionApply];
+    [UIView performWithoutAnimation:^{
+        cell.contentConfiguration = [self applyContent];
+        id footerContent = footer.contentConfiguration;
+        if ([footerContent isKindOfClass:[UIListContentConfiguration class]]) {
+            UIListContentConfiguration *updated = [footerContent copy];
+            updated.text = footerText;
+            footer.contentConfiguration = updated;
+        } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            footer.textLabel.text = footerText;
+#pragma clang diagnostic pop
+            [footer setNeedsLayout];
+        }
+        // 脚注行数变了时只重算高度，不重建任何视图。
+        [self.tableView beginUpdates];
+        [self.tableView endUpdates];
+    }];
 }
 
 @end

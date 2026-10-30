@@ -42,7 +42,7 @@
     [page didMoveToParentViewController:self];
     self.page = page;
 
-    self.navigationItem.rightBarButtonItem = page.editButtonItem;
+    self.navigationItem.rightBarButtonItem = nil;
     [self setContentScrollView:page.tableView forEdge:NSDirectionalRectEdgeAll];
     NSLog(@"[PineoraPrefs] root pane loaded");
 }

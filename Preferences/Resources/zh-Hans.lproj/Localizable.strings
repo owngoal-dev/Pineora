@@ -1,0 +1,23 @@
+/* Pineora settings — Simplified Chinese. */
+"settings.subtitle" = "主屏幕图标主题";
+"themes.active" = "已启用主题";
+"themes.available" = "可用主题";
+"themes.list_separator" = "、";
+"settings.disabled_footer" = "关闭后，主屏幕将显示系统图标。";
+"themes.install_footer" = "将 .theme 主题文件夹放入以下任一目录：\n%@";
+"themes.order_footer" = "排序靠前的主题优先生效。轻点主题可启用或停用，拖移右侧手柄可排序。";
+"themes.default_footer" = "在此选择主题前，沿用已有的主题选择；若无选择，则启用全部主题。";
+"themes.missing_footer" = "找不到以下已选主题，请重新安装：%@";
+"settings.unapplied_footer" = "更改尚未应用。轻点“应用更改”以刷新主屏幕图标。";
+"settings.apply_footer" = "调整设置或更新主题文件后，轻点“应用更改”以刷新主屏幕图标。";
+"settings.enable" = "启用";
+"themes.empty" = "未找到主题";
+"themes.none_active" = "未启用主题";
+"settings.applied" = "已应用";
+"settings.apply" = "应用更改";
+"theme.icon_count" = "%ld 个图标";
+"theme.icon_mask" = "图标蒙版";
+"theme.badge_style" = "角标样式";
+"theme.clock_style" = "时钟样式";
+"theme.calendar_style" = "日历样式";
+"theme.no_content" = "未找到可用内容，请选择其他主题。";

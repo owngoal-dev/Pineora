@@ -1,4 +1,5 @@
 #import "PineoraStore.h"
+#import "PineoraLocalization.h"
 #import "ApelinBootstrap.h"
 #import "TETheme.h"
 #import <notify.h>
@@ -250,9 +251,17 @@ static UIImage *PineoraRoundedPreview(UIImage *image) {
             UIImage *image = previewPath != nil ? [UIImage imageWithContentsOfFile:previewPath] : nil;
             UIImage *preview = image != nil ? PineoraRoundedPreview(image) : nil;
             NSInteger count = (NSInteger)icons.count;
+            NSMutableArray<NSString *> *features = [NSMutableArray array];
+            if (count > 0) [features addObject:[NSString stringWithFormat:PineoraLocalizedString(@"theme.icon_count"), (long)count]];
+            if ([theme resourcePathForBundleIdentifier:@"com.apple.mobileicons.framework" resourceName:@"AppIconMask" scale:scale]) [features addObject:PineoraLocalizedString(@"theme.icon_mask")];
+            if ([theme resourcePathForBundleIdentifier:@"com.apple.springboard" resourceName:@"SBBadgeBG" scale:scale] || [theme.info[@"BadgeSettings"] isKindOfClass:NSDictionary.class]) [features addObject:PineoraLocalizedString(@"theme.badge_style")];
+            if ([theme resourcePathForBundleIdentifier:@"com.apple.springboard" resourceName:@"ClockIconBackgroundSquare" scale:scale]) [features addObject:PineoraLocalizedString(@"theme.clock_style")];
+            if ([theme.info[@"CalendarIconDateSettings"] isKindOfClass:NSDictionary.class] || [theme.info[@"CalendarIconDaySettings"] isKindOfClass:NSDictionary.class]) [features addObject:PineoraLocalizedString(@"theme.calendar_style")];
+            NSString *summary = features.count ? [features componentsJoinedByString:@" · "] : PineoraLocalizedString(@"theme.no_content");
             dispatch_async(dispatch_get_main_queue(), ^{
                 item.iconCount = count;
                 item.preview = preview;
+                item.summary = summary;
             });
         }
         dispatch_async(dispatch_get_main_queue(), completion);

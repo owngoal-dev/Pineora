@@ -1,0 +1,23 @@
+/* Pineora settings — Korean. */
+"settings.subtitle" = "홈 화면 아이콘 테마";
+"themes.active" = "활성화된 테마";
+"themes.available" = "사용 가능한 테마";
+"themes.list_separator" = ", ";
+"settings.disabled_footer" = "비활성화하면 홈 화면에 시스템 아이콘이 표시됩니다.";
+"themes.install_footer" = ".theme 폴더를 다음 위치 중 한 곳에 넣으세요:\n%@";
+"themes.order_footer" = "목록 위쪽의 테마가 우선 적용됩니다. 테마를 탭하여 활성화하거나 비활성화할 수 있습니다. 오른쪽 핸들을 드래그하여 순서를 변경하세요.";
+"themes.default_footer" = "여기에서 테마를 선택하기 전까지는 기존 테마 선택을 사용합니다. 선택한 테마가 없으면 모든 테마가 활성화됩니다.";
+"themes.missing_footer" = "선택한 다음 테마를 찾을 수 없습니다. 다시 설치하세요: %@";
+"settings.unapplied_footer" = "변경 사항이 적용되지 않았습니다. 변경 사항 적용을 탭하여 홈 화면 아이콘을 새로 고치세요.";
+"settings.apply_footer" = "설정이나 테마 파일을 변경한 후 변경 사항 적용을 탭하여 홈 화면 아이콘을 새로 고치세요.";
+"settings.enable" = "활성화";
+"themes.empty" = "테마를 찾을 수 없습니다";
+"themes.none_active" = "활성화된 테마가 없습니다";
+"settings.applied" = "적용됨";
+"settings.apply" = "변경 사항 적용";
+"theme.icon_count" = "아이콘 %ld개";
+"theme.icon_mask" = "아이콘 마스크";
+"theme.badge_style" = "배지 스타일";
+"theme.clock_style" = "시계 스타일";
+"theme.calendar_style" = "캘린더 스타일";
+"theme.no_content" = "호환되는 콘텐츠가 없습니다. 다른 테마를 선택하세요.";

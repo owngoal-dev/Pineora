@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *title;  // 去掉 .theme 的显示名
 @property (nonatomic, assign) NSInteger iconCount;      // 解析前为 -1
 @property (nonatomic, strong, nullable) UIImage *preview;
+@property (nonatomic, copy, nullable) NSString *summary; // 应用图标数与扩展能力
 @end
 
 @interface PineoraStore : NSObject

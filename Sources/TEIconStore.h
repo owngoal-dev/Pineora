@@ -20,8 +20,8 @@ extern NSString *const TEStoreDidReloadNotification;  // 进程内通知名
 
 + (instancetype)sharedStore;
 
-@property (nonatomic, assign, readonly) BOOL enabled;
-@property (nonatomic, copy, readonly) NSArray<TETheme *> *themes;
+@property (atomic, assign, readonly) BOOL enabled;
+@property (atomic, copy, readonly) NSArray<TETheme *> *themes;
 
 /// 重新读设置与主题（幂等，可反复调用）。返回解析成功的主题数。
 - (NSInteger)reload;
@@ -31,6 +31,16 @@ extern NSString *const TEStoreDidReloadNotification;  // 进程内通知名
 
 /// 指定 bundle 与倍率的图标；没有主题文件时为 nil。
 - (nullable UIImage *)imageForBundleIdentifier:(NSString *)bundleIdentifier scale:(NSInteger)scale;
+
+/// 指定渲染尺寸及蒙版状态；避免把原始 PNG 直接交给已蒙版缓存。
+- (nullable UIImage *)imageForBundleIdentifier:(NSString *)bundleIdentifier size:(CGSize)size
+    scale:(CGFloat)scale cornerRadius:(CGFloat)cornerRadius masked:(BOOL)masked;
+/// 按已启用主题顺序取扩展资源；不包含路径时为 nil。
+- (nullable UIImage *)resourceImageForBundleIdentifier:(NSString *)bundleIdentifier
+    name:(NSString *)name size:(CGSize)size scale:(CGFloat)scale;
+- (nullable UIImage *)rawResourceForBundleIdentifier:(NSString *)bundleIdentifier
+    name:(NSString *)name scale:(NSInteger)scale;
+- (NSDictionary *)settingsForKey:(NSString *)key;
 
 /// 同上，但只返回路径。
 - (nullable NSString *)iconPathForBundleIdentifier:(NSString *)bundleIdentifier scale:(NSInteger)scale;

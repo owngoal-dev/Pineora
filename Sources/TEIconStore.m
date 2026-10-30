@@ -1,6 +1,7 @@
 #import "TEIconStore.h"
 #import "TECompat.h"
 #import "TELog.h"
+#import "TERenderer.h"
 
 NSString *const TEStoreDidReloadNotification = @"local.apelin.themeengine.store.reloaded";
 
@@ -16,11 +17,17 @@ static NSArray<NSString *> *TESnowBoardPreferencesPaths(void) {
 }
 
 @interface TEIconStore ()
-@property (nonatomic, assign) BOOL enabled;
-@property (nonatomic, copy) NSArray<TETheme *> *themes;
-@property (nonatomic, strong) NSMutableDictionary<NSString *, UIImage *> *imageCache;
+@property (atomic, assign) BOOL enabled;
+@property (atomic, copy) NSArray<TETheme *> *themes;
+@property (nonatomic, strong) NSCache<NSString *, id> *imageCache;
 @property (nonatomic, strong) NSLock *lock;
+@property (nonatomic, strong) NSCache<NSString *, id> *resourceCache;
+@property (nonatomic, assign) NSUInteger generation;
 @end
+
+static NSUInteger TEImageCost(UIImage *image) {
+    return image.CGImage ? CGImageGetBytesPerRow(image.CGImage) * CGImageGetHeight(image.CGImage) : 0;
+}
 
 @implementation TEIconStore
 
@@ -38,13 +45,31 @@ static NSArray<NSString *> *TESnowBoardPreferencesPaths(void) {
     if (self != nil) {
         _themes = @[];
         _enabled = YES;
-        _imageCache = [NSMutableDictionary dictionary];
+        _imageCache = [NSCache new];
+        _imageCache.name = @"Pineora.rendered";
+        _imageCache.totalCostLimit = 24 * 1024 * 1024;
+        _imageCache.countLimit = 512;
         _lock = [[NSLock alloc] init];
+        _resourceCache = [NSCache new];
+        _resourceCache.name = @"Pineora.resources";
+        _resourceCache.totalCostLimit = 4 * 1024 * 1024;
+        _resourceCache.countLimit = 128;
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(teMemoryWarning:)
+            name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
     }
     return self;
 }
 
 #pragma mark - 设置
+
+- (void)teMemoryWarning:(NSNotification *)notification {
+    (void)notification;
+    [self invalidateImageCache];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 - (NSString *)ownPreferencesPath {
     return [TEPreferencesDirectory stringByAppendingPathComponent:
@@ -192,6 +217,8 @@ static NSArray<NSString *> *TESnowBoardPreferencesPaths(void) {
 - (void)invalidateImageCache {
     [self.lock lock];
     [self.imageCache removeAllObjects];
+    [self.resourceCache removeAllObjects];
+    self.generation++;
     [self.lock unlock];
 }
 
@@ -209,39 +236,107 @@ static NSArray<NSString *> *TESnowBoardPreferencesPaths(void) {
     return nil;
 }
 
-- (UIImage *)imageForBundleIdentifier:(NSString *)bundleIdentifier scale:(NSInteger)scale {
-    if (bundleIdentifier.length == 0) {
-        return nil;
+- (NSDictionary *)settingsForKey:(NSString *)key {
+    if (!self.enabled) return @{};
+    for (TETheme *theme in self.themes) {
+        id value = theme.info[key];
+        if ([value isKindOfClass:NSDictionary.class]) return value;
     }
-    if (scale < 1) {
-        scale = 1;
-    }
-    NSString *key = [NSString stringWithFormat:@"%@#%ld", bundleIdentifier, (long)scale];
-    [self.lock lock];
-    UIImage *cached = self.imageCache[key];
-    [self.lock unlock];
-    if (cached != nil) {
-        return cached;
-    }
+    return @{};
+}
 
-    NSString *path = [self iconPathForBundleIdentifier:bundleIdentifier scale:scale];
-    if (path == nil) {
-        return nil;
+- (UIImage *)rawResourceForBundleIdentifier:(NSString *)bundleIdentifier name:(NSString *)name scale:(NSInteger)scale {
+    if (!self.enabled) return nil;
+    NSString *key = [NSString stringWithFormat:@"raw:%@:%@:%ld", bundleIdentifier, name, (long)scale];
+    [self.lock lock];
+    id cached = [self.resourceCache objectForKey:key];
+    NSUInteger generation = self.generation;
+    [self.lock unlock];
+    if (cached) return cached == NSNull.null ? nil : cached;
+    UIImage *image = nil;
+    for (TETheme *theme in self.themes) {
+        NSString *path = [theme resourcePathForBundleIdentifier:bundleIdentifier resourceName:name scale:scale];
+        if (!path) continue;
+        image = [UIImage imageWithContentsOfFile:path];
+        if (!image.CGImage) continue;
+        NSRange at = [path.lastPathComponent rangeOfString:@"@" options:NSBackwardsSearch];
+        NSInteger sourceScale = at.location == NSNotFound ? 1 : [[path.lastPathComponent substringFromIndex:at.location + 1] integerValue];
+        sourceScale = MAX(1, MIN(sourceScale, 4));
+        image = [UIImage imageWithCGImage:image.CGImage scale:sourceScale orientation:UIImageOrientationUp];
+        break;
     }
-    UIImage *image = [UIImage imageWithContentsOfFile:path];
-    if (image == nil) {
-        os_log_error(TELog(), "TEIconStore cannot decode %{public}s", path.UTF8String);
-        return nil;
+    [self.lock lock];
+    if (generation == self.generation) [self.resourceCache setObject:image ?: (id)NSNull.null forKey:key cost:TEImageCost(image)];
+    [self.lock unlock];
+    return image;
+}
+
+- (UIImage *)resourceImageForBundleIdentifier:(NSString *)bundleIdentifier name:(NSString *)name size:(CGSize)size scale:(CGFloat)scale {
+    if (!self.enabled || !isfinite(size.width) || !isfinite(size.height) || size.width <= 0 || size.height <= 0 || size.width > 512 || size.height > 512) return nil;
+    scale = isfinite(scale) ? MAX(1, MIN(scale, 4)) : 3;
+    NSString *key = [NSString stringWithFormat:@"resource:%@:%@:%g:%g:%g", bundleIdentifier, name, size.width, size.height, scale];
+    [self.lock lock];
+    id cached = [self.imageCache objectForKey:key];
+    NSUInteger generation = self.generation;
+    [self.lock unlock];
+    if (cached) return cached == NSNull.null ? nil : cached;
+    UIImage *raw = [self rawResourceForBundleIdentifier:bundleIdentifier name:name scale:(NSInteger)lround(scale)];
+    if (!raw) return nil;
+    UIImage *result = TEResizeImage(raw, size, scale);
+    [self.lock lock];
+    if (generation == self.generation) [self.imageCache setObject:result forKey:key cost:TEImageCost(result)];
+    [self.lock unlock];
+    return result;
+}
+
+- (UIImage *)imageForBundleIdentifier:(NSString *)bundleIdentifier scale:(NSInteger)scale {
+    return [self imageForBundleIdentifier:bundleIdentifier size:CGSizeMake(60, 60)
+                                  scale:scale cornerRadius:13.5 masked:YES];
+}
+
+- (UIImage *)imageForBundleIdentifier:(NSString *)bundleIdentifier size:(CGSize)size
+    scale:(CGFloat)scale cornerRadius:(CGFloat)cornerRadius masked:(BOOL)masked {
+    if (!self.enabled || bundleIdentifier.length == 0 || !isfinite(size.width) || !isfinite(size.height) ||
+        size.width <= 0 || size.height <= 0 || size.width > 512 || size.height > 512) return nil;
+    // 动态时钟由系统的实时视图处理，不能用带静态指针的 PNG 覆盖它。
+    if ([bundleIdentifier isEqualToString:@"com.apple.mobiletimer"]) return nil;
+    scale = isfinite(scale) ? MAX(1, MIN(scale, 4)) : 3;
+    cornerRadius = isfinite(cornerRadius) ? MAX(0, cornerRadius) : 0;
+    BOOL calendar = [bundleIdentifier isEqualToString:@"com.apple.mobilecal"];
+    NSDate *date = calendar ? NSDate.date : nil;
+    NSDateComponents *parts = calendar ? [NSCalendar.currentCalendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:date] : nil;
+    NSString *day = calendar ? [NSString stringWithFormat:@"%ld-%ld-%ld:%@:%@", (long)parts.year, (long)parts.month,
+        (long)parts.day, NSTimeZone.localTimeZone.name, NSLocale.currentLocale.localeIdentifier] : @"";
+    NSString *key = [NSString stringWithFormat:@"icon:%@:%g:%g:%g:%g:%d:%@", bundleIdentifier, size.width, size.height, scale, cornerRadius, masked, day];
+    [self.lock lock];
+    id cached = [self.imageCache objectForKey:key];
+    NSUInteger generation = self.generation;
+    [self.lock unlock];
+    if (cached) return cached == NSNull.null ? nil : cached;
+    UIImage *source = nil;
+    BOOL shouldMask = masked;
+    for (TETheme *theme in self.themes) {
+        NSString *path = [theme iconPathForBundleIdentifier:bundleIdentifier scale:(NSInteger)lround(scale)];
+        if (path == nil) continue;
+        source = [UIImage imageWithContentsOfFile:path];
+        if (source == nil) continue;
+        id maskPreference = theme.info[@"IB-MaskIcons"];
+        if ([maskPreference isKindOfClass:NSNumber.class] && ![maskPreference boolValue]) shouldMask = NO;
+        break;
     }
-    // imageWithContentsOfFile: 得到 scale 1 的图；按目标倍率重贴，尺寸才正确。
-    if (image.scale != (CGFloat)scale) {
-        image = [UIImage imageWithCGImage:image.CGImage scale:(CGFloat)scale orientation:UIImageOrientationUp];
-    }
-    if (image != nil) {
+    if (!source) {
         [self.lock lock];
-        self.imageCache[key] = image;
+        if (generation == self.generation) [self.imageCache setObject:NSNull.null forKey:key cost:0];
         [self.lock unlock];
+        return nil;
     }
+    UIImage *mask = shouldMask ? [self rawResourceForBundleIdentifier:@"com.apple.mobileicons.framework" name:@"AppIconMask" scale:(NSInteger)lround(scale)] : nil;
+    UIImage *image = TERenderIcon(source, size, scale, cornerRadius, shouldMask, mask,
+        calendar ? [self settingsForKey:@"CalendarIconDateSettings"] : nil,
+        calendar ? [self settingsForKey:@"CalendarIconDaySettings"] : nil, date);
+    [self.lock lock];
+    if (generation == self.generation) [self.imageCache setObject:image forKey:key cost:TEImageCost(image)];
+    [self.lock unlock];
     return image;
 }
 
