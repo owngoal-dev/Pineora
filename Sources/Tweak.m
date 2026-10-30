@@ -69,8 +69,10 @@ static UIImage *TEThemedImageForIcon(id icon) {
 
 #pragma mark - 钩子
 
-// 三个取图方法都只有一个参数（icon），签名一致，可以共用一个实现。
+// 每个 selector 保存独立的原实现，避免回退到其它方法或递归。
 static UIImage *(*TEOriginalIconCacheImage)(id, SEL, id);
+static UIImage *(*TEOriginalCachedIconCacheImage)(id, SEL, id);
+static UIImage *(*TEOriginalUnmaskedIconCacheImage)(id, SEL, id);
 
 static UIImage *TEHookIconCacheImage(id self, SEL _cmd, id icon) {
     UIImage *image = TEThemedImageForIcon(icon);
@@ -78,6 +80,18 @@ static UIImage *TEHookIconCacheImage(id self, SEL _cmd, id icon) {
         return image;
     }
     return TEOriginalIconCacheImage != NULL ? TEOriginalIconCacheImage(self, _cmd, icon) : nil;
+}
+
+static UIImage *TEHookCachedIconCacheImage(id self, SEL _cmd, id icon) {
+    UIImage *image = TEThemedImageForIcon(icon);
+    return image != nil ? image : (TEOriginalCachedIconCacheImage != NULL
+        ? TEOriginalCachedIconCacheImage(self, _cmd, icon) : nil);
+}
+
+static UIImage *TEHookUnmaskedIconCacheImage(id self, SEL _cmd, id icon) {
+    UIImage *image = TEThemedImageForIcon(icon);
+    return image != nil ? image : (TEOriginalUnmaskedIconCacheImage != NULL
+        ? TEOriginalUnmaskedIconCacheImage(self, _cmd, icon) : nil);
 }
 
 /// SBIconController.sharedInstance -> iconManager（SpringBoard 的运行期对象图）。
@@ -188,9 +202,15 @@ __attribute__((constructor)) static void TweakInitialize(void) {
     //   SBHIconImageCache -imageForIcon: / -cachedImageForIcon: / -unmaskedImageForIcon:
     // 两个带 options 参数的变体没有钩：参数类型未证实，猜错会破坏调用约定。
     NSMutableArray<NSString *> *hooked = [NSMutableArray array];
-    for (NSString *selectorName in @[@"imageForIcon:", @"cachedImageForIcon:", @"unmaskedImageForIcon:"]) {
+    NSArray<NSString *> *selectorNames = @[@"imageForIcon:", @"cachedImageForIcon:", @"unmaskedImageForIcon:"];
+    IMP replacements[] = {(IMP)TEHookIconCacheImage, (IMP)TEHookCachedIconCacheImage,
+                          (IMP)TEHookUnmaskedIconCacheImage};
+    IMP *originals[] = {(IMP *)&TEOriginalIconCacheImage, (IMP *)&TEOriginalCachedIconCacheImage,
+                        (IMP *)&TEOriginalUnmaskedIconCacheImage};
+    for (NSUInteger index = 0; index < selectorNames.count; index++) {
+        NSString *selectorName = selectorNames[index];
         if (TEInstallInstanceHook(@"SBHIconImageCache", selectorName,
-                                  (IMP)TEHookIconCacheImage, (IMP *)&TEOriginalIconCacheImage)) {
+                                  replacements[index], originals[index])) {
             [hooked addObject:selectorName];
         }
     }

@@ -148,11 +148,12 @@ static NSArray<NSString *> *TESnowBoardPreferencesPaths(void) {
             }
         }
     }
-    if (requested.count == 0 && importSnowBoard) {
+    BOOL hasSelection = [configured isKindOfClass:[NSArray class]];
+    if (!hasSelection && requested.count == 0 && importSnowBoard) {
         [requested addObjectsFromArray:[self snowBoardLoadedThemePaths]];
     }
     // 没有任何配置时，自动启用全部发现到的 .theme，便于第一版直接看到效果。
-    BOOL autoDiscover = requested.count == 0;
+    BOOL autoDiscover = !hasSelection && requested.count == 0;
     if (autoDiscover) {
         NSFileManager *fileManager = [NSFileManager defaultManager];
         for (NSString *base in searchDirectories) {
