@@ -10,6 +10,8 @@
         <string>PSLinkCell</string>
         <key>detail</key>
         <string>PineoraRootListController</string>
+        <key>icon</key>
+        <string>Pineora.png</string>
         <key>isController</key>
         <true/>
         <key>label</key>
