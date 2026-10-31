@@ -96,7 +96,7 @@ int main(int argc, const char *argv[]) {
             Class *classes = objc_copyClassList(&count);
             for (unsigned i = 0; i < count; i++) {
                 NSString *name = @(class_getName(classes[i]));
-                if ([name containsString:@"Icon"] && ([name containsString:@"Image"] || [name containsString:@"Render"])) printf("CANDIDATE %s\n", name.UTF8String);
+                if ([name containsString:@"Icon"] && ([name containsString:@"Image"] || [name containsString:@"Render"] || [name containsString:@"Mini"] || [name containsString:@"Folder"] || [name containsString:@"Library"])) printf("CANDIDATE %s\n", name.UTF8String);
             }
             free(classes);
         }

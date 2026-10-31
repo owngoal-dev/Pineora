@@ -9,6 +9,7 @@
 #import "TELog.h"
 #import "TEExtensions.h"
 #import "TEIconPipeline.h"
+#import "TEFolderPreview.h"
 
 /// SBIconController.sharedInstance -> iconManager (SpringBoard runtime object graph).
 static id TEIconManager(void) {
@@ -41,6 +42,7 @@ static void TEPurgeIconCaches(void) {
         os_log_error(TELog(), "TEPurge no iconManager");
         return;
     }
+    TEInvalidateFolderPreviewIcons();
     BOOL purged = TECallVoidSelector(TECallObject(manager, @"iconImageCache"), @"purgeAllCachedImages");
     BOOL folders = TECallVoidSelector(TECallObject(manager, @"folderIconImageCache"), @"informObserversOfUpdateForAllFolderIcons");
     os_log(TELog(), "TEPurge iconCache=%d folderCache=%d", purged, folders);
@@ -101,6 +103,7 @@ __attribute__((constructor)) static void TweakInitialize(void) {
     if (!springBoard) return;
     TEInstallExtensionHooks();
     TEInstallIconPipelineHooks();
+    TEInstallFolderPreviewHooks();
     MSHookMessageEx(springBoard, @selector(applicationDidFinishLaunching:),
         (IMP)TEHookedDidFinishLaunching, (IMP *)&TEOriginalDidFinishLaunching);
 }

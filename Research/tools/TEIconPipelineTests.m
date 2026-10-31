@@ -1,9 +1,11 @@
 // Isolated on-device regression. No windows, UI automation, preferences writes,
 // or SpringBoard injection. Only this process's framework classes are hooked.
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import <objc/message.h>
 #import <dlfcn.h>
 #import "../../Sources/TEIconPipeline.m"
+#import "../../Sources/TEFolderPreview.m"
 
 static int checks, failures;
 static void Check(BOOL ok, const char *name) { checks++; if (!ok) failures++; printf("%s %s\n", ok ? "PASS" : "FAIL", name); }
@@ -77,6 +79,41 @@ static int CornerAlpha(UIImage *image) {
     CGContextDrawImage(ctx, CGRectMake(0, 1-(CGFloat)CGImageGetHeight(image.CGImage), CGImageGetWidth(image.CGImage), CGImageGetHeight(image.CGImage)), image.CGImage);
     CGContextRelease(ctx); CGColorSpaceRelease(color);
     return pixel[3];
+}
+
+static NSString *previewIdentifier;
+static id PreviewIdentifier(id self, SEL cmd) { (void)self; (void)cmd; return previewIdentifier; }
+static id previewTraits, previewContext;
+static NSUInteger previewLayerFallbacks, previewGridFallbacks;
+static id PreviewLayerFallback(id self, SEL cmd, TEIconImageInfo info, id traits, id context, NSUInteger options) {
+    (void)self; (void)cmd;
+    previewLayerFallbacks++;
+    Check(info.size.width == 76 && traits == previewTraits && context == previewContext && options == 37,
+        "preview layer fallback preserves struct, traits, context and options");
+    return sentinel;
+}
+static UIImage *PreviewGridFallback(id self, SEL cmd, CGSize cell, id icon, TEIconImageInfo info, id appearance, NSUInteger *attributes) {
+    (void)self; (void)cmd; (void)icon;
+    previewGridFallbacks++;
+    Check(cell.width == 12 && info.size.width == 76 && appearance == previewTraits && attributes && *attributes == 91,
+        "preview grid fallback preserves cell, info, appearance and attribute pointer");
+    return sentinel;
+}
+static BOOL PreviewHasRedCenter(UIImage *image) {
+    if (!image.CGImage) return NO;
+    uint8_t pixel[4] = {0};
+    CGColorSpaceRef color = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(pixel,1,1,8,4,color,kCGImageAlphaPremultipliedLast|kCGBitmapByteOrder32Big);
+    CGFloat width = CGImageGetWidth(image.CGImage), height = CGImageGetHeight(image.CGImage);
+    CGContextDrawImage(context,CGRectMake(-floor(width/2),-floor(height/2),width,height),image.CGImage);
+    CGContextRelease(context); CGColorSpaceRelease(color);
+    return pixel[0] > 200 && pixel[1] < 50 && pixel[2] < 50 && pixel[3] > 200;
+}
+static UIImage *PreviewLayerPixels(id layer) {
+    if (![layer isKindOfClass:CALayer.class]) return nil;
+    id contents = [layer contents];
+    if (!contents || CFGetTypeID((__bridge CFTypeRef)contents) != CGImageGetTypeID()) return nil;
+    return [UIImage imageWithCGImage:(__bridge CGImageRef)contents];
 }
 
 int main(void) {
@@ -216,6 +253,115 @@ int main(void) {
             Check(displayed == result && CornerAlpha(displayed) == 0,
                 "detached native image view displays the rounded default-cache image");
         }
+        // Two preview paths: native mini-grid CALayers and static grid images.
+        TEOriginalPreviewLayer = PreviewLayerFallback;
+        TEOriginalPreviewGrid = PreviewGridFallback;
+        Class iconBase = objc_getClass("SBIcon");
+        Class previewClass = objc_allocateClassPair(iconBase, "TEPreviewIsolatedModelIcon", 0);
+        class_addMethod(previewClass, @selector(applicationBundleIdentifier), (IMP)PreviewIdentifier, "@16@0:8");
+        objc_registerClassPair(previewClass);
+        id previewIcon = [previewClass new];
+        previewIdentifier = @"test.pineora.icon";
+        previewTraits = [UITraitCollection traitCollectionWithDisplayScale:2];
+        previewContext = [NSObject new];
+        TEIconImageInfo previewInfo = {CGSizeMake(76,76),2,16};
+        id previewLayer = TEPreviewLayer(previewIcon,NULL,previewInfo,previewTraits,previewContext,1);
+        UIImage *layerPixels = PreviewLayerPixels(previewLayer);
+        Check(layerPixels && CGImageGetWidth(layerPixels.CGImage) == 152 && CornerAlpha(layerPixels) == 0,
+            "native mini-grid layer contains rounded theme pixels at the requested resolution");
+        id squareLayer = TEPreviewLayer(previewIcon,NULL,previewInfo,previewTraits,previewContext,0);
+        Check(CornerAlpha(PreviewLayerPixels(squareLayer)) == 255,
+            "model image options retain explicit square layer semantics");
+        NSUInteger attributes = 91;
+        CGSize cell = CGSizeMake(12,12);
+        UIImage *miniImage = TEPreviewGrid(objc_getClass("SBFolderIconImageCache"),NULL,cell,icon,previewInfo,previewTraits,&attributes);
+        Check(miniImage && miniImage.size.width == 12 && miniImage.size.height == 12 && CornerAlpha(miniImage) == 0,
+            "static folder preview uses native resizer and preserves theme corner alpha");
+        Check(attributes == 91, "themed static preview leaves native attribute output untouched");
+        icon.applicationBundleIdentifier = @"test.pineora.missing";
+        previewIdentifier = @"test.pineora.missing";
+        Check(TEPreviewLayer(previewIcon,NULL,previewInfo,previewTraits,previewContext,37) == sentinel,
+            "missing preview icon delegates to original layer factory");
+        Check(TEPreviewGrid(objc_getClass("SBFolderIconImageCache"),NULL,cell,icon,previewInfo,previewTraits,&attributes) == sentinel,
+            "missing preview icon delegates to original static grid generator");
+        previewIdentifier = @"com.apple.mobiletimer";
+        Check(TEPreviewLayer(previewIcon,NULL,previewInfo,previewTraits,previewContext,37) == sentinel,
+            "live clock preview remains native");
+        previewIdentifier = @"test.pineora.icon";
+        icon.applicationBundleIdentifier = @"test.pineora.icon";
+        [store setValue:@NO forKey:@"enabled"];
+        Check(TEPreviewLayer(previewIcon,NULL,previewInfo,previewTraits,previewContext,37) == sentinel &&
+            TEPreviewGrid(objc_getClass("SBFolderIconImageCache"),NULL,cell,icon,previewInfo,previewTraits,&attributes) == sentinel,
+            "disabled theme restores both native preview paths");
+        [store setValue:@YES forKey:@"enabled"];
+        Check(previewLayerFallbacks == 3 && previewGridFallbacks == 2,
+            "each preview fallback calls its original exactly once");
+        TEInstallFolderPreviewHooks();
+        Check(TEOriginalPreviewLayer && TEOriginalPreviewLayer != PreviewLayerFallback &&
+            TEOriginalPreviewGrid && TEOriginalPreviewGrid != PreviewGridFallback,
+            "both preview hooks installed against exact real system ABIs");
+        SEL modelFactory = NSSelectorFromString(@"makeIconLayerNativelyOrFromImageIfNecessaryWithInfo:traitCollection:context:options:");
+        id nativeLayer = ((id (*)(id,SEL,TEIconImageInfo,id,id,NSUInteger))objc_msgSend)(previewIcon,modelFactory,
+            previewInfo,previewTraits,nil,1);
+        Check(CornerAlpha(PreviewLayerPixels(nativeLayer)) == 0,
+            "real model factory dispatch uses rounded themed native layer");
+        SEL gridFactory = NSSelectorFromString(@"gridCellImageOfSize:forIcon:iconImageInfo:imageAppearance:imageAttributes:");
+        UIImage *nativeMini = ((id (*)(id,SEL,CGSize,id,TEIconImageInfo,id,NSUInteger *))objc_msgSend)(
+            objc_getClass("SBFolderIconImageCache"),gridFactory,cell,icon,previewInfo,nil,&attributes);
+        Check(nativeMini.size.width == 12 && CornerAlpha(nativeMini) == 0,
+            "real static preview dispatch uses a themed mini image");
+        __block id backgroundLayer;
+        __block BOOL previewRanOffMain = NO;
+        dispatch_group_t previewGroup = dispatch_group_create();
+        dispatch_group_async(previewGroup, dispatch_get_global_queue(QOS_CLASS_USER_INITIATED,0), ^{
+            @autoreleasepool {
+                previewRanOffMain = !NSThread.isMainThread;
+                backgroundLayer = ((id (*)(id,SEL,TEIconImageInfo,id,id,NSUInteger))objc_msgSend)(previewIcon,modelFactory,
+                    previewInfo,previewTraits,nil,1);
+            }
+        });
+        if (dispatch_group_wait(previewGroup, dispatch_time(DISPATCH_TIME_NOW, 5 * NSEC_PER_SEC))) {
+            Check(NO, "background preview factory completes within its test deadline");
+            return 2;
+        }
+        Check(previewRanOffMain, "background preview test actually executes off the main thread");
+        Check([backgroundLayer isKindOfClass:CALayer.class], "background preview generation retains native CALayer contract");
+        // The system adapter asynchronously sets contents off-main. Wait for
+        // those contents, without displayIfNeeded: a plain CALayer has no draw
+        // delegate, so explicitly redisplaying it would erase its image.
+        NSDate *previewDeadline = [NSDate dateWithTimeIntervalSinceNow:2];
+        while (!PreviewLayerPixels(backgroundLayer) && previewDeadline.timeIntervalSinceNow > 0) {
+            CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0.01, true);
+        }
+        Check(PreviewHasRedCenter(PreviewLayerPixels(backgroundLayer)),
+            "background native adapter asynchronously populates themed contents");
+        [backgroundLayer setBounds:CGRectMake(0,0,76,76)];
+        [backgroundLayer setContentsScale:2];
+        UIGraphicsImageRendererFormat *backgroundFormat = [UIGraphicsImageRendererFormat preferredFormat];
+        backgroundFormat.scale = 2; backgroundFormat.opaque = NO;
+        UIImage *backgroundPixels = [[[UIGraphicsImageRenderer alloc] initWithSize:CGSizeMake(76,76) format:backgroundFormat]
+            imageWithActions:^(UIGraphicsImageRendererContext *rendererContext) {
+                [backgroundLayer renderInContext:rendererContext.CGContext];
+            }];
+        NSData *backgroundPNG = UIImagePNGRepresentation(backgroundPixels);
+        Check(backgroundPNG.length > 0 && CornerAlpha(backgroundPixels) == 0,
+            "background native drawing-handler path preserves corner transparency");
+        Check(PreviewHasRedCenter(layerPixels) && PreviewHasRedCenter(PreviewLayerPixels(nativeLayer)),
+            "direct and hooked native layers contain the red theme fixture, not just transparent corners");
+        Check(PreviewHasRedCenter(miniImage) && PreviewHasRedCenter(nativeMini),
+            "direct and hooked static previews contain the red theme fixture");
+        Check(PreviewHasRedCenter(backgroundPixels),
+            "background drawing-handler rasterization contains the red theme fixture");
+        NSUInteger generation = ((NSUInteger (*)(id,SEL))objc_msgSend)(previewIcon,NSSelectorFromString(@"imageGeneration"));
+        TEInvalidateFolderPreviewIcons();
+        Check(((NSUInteger (*)(id,SEL))objc_msgSend)(previewIcon,NSSelectorFromString(@"imageGeneration")) > generation,
+            "theme reload invalidates the native model generation for tracked previews");
+        __weak id weakIcon;
+        @autoreleasepool {
+            id temporary = [NSObject new];
+            weakIcon = temporary; TEPreviewRecordIcon(temporary);
+        }
+        Check(weakIcon == nil, "preview tracking does not retain recycled model icons");
         printf("RESULT %d checks, %d failures\n", checks, failures);
     }
     return failures ? 1 : 0;
