@@ -44,7 +44,8 @@ TE_SIMPLE_HOOK(Cached, YES)
 TE_SIMPLE_HOOK(Unmasked, NO)
 TE_SIMPLE_HOOK(CachedUnmasked, NO)
 
-// The native imageCacheRetrievalOptions uses bit 0 for masking (verified on 26.0.1).
+// The legacy options entry points below retain their original fixed masking.
+// Do not infer the cache's mask flag from the view's image-option bit 0.
 #define TE_OPTIONS_HOOK(Name, Masked) \
     static UIImage *(*TEOriginal##Name)(id, SEL, id, NSUInteger); \
     static UIImage *TE##Name(id self, SEL cmd, id icon, NSUInteger options) { \
@@ -57,10 +58,14 @@ TE_OPTIONS_HOOK(UnmaskedOptions, NO)
 
 // iOS 18+/26 views no longer pass through imageForIcon: or imageForIcon:options:.
 // Their appearance-aware path and trait-collection bridges must be covered too.
+// Native SBHIconImageCache -variantCacheForOptions: tests 0x2, selecting
+// _unmaskedCache when set and _maskedCache otherwise (including options=0).
+// The view's iconImageOptions and cache retrieval options are different flag
+// domains. Reading bit 0 here incorrectly makes normal options=0 icons square.
 #define TE_APPEARANCE_HOOK(Name) \
     static UIImage *(*TEOriginal##Name)(id, SEL, id, id, NSUInteger); \
     static UIImage *TE##Name(id self, SEL cmd, id icon, id appearance, NSUInteger options) { \
-        return TEThemedImageForIcon(self, icon, (options & 1) != 0) \
+        return TEThemedImageForIcon(self, icon, (options & 2) == 0) \
             ?: TEOriginal##Name(self, cmd, icon, appearance, options); \
     }
 TE_APPEARANCE_HOOK(AppearanceImage)

@@ -39,6 +39,15 @@ typedef struct SBIconImageInfo { CGSize size; CGFloat scale; CGFloat continuousC
 - (TEPipelineNativeInfo)iconImageInfo { return (TEPipelineNativeInfo){CGSizeMake(76,76), 2, 16}; }
 @end
 
+@interface TEPipelineNativeVariantFixture : NSObject {
+@public
+    id maskedCache;
+    id unmaskedCache;
+}
+@end
+@implementation TEPipelineNativeVariantFixture
+@end
+
 static UIImage *sentinel;
 static NSUInteger legacyFallbacks;
 static UIImage *LegacyFallback(id self, SEL cmd, id icon) {
@@ -72,6 +81,9 @@ static int CornerAlpha(UIImage *image) {
 
 int main(void) {
     @autoreleasepool {
+        void *handle = dlopen("/System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome", RTLD_LAZY|RTLD_GLOBAL);
+        Class nativeCache = objc_getClass("SBHIconImageCache");
+        Check(handle && nativeCache, "system cache available for native flag oracle");
         NSString *root = @(getenv("APELIN_PROJECT_ROOT") ?: "");
         if (!root.length) return 2;
         NSString *themePath = [root stringByAppendingPathComponent:@"build/PipelineFixture.theme"];
@@ -92,8 +104,41 @@ int main(void) {
         UIImage *masked = TEAppearanceImage(sizing, NULL, icon, expectedAppearance, 1);
         Check(masked && masked.size.width == 76 && masked.scale == 2 && CGImageGetWidth(masked.CGImage) == 152, "appearance hook honors iPad size and scale");
         Check(CornerAlpha(masked) == 0, "masked option preserves transparent corners");
-        UIImage *square = TEAppearanceImage(sizing, NULL, icon, expectedAppearance, 0);
-        Check(CornerAlpha(square) == 255, "unmasked option preserves square pixels");
+        UIImage *square = TEAppearanceImage(sizing, NULL, icon, expectedAppearance, 2);
+        Check(CornerAlpha(square) == 255, "explicit unmasked option preserves square pixels");
+
+        // The six-instruction native method selects self+8 or self+16 and returns
+        // that cache. Call the real IMP on an isolated layout-checked fixture;
+        // neither native caches nor system objects are mutated.
+        Ivar nativeMasked = class_getInstanceVariable(nativeCache, "_maskedCache");
+        Ivar nativeUnmasked = class_getInstanceVariable(nativeCache, "_unmaskedCache");
+        Ivar fixtureMasked = class_getInstanceVariable(TEPipelineNativeVariantFixture.class, "maskedCache");
+        Ivar fixtureUnmasked = class_getInstanceVariable(TEPipelineNativeVariantFixture.class, "unmaskedCache");
+        SEL variant = NSSelectorFromString(@"variantCacheForOptions:");
+        Method variantMethod = class_getInstanceMethod(nativeCache, variant);
+        BOOL layout = nativeMasked && nativeUnmasked && fixtureMasked && fixtureUnmasked &&
+            ivar_getOffset(nativeMasked) == ivar_getOffset(fixtureMasked) &&
+            ivar_getOffset(nativeUnmasked) == ivar_getOffset(fixtureUnmasked) &&
+            variantMethod && strcmp(method_getTypeEncoding(variantMethod), "@24@0:8Q16") == 0;
+        Check(layout, "native variant IMP ABI and both fixture offsets verified");
+        if (layout) {
+            TEPipelineNativeVariantFixture *fixture = [TEPipelineNativeVariantFixture new];
+            fixture->maskedCache = [NSObject new]; fixture->unmaskedCache = [NSObject new];
+            id (*nativeVariant)(id, SEL, NSUInteger) = (void *)method_getImplementation(variantMethod);
+            NSUInteger flags[] = {0,1,2,3,4,5,6,7,32,33,34,35,36,37,38,39};
+            UIImage *(*entries[])(id,SEL,id,id,NSUInteger) = {TEAppearanceImage,TEAppearanceCached,TEAppearanceReal,TETraitImage,TETraitCached,TETraitReal};
+            for (NSUInteger i = 0; i < sizeof(flags)/sizeof(flags[0]); i++) {
+                BOOL nativeIsMasked = nativeVariant(fixture, variant, flags[i]) == fixture->maskedCache;
+                BOOL matches = YES;
+                for (NSUInteger j = 0; j < 6; j++) {
+                    UIImage *output = entries[j](sizing,NULL,icon,expectedAppearance,flags[i]);
+                    matches &= CornerAlpha(output) == (nativeIsMasked ? 0 : 255);
+                }
+                char message[128];
+                snprintf(message,sizeof(message),"all six appearance entries match native variant mask for options=%lu",(unsigned long)flags[i]);
+                Check(matches,message);
+            }
+        }
         Check(TEImage(sizing,NULL,icon) == masked && TECached(sizing,NULL,icon) == masked,
             "legacy masked and cached entrances retain their output");
         Check(TEUnmasked(sizing,NULL,icon) == square && TECachedUnmasked(sizing,NULL,icon) == square,
@@ -125,7 +170,6 @@ int main(void) {
         [store setValue:@YES forKey:@"enabled"];
         Check(fallbackCalls == 7, "exactly one original call for each fallback");
 
-        void *handle = dlopen("/System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome", RTLD_LAZY|RTLD_GLOBAL);
         Class base = objc_getClass("SBIconImageView");
         Check(handle && base, "current system image-view class loaded");
         TEInstallIconPipelineHooks();
@@ -156,8 +200,22 @@ int main(void) {
         // A genuine cache object and selector, not a direct call to our C function.
         id cache = [objc_getClass("SBHIconImageCache") new];
         UIImage *result = ((id (*)(id,SEL,id,id,NSUInteger))objc_msgSend)(cache,
-            NSSelectorFromString(@"imageForIcon:imageAppearance:options:"), icon, nil, 1);
+            NSSelectorFromString(@"imageForIcon:imageAppearance:options:"), icon, nil, 0);
         Check([result isKindOfClass:UIImage.class] && result.CGImage, "actual system cache dispatch returns theme UIImage");
+        Check(CornerAlpha(result) == 0, "actual cache options=0 returns transparent rounded corners");
+        UIImage *unmaskedResult = ((id (*)(id,SEL,id,id,NSUInteger))objc_msgSend)(cache,
+            NSSelectorFromString(@"imageForIcon:imageAppearance:options:"), icon, nil, 2);
+        Check(CornerAlpha(unmaskedResult) == 255, "actual cache explicit unmasked request still returns square pixels");
+        SEL display = NSSelectorFromString(@"updateImageContentsWithImage:imageAppearance:animated:shouldClearDisplayedLayer:");
+        Method displayMethod = class_getInstanceMethod(base, display);
+        BOOL displayABI = displayMethod && strcmp(method_getTypeEncoding(displayMethod), "v40@0:8@16@24B32B36") == 0;
+        Check(displayABI, "native bitmap display method ABI verified");
+        if (displayABI) {
+            ((void (*)(id,SEL,id,id,BOOL,BOOL))objc_msgSend)(view,display,result,nil,NO,YES);
+            UIImage *displayed = TECallObject(view,@"displayedImage");
+            Check(displayed == result && CornerAlpha(displayed) == 0,
+                "detached native image view displays the rounded default-cache image");
+        }
         printf("RESULT %d checks, %d failures\n", checks, failures);
     }
     return failures ? 1 : 0;
